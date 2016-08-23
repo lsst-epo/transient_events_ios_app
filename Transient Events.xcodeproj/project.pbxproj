@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 45;
+	objectVersion = 46;
 	objects = {
 
 /* Begin PBXAggregateTarget section */
@@ -37,7 +37,7 @@
 		0330915F10973EDE0016EC0D /* EventListHelp.html in Resources */ = {isa = PBXBuildFile; fileRef = 0330915E10973EDE0016EC0D /* EventListHelp.html */; };
 		0330916310973EFD0016EC0D /* BookmarkListHelp.html in Resources */ = {isa = PBXBuildFile; fileRef = 0330916210973EFD0016EC0D /* BookmarkListHelp.html */; };
 		0330916910973F2F0016EC0D /* SettingsHelp.html in Resources */ = {isa = PBXBuildFile; fileRef = 0330916810973F2F0016EC0D /* SettingsHelp.html */; };
-		033CC77B10879A0A00FF3BDC /* BookmarkDetailView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 033CC77A10879A0A00FF3BDC /* BookmarkDetailView.xib */; };
+		033CC77B10879A0A00FF3BDC /* BookmarkDetailView_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = 033CC77A10879A0A00FF3BDC /* BookmarkDetailView_iPhone.xib */; };
 		03471854106A3E27001EDCDB /* Entitlements.plist in Resources */ = {isa = PBXBuildFile; fileRef = 03471853106A3E27001EDCDB /* Entitlements.plist */; };
 		03471B36106AA7A4001EDCDB /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03471B35106AA7A4001EDCDB /* MessageUI.framework */; };
 		03471B47106AB116001EDCDB /* FinderImageView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 03471B46106AB116001EDCDB /* FinderImageView.xib */; };
@@ -99,7 +99,6 @@
 		039FD2031072793B003184BC /* SBJsonBase.m in Sources */ = {isa = PBXBuildFile; fileRef = 039FD1FB1072793B003184BC /* SBJsonBase.m */; };
 		039FD2041072793B003184BC /* SBJsonParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 039FD1FD1072793B003184BC /* SBJsonParser.m */; };
 		039FD2051072793B003184BC /* SBJsonWriter.m in Sources */ = {isa = PBXBuildFile; fileRef = 039FD1FF1072793B003184BC /* SBJsonWriter.m */; };
-		03A71BA5102C8F540056AF1C /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03A71BA4102C8F540056AF1C /* CoreLocation.framework */; };
 		03A71BAE102C90000056AF1C /* EventListController.m in Sources */ = {isa = PBXBuildFile; fileRef = 03A71BAD102C90000056AF1C /* EventListController.m */; };
 		03A71C0B102CA7100056AF1C /* SettingsListController.m in Sources */ = {isa = PBXBuildFile; fileRef = 03A71C0A102CA7100056AF1C /* SettingsListController.m */; };
 		03A71C0F102CA83D0056AF1C /* Gear.png in Resources */ = {isa = PBXBuildFile; fileRef = 03A71C0E102CA83D0056AF1C /* Gear.png */; };
@@ -108,7 +107,6 @@
 		03A71CE3102CB79B0056AF1C /* BookmarkListController.m in Sources */ = {isa = PBXBuildFile; fileRef = 03A71CE2102CB79B0056AF1C /* BookmarkListController.m */; };
 		03AD194810FE5F7900F3554D /* AlertIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = 03AD194710FE5F7900F3554D /* AlertIcon.png */; };
 		03AD19C210FE725200F3554D /* incoming.wav in Resources */ = {isa = PBXBuildFile; fileRef = 03AD19C110FE725200F3554D /* incoming.wav */; };
-		03AD19E310FE734100F3554D /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03AD19E210FE734100F3554D /* AudioToolbox.framework */; };
 		03B1F82A1121E794004DAA56 /* VariableBig.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 03B1F8171121E794004DAA56 /* VariableBig.jpg */; };
 		03B1F82B1121E794004DAA56 /* UnknownBig.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 03B1F8181121E794004DAA56 /* UnknownBig.jpg */; };
 		03B1F82C1121E794004DAA56 /* Tidal Distuption FlareBig.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 03B1F8191121E794004DAA56 /* Tidal Distuption FlareBig.jpg */; };
@@ -128,7 +126,6 @@
 		03B1F83A1121E794004DAA56 /* UV Ceti VariableBig.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 03B1F8271121E794004DAA56 /* UV Ceti VariableBig.jpg */; };
 		03B1F83B1121E794004DAA56 /* MicrolensingBig.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 03B1F8281121E794004DAA56 /* MicrolensingBig.jpg */; };
 		03B1F83C1121E794004DAA56 /* Active Galactic Nucleus VariabilityBig.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 03B1F8291121E794004DAA56 /* Active Galactic Nucleus VariabilityBig.jpg */; };
-		03B1F85B1121E8EF004DAA56 /* skyalert.png in Resources */ = {isa = PBXBuildFile; fileRef = 03B1F85A1121E8EF004DAA56 /* skyalert.png */; };
 		03B9FD40107D1EFD00A7CB72 /* AltAzComputation.m in Sources */ = {isa = PBXBuildFile; fileRef = 03B9FD3F107D1EFD00A7CB72 /* AltAzComputation.m */; };
 		03BD74FC111761F10013F235 /* EventListBackgroundView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 03BD74FA111761F10013F235 /* EventListBackgroundView.xib */; };
 		03BD75C41117749A0013F235 /* BookmarkDetailController.m in Sources */ = {isa = PBXBuildFile; fileRef = 03BD75C31117749A0013F235 /* BookmarkDetailController.m */; };
@@ -139,13 +136,56 @@
 		03BD75DD1117755A0013F235 /* CSS(60px).jpg in Resources */ = {isa = PBXBuildFile; fileRef = 03BD75DB1117755A0013F235 /* CSS(60px).jpg */; };
 		03BD75DE1117755A0013F235 /* CRTS(60px).jpg in Resources */ = {isa = PBXBuildFile; fileRef = 03BD75DC1117755A0013F235 /* CRTS(60px).jpg */; };
 		03BE73A4108CD30E001D23EA /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 03BE73A3108CD30E001D23EA /* Settings.bundle */; };
-		03C98D801030752800396439 /* EventDetailView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 03C98D7F1030752800396439 /* EventDetailView.xib */; };
 		03C98D851030799100396439 /* sampleimage.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 03C98D841030799100396439 /* sampleimage.jpg */; };
 		03E148F710986212002C4C0A /* EventDetailController.m in Sources */ = {isa = PBXBuildFile; fileRef = 03E148F610986212002C4C0A /* EventDetailController.m */; };
 		03F1B7B21090EBFB0012C7D6 /* MissingImage.png in Resources */ = {isa = PBXBuildFile; fileRef = 03F1B7B11090EBFB0012C7D6 /* MissingImage.png */; };
 		03F2CC3110C9E1B700D773DB /* Active Galactic Nucleus Variability.png in Resources */ = {isa = PBXBuildFile; fileRef = 03590FA910C9C41700D45180 /* Active Galactic Nucleus Variability.png */; };
 		03F3FBDF1051A110009575B6 /* EventTypesListController.m in Sources */ = {isa = PBXBuildFile; fileRef = 03F3FBDE1051A110009575B6 /* EventTypesListController.m */; };
 		03F3FBFC1051A5F3009575B6 /* EventTypeDictionary.plist in Resources */ = {isa = PBXBuildFile; fileRef = 03F3FBFB1051A5F3009575B6 /* EventTypeDictionary.plist */; };
+		0F10B7A31491488E00443674 /* 152-rolodex.png in Resources */ = {isa = PBXBuildFile; fileRef = 0F10B7991491488E00443674 /* 152-rolodex.png */; };
+		0F10B7A41491488E00443674 /* GlossaryController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F10B79B1491488E00443674 /* GlossaryController.m */; };
+		0F10B7A51491488E00443674 /* GlossaryController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0F10B79C1491488E00443674 /* GlossaryController.xib */; };
+		0F10B7A61491488E00443674 /* ObjectInfoPageController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F10B79E1491488E00443674 /* ObjectInfoPageController.m */; };
+		0F10B7A71491488E00443674 /* ObjectInfoPageController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0F10B79F1491488E00443674 /* ObjectInfoPageController.xib */; };
+		0F10B7A81491488E00443674 /* GlossaryView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F10B7A11491488E00443674 /* GlossaryView.m */; };
+		0F10B7A91491488E00443674 /* GlossaryView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0F10B7A21491488E00443674 /* GlossaryView.xib */; };
+		0F10B7BF1491494900443674 /* Unknown.txt in Resources */ = {isa = PBXBuildFile; fileRef = 0F10B7AB1491494900443674 /* Unknown.txt */; };
+		0F10B7C01491494900443674 /* Active Galactic Nucleus.txt in Resources */ = {isa = PBXBuildFile; fileRef = 0F10B7AC1491494900443674 /* Active Galactic Nucleus.txt */; };
+		0F10B7C11491494900443674 /* Asteroid.txt in Resources */ = {isa = PBXBuildFile; fileRef = 0F10B7AD1491494900443674 /* Asteroid.txt */; };
+		0F10B7C21491494900443674 /* Blazar Outburst.txt in Resources */ = {isa = PBXBuildFile; fileRef = 0F10B7AE1491494900443674 /* Blazar Outburst.txt */; };
+		0F10B7C31491494900443674 /* Cataclysmic Variable.txt in Resources */ = {isa = PBXBuildFile; fileRef = 0F10B7AF1491494900443674 /* Cataclysmic Variable.txt */; };
+		0F10B7C41491494900443674 /* Comet.txt in Resources */ = {isa = PBXBuildFile; fileRef = 0F10B7B01491494900443674 /* Comet.txt */; };
+		0F10B7C51491494900443674 /* Eclipsing Variable.txt in Resources */ = {isa = PBXBuildFile; fileRef = 0F10B7B11491494900443674 /* Eclipsing Variable.txt */; };
+		0F10B7C61491494900443674 /* Gamma Ray Burst Afterglow.txt in Resources */ = {isa = PBXBuildFile; fileRef = 0F10B7B21491494900443674 /* Gamma Ray Burst Afterglow.txt */; };
+		0F10B7C71491494900443674 /* High Proper Motion Star.txt in Resources */ = {isa = PBXBuildFile; fileRef = 0F10B7B31491494900443674 /* High Proper Motion Star.txt */; };
+		0F10B7C81491494900443674 /* Microlensing.txt in Resources */ = {isa = PBXBuildFile; fileRef = 0F10B7B41491494900443674 /* Microlensing.txt */; };
+		0F10B7C91491494900443674 /* Mira Variable.txt in Resources */ = {isa = PBXBuildFile; fileRef = 0F10B7B51491494900443674 /* Mira Variable.txt */; };
+		0F10B7CA1491494900443674 /* Nova.txt in Resources */ = {isa = PBXBuildFile; fileRef = 0F10B7B61491494900443674 /* Nova.txt */; };
+		0F10B7CB1491494900443674 /* Planetary Microlensing.txt in Resources */ = {isa = PBXBuildFile; fileRef = 0F10B7B71491494900443674 /* Planetary Microlensing.txt */; };
+		0F10B7CC1491494900443674 /* RR Lyrae Variable.txt in Resources */ = {isa = PBXBuildFile; fileRef = 0F10B7B81491494900443674 /* RR Lyrae Variable.txt */; };
+		0F10B7CD1491494900443674 /* Supernova.txt in Resources */ = {isa = PBXBuildFile; fileRef = 0F10B7B91491494900443674 /* Supernova.txt */; };
+		0F10B7CE1491494900443674 /* Transient Event.txt in Resources */ = {isa = PBXBuildFile; fileRef = 0F10B7BA1491494900443674 /* Transient Event.txt */; };
+		0F10B7CF1491494900443674 /* Tidal Disruption Flare.txt in Resources */ = {isa = PBXBuildFile; fileRef = 0F10B7BB1491494900443674 /* Tidal Disruption Flare.txt */; };
+		0F10B7D01491494900443674 /* UV Ceti Variable.txt in Resources */ = {isa = PBXBuildFile; fileRef = 0F10B7BC1491494900443674 /* UV Ceti Variable.txt */; };
+		0F10B7D11491494900443674 /* Variable.txt in Resources */ = {isa = PBXBuildFile; fileRef = 0F10B7BD1491494900443674 /* Variable.txt */; };
+		0F10B7D21491494900443674 /* Other.txt in Resources */ = {isa = PBXBuildFile; fileRef = 0F10B7BE1491494900443674 /* Other.txt */; };
+		0F10B7D514914A2B00443674 /* EventDetailView_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0F10B7D414914A2B00443674 /* EventDetailView_iPhone.xib */; };
+		0F10B7D714914BEA00443674 /* CRTSbutton.png in Resources */ = {isa = PBXBuildFile; fileRef = 0F10B7D614914BEA00443674 /* CRTSbutton.png */; };
+		0F10B7D914914C0200443674 /* skyalert.png in Resources */ = {isa = PBXBuildFile; fileRef = 0F10B7D814914C0200443674 /* skyalert.png */; };
+		0F10B7DB149151A300443674 /* BookmarkDetailView_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0F10B7DA149151A300443674 /* BookmarkDetailView_iPad.xib */; };
+		0F10B7E01491551600443674 /* BGtelescope_Big.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0F10B7DD1491551600443674 /* BGtelescope_Big.jpg */; };
+		0F10B7E11491551600443674 /* BGStar_Big.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0F10B7DE1491551600443674 /* BGStar_Big.jpg */; };
+		0F6D91A014915849005BAD77 /* Default-Portrait~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = 0F6D919F14915849005BAD77 /* Default-Portrait~ipad.png */; };
+		0FACF69C1492B6290030B5E2 /* LocationView_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0FACF69B1492B6290030B5E2 /* LocationView_iPad.xib */; };
+		0FACF69F1492BF0F0030B5E2 /* AboutTransientEventsView_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0FACF69E1492BF0F0030B5E2 /* AboutTransientEventsView_iPad.xib */; };
+		0FACF6A11492C30F0030B5E2 /* MagnitudeLimitView_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0FACF6A01492C30F0030B5E2 /* MagnitudeLimitView_iPad.xib */; };
+		0FACF6A31492C4DE0030B5E2 /* EventAgeViewController_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0FACF6A21492C4DE0030B5E2 /* EventAgeViewController_iPad.xib */; };
+		0FACF6A51492C5860030B5E2 /* MinAltitudeView_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0FACF6A41492C5860030B5E2 /* MinAltitudeView_iPad.xib */; };
+		0FACF6A71492C7CC0030B5E2 /* SurveyQuestion1ViewController_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0FACF6A61492C7CC0030B5E2 /* SurveyQuestion1ViewController_iPad.xib */; };
+		0FACF6A91492C91E0030B5E2 /* SurveyQuestion2ViewController_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0FACF6A81492C91D0030B5E2 /* SurveyQuestion2ViewController_iPad.xib */; };
+		0FACF6AB1492C9520030B5E2 /* SurveyQuestion3ViewController_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0FACF6AA1492C9520030B5E2 /* SurveyQuestion3ViewController_iPad.xib */; };
+		0FFDDD6C148ED713008CDA4D /* EventDetailView_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0FFDDD6B148ED713008CDA4D /* EventDetailView_iPad.xib */; };
+		0FFDDD6F148EE106008CDA4D /* UnderlinedUILabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FFDDD6E148EE106008CDA4D /* UnderlinedUILabel.m */; };
 		1D3623260D0F684500981E51 /* Transient_EventsAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D3623250D0F684500981E51 /* Transient_EventsAppDelegate.m */; };
 		1D60589B0D05DD56006BFB54 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; };
 		1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D30AB110D05D00D00671497 /* Foundation.framework */; };
@@ -160,6 +200,7 @@
 		32152B5111C969D400905BEA /* SurveyQuestion2ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 32152B5011C969D400905BEA /* SurveyQuestion2ViewController.xib */; };
 		32152BF311C97A0300905BEA /* SurveyQuestion3ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 32152BF111C97A0300905BEA /* SurveyQuestion3ViewController.m */; };
 		32152BF411C97A0300905BEA /* SurveyQuestion3ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 32152BF211C97A0300905BEA /* SurveyQuestion3ViewController.xib */; };
+		84E5B7C81483267B00FC0FB1 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84E5B7C71483267B00FC0FB1 /* AudioToolbox.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -181,7 +222,7 @@
 		033092AA109772330016EC0D /* TableGradient.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TableGradient.png; sourceTree = "<group>"; };
 		0330933810977DF10016EC0D /* Background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Background.png; sourceTree = "<group>"; };
 		03309398109789FB0016EC0D /* DarkBackground.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = DarkBackground.png; sourceTree = "<group>"; };
-		033CC77A10879A0A00FF3BDC /* BookmarkDetailView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BookmarkDetailView.xib; sourceTree = "<group>"; };
+		033CC77A10879A0A00FF3BDC /* BookmarkDetailView_iPhone.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BookmarkDetailView_iPhone.xib; sourceTree = "<group>"; };
 		0341824810C9EFFB002562D8 /* Galaxy.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Galaxy.png; sourceTree = "<group>"; };
 		034384F31117A0B300635A1E /* Mira VariableBig.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Mira VariableBig.png"; sourceTree = "<group>"; };
 		0343850C1117A16500635A1E /* CometBig.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = CometBig.png; sourceTree = "<group>"; };
@@ -318,7 +359,6 @@
 		03B1F8271121E794004DAA56 /* UV Ceti VariableBig.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "UV Ceti VariableBig.jpg"; sourceTree = "<group>"; };
 		03B1F8281121E794004DAA56 /* MicrolensingBig.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = MicrolensingBig.jpg; sourceTree = "<group>"; };
 		03B1F8291121E794004DAA56 /* Active Galactic Nucleus VariabilityBig.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Active Galactic Nucleus VariabilityBig.jpg"; sourceTree = "<group>"; };
-		03B1F85A1121E8EF004DAA56 /* skyalert.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = skyalert.png; sourceTree = "<group>"; };
 		03B9FD3E107D1EFD00A7CB72 /* AltAzComputation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AltAzComputation.h; sourceTree = "<group>"; };
 		03B9FD3F107D1EFD00A7CB72 /* AltAzComputation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AltAzComputation.m; sourceTree = "<group>"; };
 		03BD74FA111761F10013F235 /* EventListBackgroundView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = EventListBackgroundView.xib; path = Classes/EventListBackgroundView.xib; sourceTree = "<group>"; };
@@ -345,7 +385,6 @@
 		03BD76F5111788880013F235 /* High Proper Motion StarBig.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "High Proper Motion StarBig.png"; sourceTree = "<group>"; };
 		03BE73A3108CD30E001D23EA /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
 		03C98D7410305C8800396439 /* Notes.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Notes.txt; sourceTree = "<group>"; };
-		03C98D7F1030752800396439 /* EventDetailView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EventDetailView.xib; sourceTree = "<group>"; };
 		03C98D841030799100396439 /* sampleimage.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = sampleimage.jpg; sourceTree = "<group>"; };
 		03C98D8F1030A5B400396439 /* EventDetailController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EventDetailController.h; sourceTree = "<group>"; };
 		03CD995B10641FA1008190FF /* ToDo.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ToDo.txt; sourceTree = "<group>"; };
@@ -357,6 +396,54 @@
 		03F3FBDD1051A110009575B6 /* EventTypesListController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EventTypesListController.h; sourceTree = "<group>"; };
 		03F3FBDE1051A110009575B6 /* EventTypesListController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EventTypesListController.m; sourceTree = "<group>"; };
 		03F3FBFB1051A5F3009575B6 /* EventTypeDictionary.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = EventTypeDictionary.plist; sourceTree = "<group>"; };
+		0F10B7991491488E00443674 /* 152-rolodex.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "152-rolodex.png"; sourceTree = "<group>"; };
+		0F10B79A1491488E00443674 /* GlossaryController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GlossaryController.h; sourceTree = "<group>"; };
+		0F10B79B1491488E00443674 /* GlossaryController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GlossaryController.m; sourceTree = "<group>"; };
+		0F10B79C1491488E00443674 /* GlossaryController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GlossaryController.xib; sourceTree = "<group>"; };
+		0F10B79D1491488E00443674 /* ObjectInfoPageController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ObjectInfoPageController.h; sourceTree = "<group>"; };
+		0F10B79E1491488E00443674 /* ObjectInfoPageController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ObjectInfoPageController.m; sourceTree = "<group>"; };
+		0F10B79F1491488E00443674 /* ObjectInfoPageController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ObjectInfoPageController.xib; sourceTree = "<group>"; };
+		0F10B7A01491488E00443674 /* GlossaryView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GlossaryView.h; sourceTree = "<group>"; };
+		0F10B7A11491488E00443674 /* GlossaryView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GlossaryView.m; sourceTree = "<group>"; };
+		0F10B7A21491488E00443674 /* GlossaryView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GlossaryView.xib; sourceTree = "<group>"; };
+		0F10B7AB1491494900443674 /* Unknown.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Unknown.txt; sourceTree = "<group>"; };
+		0F10B7AC1491494900443674 /* Active Galactic Nucleus.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "Active Galactic Nucleus.txt"; sourceTree = "<group>"; };
+		0F10B7AD1491494900443674 /* Asteroid.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Asteroid.txt; sourceTree = "<group>"; };
+		0F10B7AE1491494900443674 /* Blazar Outburst.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "Blazar Outburst.txt"; sourceTree = "<group>"; };
+		0F10B7AF1491494900443674 /* Cataclysmic Variable.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "Cataclysmic Variable.txt"; sourceTree = "<group>"; };
+		0F10B7B01491494900443674 /* Comet.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Comet.txt; sourceTree = "<group>"; };
+		0F10B7B11491494900443674 /* Eclipsing Variable.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "Eclipsing Variable.txt"; sourceTree = "<group>"; };
+		0F10B7B21491494900443674 /* Gamma Ray Burst Afterglow.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "Gamma Ray Burst Afterglow.txt"; sourceTree = "<group>"; };
+		0F10B7B31491494900443674 /* High Proper Motion Star.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "High Proper Motion Star.txt"; sourceTree = "<group>"; };
+		0F10B7B41491494900443674 /* Microlensing.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Microlensing.txt; sourceTree = "<group>"; };
+		0F10B7B51491494900443674 /* Mira Variable.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "Mira Variable.txt"; sourceTree = "<group>"; };
+		0F10B7B61491494900443674 /* Nova.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Nova.txt; sourceTree = "<group>"; };
+		0F10B7B71491494900443674 /* Planetary Microlensing.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "Planetary Microlensing.txt"; sourceTree = "<group>"; };
+		0F10B7B81491494900443674 /* RR Lyrae Variable.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "RR Lyrae Variable.txt"; sourceTree = "<group>"; };
+		0F10B7B91491494900443674 /* Supernova.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Supernova.txt; sourceTree = "<group>"; };
+		0F10B7BA1491494900443674 /* Transient Event.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "Transient Event.txt"; sourceTree = "<group>"; };
+		0F10B7BB1491494900443674 /* Tidal Disruption Flare.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "Tidal Disruption Flare.txt"; sourceTree = "<group>"; };
+		0F10B7BC1491494900443674 /* UV Ceti Variable.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "UV Ceti Variable.txt"; sourceTree = "<group>"; };
+		0F10B7BD1491494900443674 /* Variable.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Variable.txt; sourceTree = "<group>"; };
+		0F10B7BE1491494900443674 /* Other.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Other.txt; sourceTree = "<group>"; };
+		0F10B7D414914A2B00443674 /* EventDetailView_iPhone.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EventDetailView_iPhone.xib; sourceTree = "<group>"; };
+		0F10B7D614914BEA00443674 /* CRTSbutton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = CRTSbutton.png; sourceTree = "<group>"; };
+		0F10B7D814914C0200443674 /* skyalert.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = skyalert.png; sourceTree = "<group>"; };
+		0F10B7DA149151A300443674 /* BookmarkDetailView_iPad.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BookmarkDetailView_iPad.xib; sourceTree = "<group>"; };
+		0F10B7DD1491551600443674 /* BGtelescope_Big.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = BGtelescope_Big.jpg; sourceTree = "<group>"; };
+		0F10B7DE1491551600443674 /* BGStar_Big.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = BGStar_Big.jpg; sourceTree = "<group>"; };
+		0F6D919F14915849005BAD77 /* Default-Portrait~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-Portrait~ipad.png"; sourceTree = "<group>"; };
+		0FACF69B1492B6290030B5E2 /* LocationView_iPad.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LocationView_iPad.xib; sourceTree = "<group>"; };
+		0FACF69E1492BF0F0030B5E2 /* AboutTransientEventsView_iPad.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AboutTransientEventsView_iPad.xib; sourceTree = "<group>"; };
+		0FACF6A01492C30F0030B5E2 /* MagnitudeLimitView_iPad.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MagnitudeLimitView_iPad.xib; sourceTree = "<group>"; };
+		0FACF6A21492C4DE0030B5E2 /* EventAgeViewController_iPad.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = EventAgeViewController_iPad.xib; path = Classes/EventAgeViewController_iPad.xib; sourceTree = "<group>"; };
+		0FACF6A41492C5860030B5E2 /* MinAltitudeView_iPad.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MinAltitudeView_iPad.xib; sourceTree = "<group>"; };
+		0FACF6A61492C7CC0030B5E2 /* SurveyQuestion1ViewController_iPad.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = SurveyQuestion1ViewController_iPad.xib; path = Classes/SurveyQuestion1ViewController_iPad.xib; sourceTree = "<group>"; };
+		0FACF6A81492C91D0030B5E2 /* SurveyQuestion2ViewController_iPad.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SurveyQuestion2ViewController_iPad.xib; sourceTree = "<group>"; };
+		0FACF6AA1492C9520030B5E2 /* SurveyQuestion3ViewController_iPad.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SurveyQuestion3ViewController_iPad.xib; sourceTree = "<group>"; };
+		0FFDDD6B148ED713008CDA4D /* EventDetailView_iPad.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EventDetailView_iPad.xib; sourceTree = "<group>"; };
+		0FFDDD6D148EE106008CDA4D /* UnderlinedUILabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UnderlinedUILabel.h; sourceTree = "<group>"; };
+		0FFDDD6E148EE106008CDA4D /* UnderlinedUILabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UnderlinedUILabel.m; sourceTree = "<group>"; };
 		1D30AB110D05D00D00671497 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		1D3623240D0F684500981E51 /* Transient_EventsAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Transient_EventsAppDelegate.h; sourceTree = "<group>"; };
 		1D3623250D0F684500981E51 /* Transient_EventsAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Transient_EventsAppDelegate.m; sourceTree = "<group>"; };
@@ -378,6 +465,7 @@
 		32152BF211C97A0300905BEA /* SurveyQuestion3ViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = SurveyQuestion3ViewController.xib; path = Classes/SurveyQuestion3ViewController.xib; sourceTree = "<group>"; };
 		32CA4F630368D1EE00C91783 /* Transient_Events_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Transient_Events_Prefix.pch; sourceTree = "<group>"; };
 		32D976C5105EA2D300C93CF4 /* Bugs and Changes.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "Bugs and Changes.txt"; sourceTree = "<group>"; };
+		84E5B7C71483267B00FC0FB1 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		8D1107310486CEB800E47090 /* Transient_Events-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Transient_Events-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -386,15 +474,14 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				84E5B7C81483267B00FC0FB1 /* AudioToolbox.framework in Frameworks */,
 				1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */,
 				1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */,
 				288765A50DF7441C002DB57D /* CoreGraphics.framework in Frameworks */,
 				28D801B40F44B63D00FB423F /* CoreData.framework in Frameworks */,
-				03A71BA5102C8F540056AF1C /* CoreLocation.framework in Frameworks */,
 				038822E4104EFCB0008651C8 /* MapKit.framework in Frameworks */,
 				038822F0104F0070008651C8 /* CoreLocation.framework in Frameworks */,
 				03471B36106AA7A4001EDCDB /* MessageUI.framework in Frameworks */,
-				03AD19E310FE734100F3554D /* AudioToolbox.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -404,8 +491,12 @@
 		03471906106A582D001EDCDB /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				0F6D919F14915849005BAD77 /* Default-Portrait~ipad.png */,
+				0F10B7DD1491551600443674 /* BGtelescope_Big.jpg */,
+				0F10B7DE1491551600443674 /* BGStar_Big.jpg */,
 				037CBE4C11DB6D3300709F26 /* surveyIcon.png */,
-				03B1F85A1121E8EF004DAA56 /* skyalert.png */,
+				0F10B7D614914BEA00443674 /* CRTSbutton.png */,
+				0F10B7D814914C0200443674 /* skyalert.png */,
 				03B1F8171121E794004DAA56 /* VariableBig.jpg */,
 				03B1F8181121E794004DAA56 /* UnknownBig.jpg */,
 				03B1F8191121E794004DAA56 /* Tidal Distuption FlareBig.jpg */,
@@ -621,6 +712,33 @@
 			path = Classes;
 			sourceTree = "<group>";
 		};
+		0F10B7AA1491490A00443674 /* Type texts */ = {
+			isa = PBXGroup;
+			children = (
+				0F10B7AB1491494900443674 /* Unknown.txt */,
+				0F10B7AC1491494900443674 /* Active Galactic Nucleus.txt */,
+				0F10B7AD1491494900443674 /* Asteroid.txt */,
+				0F10B7AE1491494900443674 /* Blazar Outburst.txt */,
+				0F10B7AF1491494900443674 /* Cataclysmic Variable.txt */,
+				0F10B7B01491494900443674 /* Comet.txt */,
+				0F10B7B11491494900443674 /* Eclipsing Variable.txt */,
+				0F10B7B21491494900443674 /* Gamma Ray Burst Afterglow.txt */,
+				0F10B7B31491494900443674 /* High Proper Motion Star.txt */,
+				0F10B7B41491494900443674 /* Microlensing.txt */,
+				0F10B7B51491494900443674 /* Mira Variable.txt */,
+				0F10B7B61491494900443674 /* Nova.txt */,
+				0F10B7B71491494900443674 /* Planetary Microlensing.txt */,
+				0F10B7B81491494900443674 /* RR Lyrae Variable.txt */,
+				0F10B7B91491494900443674 /* Supernova.txt */,
+				0F10B7BA1491494900443674 /* Transient Event.txt */,
+				0F10B7BB1491494900443674 /* Tidal Disruption Flare.txt */,
+				0F10B7BC1491494900443674 /* UV Ceti Variable.txt */,
+				0F10B7BD1491494900443674 /* Variable.txt */,
+				0F10B7BE1491494900443674 /* Other.txt */,
+			);
+			name = "Type texts";
+			sourceTree = "<group>";
+		};
 		19C28FACFE9D520D11CA2CBB /* Products */ = {
 			isa = PBXGroup;
 			children = (
@@ -632,6 +750,7 @@
 		29B97314FDCFA39411CA2CEA /* CustomTemplate */ = {
 			isa = PBXGroup;
 			children = (
+				84BE0743148302A8000E47E3 /* New stuff */,
 				038244801122EC2500DF2E53 /* doxygen.config */,
 				03AD19B310FE6C4F00F3554D /* Sample JSON payload.txt */,
 				03C98D7410305C8800396439 /* Notes.txt */,
@@ -640,8 +759,8 @@
 				0388CF45107D152B003163F8 /* Version History.txt */,
 				03902334107E37D300320829 /* Master Images */,
 				080E96DDFE201D6D7F000001 /* Classes */,
-				29B97315FDCFA39411CA2CEA /* Other Sources */,
 				29B97317FDCFA39411CA2CEA /* Resources */,
+				29B97315FDCFA39411CA2CEA /* Other Sources */,
 				29B97323FDCFA39411CA2CEA /* Frameworks */,
 				19C28FACFE9D520D11CA2CBB /* Products */,
 				036A259D107CE08F0016B241 /* IncrementVersion */,
@@ -661,24 +780,35 @@
 		29B97317FDCFA39411CA2CEA /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				0F10B7AA1491490A00443674 /* Type texts */,
 				32152BF211C97A0300905BEA /* SurveyQuestion3ViewController.xib */,
+				0FACF6AA1492C9520030B5E2 /* SurveyQuestion3ViewController_iPad.xib */,
 				32152B5011C969D400905BEA /* SurveyQuestion2ViewController.xib */,
+				0FACF6A81492C91D0030B5E2 /* SurveyQuestion2ViewController_iPad.xib */,
 				3215294D11C923FC00905BEA /* SurveyQuestion1ViewController.xib */,
+				0FACF6A61492C7CC0030B5E2 /* SurveyQuestion1ViewController_iPad.xib */,
 				03BD74FA111761F10013F235 /* EventListBackgroundView.xib */,
 				03AD19C110FE725200F3554D /* incoming.wav */,
 				03E149A310987A62002C4C0A /* HTML files */,
 				03E149A210987A22002C4C0A /* String Plists and TXT files */,
-				033CC77A10879A0A00FF3BDC /* BookmarkDetailView.xib */,
+				033CC77A10879A0A00FF3BDC /* BookmarkDetailView_iPhone.xib */,
+				0F10B7DA149151A300443674 /* BookmarkDetailView_iPad.xib */,
 				8D1107310486CEB800E47090 /* Transient_Events-Info.plist */,
 				0388CED9107D0D04003163F8 /* MinAltitudeView.xib */,
+				0FACF6A41492C5860030B5E2 /* MinAltitudeView_iPad.xib */,
+				0FACF69E1492BF0F0030B5E2 /* AboutTransientEventsView_iPad.xib */,
 				0387846E107BC7B600610E90 /* AboutTransientEventsView.xib */,
 				03471906106A582D001EDCDB /* Images */,
 				03471853106A3E27001EDCDB /* Entitlements.plist */,
 				03584D5610515096005A0EF0 /* EventAgeViewController.xib */,
+				0FACF6A21492C4DE0030B5E2 /* EventAgeViewController_iPad.xib */,
 				28AD733E0D9D9553002E5188 /* MainWindow.xib */,
-				03C98D7F1030752800396439 /* EventDetailView.xib */,
+				0FFDDD6B148ED713008CDA4D /* EventDetailView_iPad.xib */,
+				0F10B7D414914A2B00443674 /* EventDetailView_iPhone.xib */,
 				0388229C104EFB5C008651C8 /* LocationView.xib */,
+				0FACF69B1492B6290030B5E2 /* LocationView_iPad.xib */,
 				03584CD510513EA9005A0EF0 /* MagnitudeLimitView.xib */,
+				0FACF6A01492C30F0030B5E2 /* MagnitudeLimitView_iPad.xib */,
 				03471B46106AB116001EDCDB /* FinderImageView.xib */,
 				03709B6B1073A53E002D91A0 /* FinderImageWebView.xib */,
 				03BE73A3108CD30E001D23EA /* Settings.bundle */,
@@ -690,6 +820,7 @@
 			isa = PBXGroup;
 			children = (
 				03AD19E210FE734100F3554D /* AudioToolbox.framework */,
+				84E5B7C71483267B00FC0FB1 /* AudioToolbox.framework */,
 				038822EF104F0070008651C8 /* CoreLocation.framework */,
 				038822E3104EFCB0008651C8 /* MapKit.framework */,
 				1DF5F4DF0D08C38300B7A737 /* UIKit.framework */,
@@ -700,6 +831,25 @@
 				03471B35106AA7A4001EDCDB /* MessageUI.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		84BE0743148302A8000E47E3 /* New stuff */ = {
+			isa = PBXGroup;
+			children = (
+				0F10B7991491488E00443674 /* 152-rolodex.png */,
+				0F10B79A1491488E00443674 /* GlossaryController.h */,
+				0F10B79B1491488E00443674 /* GlossaryController.m */,
+				0F10B79C1491488E00443674 /* GlossaryController.xib */,
+				0F10B79D1491488E00443674 /* ObjectInfoPageController.h */,
+				0F10B79E1491488E00443674 /* ObjectInfoPageController.m */,
+				0F10B79F1491488E00443674 /* ObjectInfoPageController.xib */,
+				0F10B7A01491488E00443674 /* GlossaryView.h */,
+				0F10B7A11491488E00443674 /* GlossaryView.m */,
+				0F10B7A21491488E00443674 /* GlossaryView.xib */,
+				0FFDDD6D148EE106008CDA4D /* UnderlinedUILabel.h */,
+				0FFDDD6E148EE106008CDA4D /* UnderlinedUILabel.m */,
+			);
+			name = "New stuff";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -729,10 +879,11 @@
 		29B97313FDCFA39411CA2CEA /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastUpgradeCheck = 0420;
 				ORGANIZATIONNAME = "Diffraction Limited Design LLC";
 			};
 			buildConfigurationList = C01FCF4E08A954540054247B /* Build configuration list for PBXProject "Transient Events" */;
-			compatibilityVersion = "Xcode 3.1";
+			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 1;
 			knownRegions = (
@@ -796,7 +947,6 @@
 				03709BF41073AC64002D91A0 /* BackButton.png in Resources */,
 				03709BF51073AC64002D91A0 /* ForwardButton.png in Resources */,
 				28AD733F0D9D9553002E5188 /* MainWindow.xib in Resources */,
-				03C98D801030752800396439 /* EventDetailView.xib in Resources */,
 				03881FCA104EBFA3008651C8 /* SettingsTitles.plist in Resources */,
 				0388200F104EC5DE008651C8 /* GroupTitles.plist in Resources */,
 				0388229D104EFB5C008651C8 /* LocationView.xib in Resources */,
@@ -812,7 +962,7 @@
 				038784DC107BD24D00610E90 /* Credits.html in Resources */,
 				0388CEDA107D0D04003163F8 /* MinAltitudeView.xib in Resources */,
 				0391E3A41080B12800A62B9F /* Locations1000.txt in Resources */,
-				033CC77B10879A0A00FF3BDC /* BookmarkDetailView.xib in Resources */,
+				033CC77B10879A0A00FF3BDC /* BookmarkDetailView_iPhone.xib in Resources */,
 				03BE73A4108CD30E001D23EA /* Settings.bundle in Resources */,
 				0330915F10973EDE0016EC0D /* EventListHelp.html in Resources */,
 				0330916310973EFD0016EC0D /* BookmarkListHelp.html in Resources */,
@@ -838,11 +988,50 @@
 				03B1F83A1121E794004DAA56 /* UV Ceti VariableBig.jpg in Resources */,
 				03B1F83B1121E794004DAA56 /* MicrolensingBig.jpg in Resources */,
 				03B1F83C1121E794004DAA56 /* Active Galactic Nucleus VariabilityBig.jpg in Resources */,
-				03B1F85B1121E8EF004DAA56 /* skyalert.png in Resources */,
 				3215294F11C923FC00905BEA /* SurveyQuestion1ViewController.xib in Resources */,
 				32152B5111C969D400905BEA /* SurveyQuestion2ViewController.xib in Resources */,
 				32152BF411C97A0300905BEA /* SurveyQuestion3ViewController.xib in Resources */,
 				037CBE4D11DB6D3300709F26 /* surveyIcon.png in Resources */,
+				0FFDDD6C148ED713008CDA4D /* EventDetailView_iPad.xib in Resources */,
+				0F10B7A31491488E00443674 /* 152-rolodex.png in Resources */,
+				0F10B7A51491488E00443674 /* GlossaryController.xib in Resources */,
+				0F10B7A71491488E00443674 /* ObjectInfoPageController.xib in Resources */,
+				0F10B7A91491488E00443674 /* GlossaryView.xib in Resources */,
+				0F10B7BF1491494900443674 /* Unknown.txt in Resources */,
+				0F10B7C01491494900443674 /* Active Galactic Nucleus.txt in Resources */,
+				0F10B7C11491494900443674 /* Asteroid.txt in Resources */,
+				0F10B7C21491494900443674 /* Blazar Outburst.txt in Resources */,
+				0F10B7C31491494900443674 /* Cataclysmic Variable.txt in Resources */,
+				0F10B7C41491494900443674 /* Comet.txt in Resources */,
+				0F10B7C51491494900443674 /* Eclipsing Variable.txt in Resources */,
+				0F10B7C61491494900443674 /* Gamma Ray Burst Afterglow.txt in Resources */,
+				0F10B7C71491494900443674 /* High Proper Motion Star.txt in Resources */,
+				0F10B7C81491494900443674 /* Microlensing.txt in Resources */,
+				0F10B7C91491494900443674 /* Mira Variable.txt in Resources */,
+				0F10B7CA1491494900443674 /* Nova.txt in Resources */,
+				0F10B7CB1491494900443674 /* Planetary Microlensing.txt in Resources */,
+				0F10B7CC1491494900443674 /* RR Lyrae Variable.txt in Resources */,
+				0F10B7CD1491494900443674 /* Supernova.txt in Resources */,
+				0F10B7CE1491494900443674 /* Transient Event.txt in Resources */,
+				0F10B7CF1491494900443674 /* Tidal Disruption Flare.txt in Resources */,
+				0F10B7D01491494900443674 /* UV Ceti Variable.txt in Resources */,
+				0F10B7D11491494900443674 /* Variable.txt in Resources */,
+				0F10B7D21491494900443674 /* Other.txt in Resources */,
+				0F10B7D514914A2B00443674 /* EventDetailView_iPhone.xib in Resources */,
+				0F10B7D714914BEA00443674 /* CRTSbutton.png in Resources */,
+				0F10B7D914914C0200443674 /* skyalert.png in Resources */,
+				0F10B7DB149151A300443674 /* BookmarkDetailView_iPad.xib in Resources */,
+				0F10B7E01491551600443674 /* BGtelescope_Big.jpg in Resources */,
+				0F10B7E11491551600443674 /* BGStar_Big.jpg in Resources */,
+				0F6D91A014915849005BAD77 /* Default-Portrait~ipad.png in Resources */,
+				0FACF69C1492B6290030B5E2 /* LocationView_iPad.xib in Resources */,
+				0FACF69F1492BF0F0030B5E2 /* AboutTransientEventsView_iPad.xib in Resources */,
+				0FACF6A11492C30F0030B5E2 /* MagnitudeLimitView_iPad.xib in Resources */,
+				0FACF6A31492C4DE0030B5E2 /* EventAgeViewController_iPad.xib in Resources */,
+				0FACF6A51492C5860030B5E2 /* MinAltitudeView_iPad.xib in Resources */,
+				0FACF6A71492C7CC0030B5E2 /* SurveyQuestion1ViewController_iPad.xib in Resources */,
+				0FACF6A91492C91E0030B5E2 /* SurveyQuestion2ViewController_iPad.xib in Resources */,
+				0FACF6AB1492C9520030B5E2 /* SurveyQuestion3ViewController_iPad.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -929,6 +1118,10 @@
 				32152B2111C9688000905BEA /* SurveyQuestion2ViewController.m in Sources */,
 				32152BF311C97A0300905BEA /* SurveyQuestion3ViewController.m in Sources */,
 				0363DDF911DE63620053633A /* httpFlattening.m in Sources */,
+				0FFDDD6F148EE106008CDA4D /* UnderlinedUILabel.m in Sources */,
+				0F10B7A41491488E00443674 /* GlossaryController.m in Sources */,
+				0F10B7A61491488E00443674 /* ObjectInfoPageController.m in Sources */,
+				0F10B7A81491488E00443674 /* GlossaryView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -949,6 +1142,7 @@
 				COPY_PHASE_STRIP = NO;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				PRODUCT_NAME = IncrementBuildNumber;
 			};
 			name = Debug;
@@ -956,6 +1150,7 @@
 		0374ED60108FAB81007B314F /* DeviceDevelopmentDebug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				PRODUCT_NAME = IncrementBuildNumber;
 			};
 			name = DeviceDevelopmentDebug;
@@ -965,7 +1160,7 @@
 			buildSettings = {
 				COPY_PHASE_STRIP = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				PRODUCT_NAME = IncrementBuildNumber;
 				ZERO_LINK = NO;
 			};
@@ -974,6 +1169,7 @@
 		0374ED63108FAB81007B314F /* AdHocRelease LSST */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				PRODUCT_NAME = IncrementBuildNumber;
 			};
 			name = "AdHocRelease LSST";
@@ -991,10 +1187,12 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				INFOPLIST_FILE = "Transient_Events-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 3.0;
-				PREBINDING = NO;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				ONLY_ACTIVE_ARCH = NO;
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "FAC434D0-38DF-4891-B18A-18884B913EF1";
-				SDKROOT = iphoneos3.2;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALID_ARCHS = "i386 $(ARCHS_STANDARD_32_BIT)";
 				VERSIONING_SYSTEM = "apple-generic";
 			};
 			name = "iTunesDistributionRelease LSST";
@@ -1002,6 +1200,7 @@
 		037C8AB9109089EC00B09EDE /* iTunesDistributionRelease LSST */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				PRODUCT_NAME = IncrementBuildNumber;
 			};
 			name = "iTunesDistributionRelease LSST";
@@ -1011,14 +1210,14 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				COPY_PHASE_STRIP = NO;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"\"/Volumes/Skiiing2/CD/ViewBased/Unknown Path/System/Library/Frameworks\"",
-				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = Transient_Events_Prefix.pch;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				INFOPLIST_FILE = "Transient_Events-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				PRODUCT_NAME = "Transient Events";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = "iTunesDistributionRelease LSST";
 		};
@@ -1035,10 +1234,12 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				INFOPLIST_FILE = "Transient_Events-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 3.0;
-				PREBINDING = NO;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				ONLY_ACTIVE_ARCH = NO;
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "D0BB519D-DA37-47F3-AF55-423D896EAA71";
-				SDKROOT = iphoneos3.2;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALID_ARCHS = "i386 $(ARCHS_STANDARD_32_BIT)";
 			};
 			name = DeviceDevelopmentDebug;
 		};
@@ -1047,16 +1248,16 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				COPY_PHASE_STRIP = NO;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"\"/Volumes/Skiiing2/CD/ViewBased/Unknown Path/System/Library/Frameworks\"",
-				);
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = Transient_Events_Prefix.pch;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				INFOPLIST_FILE = "Transient_Events-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				PRODUCT_NAME = "Transient Events";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = DeviceDevelopmentDebug;
 		};
@@ -1072,10 +1273,12 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				INFOPLIST_FILE = "Transient_Events-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 3.0;
-				PREBINDING = NO;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				ONLY_ACTIVE_ARCH = NO;
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "DE1E58FA-7DE3-4CDB-91AC-6E1CB565523E";
-				SDKROOT = iphoneos3.2;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALID_ARCHS = "i386 $(ARCHS_STANDARD_32_BIT)";
 				VERSIONING_SYSTEM = "apple-generic";
 			};
 			name = "AdHocRelease LSST";
@@ -1085,14 +1288,14 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				COPY_PHASE_STRIP = NO;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"\"/Volumes/Skiiing2/CD/ViewBased/Unknown Path/System/Library/Frameworks\"",
-				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = Transient_Events_Prefix.pch;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				INFOPLIST_FILE = "Transient_Events-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				PRODUCT_NAME = "Transient Events";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = "AdHocRelease LSST";
 		};
@@ -1104,6 +1307,7 @@
 				DOXYGEN_PATH = /Applications/Doxygen.app/Contents/Resources/doxygen;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				PRODUCT_NAME = Untitled;
 			};
 			name = Debug;
@@ -1113,6 +1317,7 @@
 			buildSettings = {
 				DOCSET_BUNDLE_ID = org.lsst.transientevents;
 				DOXYGEN_PATH = /Applications/Doxygen.app/Contents/Resources/doxygen;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				PRODUCT_NAME = Untitled;
 			};
 			name = DeviceDevelopmentDebug;
@@ -1124,7 +1329,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DOCSET_BUNDLE_ID = org.lsst.transientevents;
 				DOXYGEN_PATH = /Applications/Doxygen.app/Contents/Resources/doxygen;
-				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				PRODUCT_NAME = Untitled;
 				ZERO_LINK = NO;
 			};
@@ -1135,6 +1340,7 @@
 			buildSettings = {
 				DOCSET_BUNDLE_ID = org.lsst.transientevents;
 				DOXYGEN_PATH = /Applications/Doxygen.app/Contents/Resources/doxygen;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				PRODUCT_NAME = Untitled;
 			};
 			name = "AdHocRelease LSST";
@@ -1144,6 +1350,7 @@
 			buildSettings = {
 				DOCSET_BUNDLE_ID = org.lsst.transientevents;
 				DOXYGEN_PATH = /Applications/Doxygen.app/Contents/Resources/doxygen;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				PRODUCT_NAME = Untitled;
 			};
 			name = "iTunesDistributionRelease LSST";
@@ -1153,16 +1360,16 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				COPY_PHASE_STRIP = NO;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"\"/Volumes/Skiiing2/CD/ViewBased/Unknown Path/System/Library/Frameworks\"",
-				);
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = Transient_Events_Prefix.pch;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				INFOPLIST_FILE = "Transient_Events-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				PRODUCT_NAME = "Transient Events";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -1171,14 +1378,14 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				COPY_PHASE_STRIP = YES;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"\"/Volumes/Skiiing2/CD/ViewBased/Unknown Path/System/Library/Frameworks\"",
-				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = Transient_Events_Prefix.pch;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				INFOPLIST_FILE = "Transient_Events-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				PRODUCT_NAME = "Transient Events";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
@@ -1195,9 +1402,11 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				INFOPLIST_FILE = "Transient_Events-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 3.0;
-				PREBINDING = NO;
-				SDKROOT = iphonesimulator3.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				ONLY_ACTIVE_ARCH = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALID_ARCHS = "i386 $(ARCHS_STANDARD_32_BIT)";
 			};
 			name = Debug;
 		};
@@ -1211,9 +1420,11 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				INFOPLIST_FILE = "Transient_Events-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 3.0;
-				PREBINDING = NO;
-				SDKROOT = iphoneos3.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				ONLY_ACTIVE_ARCH = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALID_ARCHS = "i386 $(ARCHS_STANDARD_32_BIT)";
 			};
 			name = Release;
 		};

@@ -64,16 +64,12 @@
  */
 - (void)viewDidLoad {//! \private
 	//start by setting the look of the text edit boxes
-	self.longitude.borderStyle = UITextBorderStyleBezel;
 	self.longitude.backgroundColor = [UIColor whiteColor];
 	self.longitude.alpha = 0.75;
-	self.latitude.borderStyle = UITextBorderStyleBezel;
 	self.latitude.backgroundColor = [UIColor whiteColor];
 	self.latitude.alpha = 0.75;
-	self.altitude.borderStyle = UITextBorderStyleBezel;
 	self.altitude.backgroundColor = [UIColor whiteColor];
 	self.altitude.alpha = 0.75;
-	self.textLocation.borderStyle = UITextBorderStyleBezel;
 	self.textLocation.backgroundColor = [UIColor whiteColor];
 	self.textLocation.alpha = 0.75;
 	self.tintView.backgroundColor = kSettingsTableBackgroundColor;
@@ -286,6 +282,10 @@
 										 destructiveButtonTitle:nil
 											  otherButtonTitles:nil];
 	[actionSheet addButtonWithTitle:NSLocalizedString(@"Add To Location List", @"Add To Location List Button Title")];
+    if (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad)
+    {
+        [actionSheet addButtonWithTitle:NSLocalizedString(@"Add To Location List", @"Add To Location List Button Title")];
+    }
 	actionSheet.actionSheetStyle = UIActionSheetStyleBlackTranslucent;
 	[actionSheet showFromToolbar:self.toolbar];
 	[actionSheet release];

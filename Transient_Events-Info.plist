@@ -23,12 +23,14 @@
 	<key>CFBundleSignature</key>
 	<string>????</string>
 	<key>CFBundleVersion</key>
-	<string>219M</string>
+	<string>220M</string>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
 	<key>NSMainNibFile</key>
 	<string>MainWindow</string>
 	<key>UIPrerenderedIcon</key>
 	<string>YES</string>
+	<key>UISupportedInterfaceOrientations</key>
+	<array/>
 </dict>
 </plist>

@@ -155,8 +155,16 @@
 #ifdef LOGGING
 	NSLog(@"SurveyQuestion2ViewController: Next button pressed");
 #endif
-	
-	SurveyQuestion3ViewController *nextView= [[SurveyQuestion3ViewController alloc] initWithNibName:@"SurveyQuestion3ViewController"
+	NSString *device = @"";
+    if (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad)
+    {
+        device = @"SurveyQuestion3ViewController_iPad";
+    }
+    else
+    {
+        device = @"SurveyQuestion3ViewController";
+    }
+	SurveyQuestion3ViewController *nextView= [[SurveyQuestion3ViewController alloc] initWithNibName:device
 																							 bundle:nil];
 	nextView.surveyResults = self.surveyResults;
 	[self.navController pushViewController:nextView animated:YES];

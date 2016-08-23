@@ -61,6 +61,7 @@
 	buildDate.font = kSettingsDetailTextLabelFont;
 	//Get the credits HTML file.
 	NSString *path = [[NSBundle mainBundle] pathForResource:@"Credits" ofType:@"html"];
+    NSLog(@"%@", path);
 	//Create a URL from the path
 	NSURL *url = [NSURL fileURLWithPath:path];
 	//Create a urlRequest from the URL

@@ -66,6 +66,7 @@
 #define kAlertEventIDKey		@"AlertEventIDKey"
 #define kFirstRunKey			@"FirstRunKey"
 #define kTakeSurveyKey			@"TakeSurveyKey"
+#define kWifiNotificationTitle  @"3G Warning"
 
 //UserDefaultValues
 
@@ -148,6 +149,9 @@
 #define kFindingChartImageKey	@"findingChartImage"
 #define kResumptionTokenKey		@"resumptionToken"
 #define	kStreamKey				@"stream"
+
+#define kURLForSkyAlert         @"http://skyalert.org/"
+#define kURLForCRTS             @"http://crts.caltech.edu/"
 
 
 #define kNavBarColor			[UIColor colorWithRed:.010 green:.045 blue:.27 alpha:1.0]

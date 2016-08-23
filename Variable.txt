@@ -1,0 +1,2 @@
+A star is classified as variable if its apparent magnitude as seen from Earth changes over time, whether the changes are due to variations in the star's actual luminosity, or to variations in the amount of the star's light that is blocked from reaching Earth.
+More info: http://en.wikipedia.org/wiki/Variable_star

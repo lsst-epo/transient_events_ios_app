@@ -107,5 +107,6 @@
 - (void)sendProviderDeviceToken:(NSData *)devToken synchronously:(BOOL)synchronous; //!<Sends device token and desired event types to push server
 - (void)handlePushPayload:(NSDictionary *)launchOptions; //!< decode and handle launch options
 - (void)removeLastTab;
+- (BOOL)localWifiAvailable; // Used to check if Wifi is connected at startup
 @end
 

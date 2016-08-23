@@ -45,14 +45,25 @@
 - (void)loadView {
 	[super loadView];
 	
-	UIImageView *imageView = [[[UIImageView alloc] initWithFrame:self.view.bounds] autorelease];
-	[imageView setImage:[UIImage imageNamed:@"BGtelescope.jpg"]];
+	UIImageView *imageView = [[UIImageView alloc] initWithFrame:self.view.bounds];
+    if (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPhone)
+    {
+        [imageView setImage:[UIImage imageNamed:@"BGtelescope.jpg"]];
+    }
+    else
+    {
+        [imageView setImage:[UIImage imageNamed:@"BGtelescope_Big.jpg"]];
+    }
 	[self.view addSubview:imageView];
+    [imageView release];
 	CGRect tableBounds = self.view.bounds;
 	tableBounds.origin.y	 = 0;
 	tableBounds.size.height = tableBounds.size.height - (48 + 44);
 	self.tableView = [[UITableView alloc] initWithFrame:tableBounds style:UITableViewStyleGrouped];
 	[self.tableView setBackgroundColor:kSettingsTableBackgroundColor];
+    if (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad) {
+        self.tableView.backgroundView.alpha = 0.5;
+    }
 	[self.view addSubview:self.tableView];
 
 	self.tableView.delegate = self;
@@ -404,19 +415,38 @@
 	UIViewController *nextView;
 	
 
-	
+	NSString *device = @"";
 	switch (rowCase) {
 		case kLocationCase:
-			nextView = [[LocationSettingViewController alloc] initWithNibName:@"LocationView" bundle:nil];
+            if (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad)
+            {
+                device = @"LocationView_iPad";
+            }
+            else
+            {
+                device = @"LocationView";
+            }
+            
+            
+			nextView = [[LocationSettingViewController alloc] initWithNibName:device bundle:nil];
 			nextView.hidesBottomBarWhenPushed = YES;
 
-			[(SettingsListController *)nextView setNavController:self.navController];
+			//[(SettingsListController *)nextView setNavController:self.navController];
+            [(LocationSettingViewController *)nextView setNavController:self.navController];
 			[self.navController pushViewController:nextView animated:YES];
 			[nextView release];
 			
 			break;
 		case kMagnitudeLimitCase:
-			nextView = [[MagnitudeLimitViewController alloc] initWithNibName:@"MagnitudeLimitView" bundle:nil];
+            if (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad)
+            {
+                device = @"MagnitudeLimitView_iPad";
+            }
+            else
+            {
+                device = @"MagnitudeLimitView";
+            }
+			nextView = [[MagnitudeLimitViewController alloc] initWithNibName:device bundle:nil];
 			nextView.hidesBottomBarWhenPushed = YES;
 			[self.navController pushViewController:nextView animated:YES];
 			[nextView release];
@@ -431,14 +461,30 @@
 			
 			break;
 		case kEventAgeCase:
-			nextView = [[EventAgeViewController alloc] initWithNibName:@"EventAgeViewController" bundle:nil];
+            if (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad)
+            {
+                device = @"EventAgeViewController_iPad";
+            }
+            else
+            {
+                device = @"EventAgeViewController";
+            }
+			nextView = [[EventAgeViewController alloc] initWithNibName:device bundle:nil];
 			nextView.hidesBottomBarWhenPushed = YES;
 			[self.navController pushViewController:nextView animated:YES];
 			[nextView release];
 			
 			break;
 		case kMinAltitudeCase:
-			nextView = [[MinimumAltitudeViewController alloc] initWithNibName:@"MinAltitudeView" bundle:nil];
+            if (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad)
+            {
+                device = @"MinAltitudeView_iPad";
+            }
+            else
+            {
+                device = @"MinAltitudeView";
+            }
+			nextView = [[MinimumAltitudeViewController alloc] initWithNibName:device bundle:nil];
 			nextView.hidesBottomBarWhenPushed = YES;
 			[self.navController pushViewController:nextView animated:YES];
 			[nextView release];
@@ -461,7 +507,15 @@
 			
 			break;
 		case kAboutCase:
-			nextView = [[AboutTransientEventsView alloc] initWithNibName:@"AboutTransientEventsView" bundle:nil];
+            if (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad)
+            {
+                device = @"AboutTransientEventsView_iPad";
+            }
+            else
+            {
+                device = @"AboutTransientEventsView";
+            }
+			nextView = [[AboutTransientEventsView alloc] initWithNibName:device bundle:nil];
 			nextView.hidesBottomBarWhenPushed = YES;
 			[self.navController pushViewController:nextView animated:YES];
 			[nextView release];

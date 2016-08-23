@@ -12,6 +12,7 @@
 #import "Constants.h"
 #import "BookmarkDetailController.h"
 #import "FinderImageWebViewController.h"
+#import "EventDetailController.h"
 
 
 @implementation BookmarkListController
@@ -48,7 +49,14 @@
 	[super loadView];
 	
 	UIImageView *imageView = [[[UIImageView alloc] initWithFrame:self.view.bounds] autorelease];
-	[imageView setImage:[UIImage imageNamed:@"BGtelescope.jpg"]];
+	if (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPhone)
+    {
+        [imageView setImage:[UIImage imageNamed:@"BGtelescope.jpg"]];
+    }
+    else
+    {
+        [imageView setImage:[UIImage imageNamed:@"BGtelescope_Big.jpg"]];
+    }
 	[self.view addSubview:imageView];
 	CGRect tableBounds;
 	tableBounds = self.view.bounds;
@@ -361,8 +369,22 @@
 	//A cell was selected so we need to define a BookmarkDetailController and then pass the 
 	//event object to the detail controller.
 	Transient *transient = [fetchedResultsController objectAtIndexPath:indexPath];
+    
+    
+    NSString *deviceType;
+    if (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad)
+    {
+        // is iPad
+        deviceType = @"BookmarkDetailView_iPad";
+    }
+    else
+    {
+        deviceType = @"BookmarkDetailView_iPhone";
+    }   
+    
+    
 	BookmarkDetailController *bookmarkDetailController = [[BookmarkDetailController alloc] 
-													initWithNibName:@"BookmarkDetailView" bundle:nil];
+													initWithNibName:deviceType bundle:nil];
 	bookmarkDetailController.title = transient.EventType;
 	
 	bookmarkDetailController.hidesBottomBarWhenPushed = YES;

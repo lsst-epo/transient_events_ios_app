@@ -16,6 +16,8 @@
 #import "ImageLoadingOperation.h"
 #import	"FinderImageWebViewController.h"
 #import "AltAzComputation.h"
+#import "ObjectInfoPageController.h"
+#import <QuartzCore/QuartzCore.h>
 
 #define kBookmarkButtonLabel NSLocalizedString(@"Add To Bookmarks", @"Add To Bookmarks Button Label")
 #define kTransitionDuration .5
@@ -58,6 +60,22 @@ NSString *const LoadingPlaceholder = @"Loading";
 @synthesize backgroundView;
 @synthesize streamIconLeft;
 @synthesize streamIconRight;
+@synthesize leftUIView;
+@synthesize rightUIView;
+@synthesize iPadImage1;
+@synthesize iPadImage2;
+@synthesize iPadImage3;
+@synthesize iPadImage4;
+@synthesize iPadImage5;
+@synthesize iPadEventType;
+@synthesize iPadInfoTextView;
+@synthesize iPadImages;
+@synthesize iPadImageLabel1;
+@synthesize iPadImageLabel2;
+@synthesize iPadImageLabel3;
+@synthesize iPadImageLabel4;
+@synthesize iPadImageLabel5;
+@synthesize iPadImageLabels;
 
 /**
  @brief Designated initializer.  Call with nib "EventDetailView.xib"
@@ -74,8 +92,8 @@ NSString *const LoadingPlaceholder = @"Loading";
         [operationQueue setMaxConcurrentOperationCount:1];
 		userDefaults = [NSUserDefaults standardUserDefaults];
 		bookmarkThreadRunning = NO;
-		
-		
+		iPadImages = [[NSMutableArray alloc] init];
+        iPadImageLabels = [[NSMutableArray alloc] init];
     }
     return self;
 }
@@ -100,17 +118,17 @@ NSString *const LoadingPlaceholder = @"Loading";
 
 	self.navigationItem.rightBarButtonItem = emailButton;
 	UIColor *toolbarColor = kNavBarColor;
-	self.toolbar.tintColor = toolbarColor;
+	self.toolbar.tintColor = toolbarColor;    
 	[self fillInEventData];
-	[emailButton release];
+    [emailButton release];
+    
 	scrollView.contentSize = CGSizeMake((scrollView.frame.size.width) * [self.photoURLs count],
 										scrollView.frame.size.height);
-
-	pageControl.numberOfPages = [self.photoURLs count];
+	
+    pageControl.numberOfPages = [self.photoURLs count];
     pageControl.currentPage = 1;
     [super viewDidLoad];
 }
-
 
 
 /*
@@ -136,7 +154,56 @@ NSString *const LoadingPlaceholder = @"Loading";
 - (void)viewWillAppear:(BOOL)animated{
 	[super viewWillAppear:animated];
 	self.title = [self.eventDetails objectForKey:kTypeKey];
-	[self changePage:self];
+    if (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPhone)
+    {
+        // Is iPhone
+        [self changePage:self];
+    }
+    else {          
+        if ([iPadImages count] == 0)
+        {
+            [iPadImages addObject:self.iPadImage1];
+            [iPadImages addObject:self.iPadImage2];        
+            [iPadImages addObject:self.iPadImage3];        
+            [iPadImages addObject:self.iPadImage4];
+            [iPadImages addObject:self.iPadImage5];
+            [iPadImages addObject:@"Empty"];
+            
+            [iPadImageLabels addObject:self.iPadImageLabel1];
+            [iPadImageLabels addObject:self.iPadImageLabel2];
+            [iPadImageLabels addObject:self.iPadImageLabel3];
+            [iPadImageLabels addObject:self.iPadImageLabel4];
+            [iPadImageLabels addObject:self.iPadImageLabel5];
+            
+            
+            for (int i = [self.photoURLs count]; i < 5; i++)
+            {
+                ((UIImageView *) [iPadImages objectAtIndex:i]).hidden = YES;
+            }
+            for (int i = 0; i < [self.photoURLs count]; i++)
+            {
+                UIImage *image = [self cachedImageForURL:[photoURLs objectAtIndex:i]];
+                if (image != nil)
+                {
+                    ((UIImageView *) [iPadImages objectAtIndex:0]).image = image;
+                    [iPadImages removeObjectAtIndex:0];
+                    
+                    UILabel *label = ((UILabel *) [iPadImageLabels objectAtIndex:0]);
+                    if ([label.text isEqualToString:@"0"])
+                    {
+                        label.text = @"Past Image";
+                    }
+                    else
+                    {
+                        NSString *str = [[NSString alloc] initWithFormat:@"New Image %@", label.text];
+                        label.text = str;
+                        [str release];
+                    }
+                    [iPadImageLabels removeObjectAtIndex:0];
+                }
+            }
+        }
+    }
 }
 
 - (void)viewWillDisappear:(BOOL)animated{
@@ -160,6 +227,8 @@ NSString *const LoadingPlaceholder = @"Loading";
 	[cachedImages release];
 	[cachedImageStatus release];
 	[operationQueue release];
+    [iPadImages release];
+    [iPadImageLabels release];
     [super dealloc];
 }
 
@@ -172,7 +241,41 @@ NSString *const LoadingPlaceholder = @"Loading";
  
  */
 - (void)fillInEventData{
-	self.eventID.text = [self.eventDetails objectForKey:kEventIDKey];
+    if (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad)
+    {
+        self.leftUIView.backgroundColor = [UIColor colorWithWhite:0.1 alpha:0.75];
+        self.leftUIView.layer.cornerRadius = 6.0;
+        self.leftUIView.layer.borderColor = [[UIColor whiteColor] CGColor];
+        self.leftUIView.layer.borderWidth = 0.7;
+        self.rightUIView.backgroundColor = [UIColor colorWithWhite:0.1 alpha:0.75];    
+        self.rightUIView.layer.cornerRadius = 6.0;
+        self.rightUIView.layer.borderColor = [[UIColor whiteColor] CGColor];
+        self.rightUIView.layer.borderWidth = 0.7;
+        
+        self.iPadEventType.text = self.title;
+        
+        NSString* path = [[NSBundle mainBundle] pathForResource:self.title 
+                                                         ofType:@"txt"];
+        NSString* content = [NSString stringWithContentsOfFile:path
+                                                      encoding:NSUTF8StringEncoding
+                                                         error:NULL];
+        self.iPadInfoTextView.text = content;
+    }
+    
+    
+	NSMutableString *str;
+    if (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad) {
+        // is iPad
+        str = [[NSMutableString alloc] init];
+    }
+    else {
+        // is iPhone
+        str = [[NSMutableString alloc] initWithString:@"ID: "];
+    }
+    [str appendString:[self.eventDetails objectForKey:kEventIDKey]];
+    self.eventID.text = [str autorelease];
+    
+    
 	NSString *path = [[NSBundle mainBundle] pathForResource:@"RAFormat" ofType:@"plist"];
 	NSMutableArray *RAFormatArray = [[NSMutableArray alloc] initWithContentsOfFile:path];
 
@@ -214,7 +317,7 @@ NSString *const LoadingPlaceholder = @"Loading";
 
 	[RAFormatArray release];	
 	self.magnitude.text = [NSString stringWithFormat:@"Mv= %.2f",[[self.eventDetails objectForKey:kMagnitudeKey]floatValue]];
-//	self.eventTime.text = [NSString stringWithFormat:@"Event %@",[self.eventDetails objectForKey:kEventTimeKey]];
+	self.eventTime.text = [NSString stringWithFormat:@"Event Time: %@",[self.eventDetails objectForKey:kEventTimeKey]];
 	self.alertTime.text = [NSString stringWithFormat:@"Alert Time: %@",[self.eventDetails objectForKey:kAlertTimeKey]];
 		
 	AltAzComputation *altAzCalculator = [[AltAzComputation alloc] initWithRA:[[self.eventDetails objectForKey:kRightAscensionKey] doubleValue]
@@ -232,46 +335,68 @@ NSString *const LoadingPlaceholder = @"Loading";
 	[array addObjectsFromArray:[self.eventDetails objectForKey:kReferenceImageURLKey]];
 	[array addObjectsFromArray:[self.eventDetails objectForKey:kFreshImageURLKey]];
 //	[array addObjectsFromArray:[self.eventDetails objectForKey:@"finding_chart"]];
+    [array addObjectsFromArray:[self.eventDetails objectForKey:@"light_curve"]];
 	for (NSString *aString in array){
 		[self.photoURLs addObject:[NSURL URLWithString:aString]];
 	}
 	[array release];
 	NSString *imageName = [[NSString alloc] initWithFormat:@"%@Big.jpg", [self.eventDetails objectForKey:kTypeKey]];
+   
 	UIImage *image = [UIImage imageNamed:imageName];
-	if (image != nil) {
+	if (image != nil && ![imageName isEqualToString:@"OtherBig.jpg"]) {
 		self.backgroundView.image = image;
 	}	
 	[imageName release];
 	if ([[eventDetails objectForKey:kStreamKey] isEqualToString:@"CRTS"]) {
 		//This is a CRTS stream, display their icons
 //		streamIconLeft.image = [UIImage imageNamed:@"CSS(60px).jpg"];
-		streamIconLeft.image = [UIImage imageNamed:@"skyalert.png"];
+		[streamIconLeft setBackgroundImage:[UIImage imageNamed:@"skyalert.png"] forState:UIControlStateNormal];
 		streamIconLeft.alpha = 1.0;
-		streamIconRight.image = [UIImage imageNamed:@"CRTS(60px).jpg"];
+        [streamIconRight setBackgroundImage:[UIImage imageNamed:@"CRTSbutton.png"] forState:UIControlStateNormal];
 	}
 	if ([[eventDetails objectForKey:kStreamKey] isEqualToString:@"CRTS2"]) {
 		//This is a CRTS2 stream, display their icons
 		//		streamIconLeft.image = [UIImage imageNamed:@"CSS(60px).jpg"];
-		streamIconLeft.image = [UIImage imageNamed:@"skyalert.png"];
+		[streamIconLeft setBackgroundImage:[UIImage imageNamed:@"skyalert.png"] forState:UIControlStateNormal];
 		streamIconLeft.alpha = 1.0;
-		streamIconRight.image = [UIImage imageNamed:@"CRTS(60px).jpg"];
+        [streamIconRight setBackgroundImage:[UIImage imageNamed:@"CRTSbutton.png"] forState:UIControlStateNormal];
 	}
 	if ([[eventDetails objectForKey:kStreamKey] isEqualToString:@"CRTS3"]) {
 		//This is a CRTS3 stream, display their icons
 		//		streamIconLeft.image = [UIImage imageNamed:@"CSS(60px).jpg"];
-		streamIconLeft.image = [UIImage imageNamed:@"skyalert.png"];
+		[streamIconLeft setBackgroundImage:[UIImage imageNamed:@"skyalert.png"] forState:UIControlStateNormal];
 		streamIconLeft.alpha = 1.0;
-		streamIconRight.image = [UIImage imageNamed:@"CRTS(60px).jpg"];
+        [streamIconRight setBackgroundImage:[UIImage imageNamed:@"CRTSbutton.png"] forState:UIControlStateNormal];
 	}
-	
-	
+}
+
+- (IBAction)iconPressed:(UIButton *)button
+{
+    WebViewController *finderImageView = [[WebViewController alloc]
+                                          initWithNibName:@"FinderImageWebView"
+                                          bundle:nil];
+    
+    if (button == streamIconLeft)
+    {
+        finderImageView.title = @"SkyAlert";
+        [finderImageView webViewForURL:kURLForSkyAlert];
+        
+    }
+    else if (button == streamIconRight)
+    {
+        finderImageView.title = @"CRTS";
+        [finderImageView webViewForURL:kURLForCRTS];
+    }
+    
+    finderImageView.hidesBottomBarWhenPushed = YES;
+	[self.navigationController pushViewController:finderImageView animated:YES];
+	[finderImageView release];
 }
 
 #pragma mark -
 #pragma mark Custom Methods
 
 - (void)loadScrollViewWithPage:(int)page {
-
     if (page < 0) return;
     if (page >= [self.photoURLs count]) return;
 	
@@ -452,12 +577,21 @@ NSString *const LoadingPlaceholder = @"Loading";
 
 - (IBAction)addBookmark:(id)sender {
 	UIActionSheet *actionSheet = [[UIActionSheet alloc] initWithTitle:NSLocalizedString(@"Add this event to your bookmark list?" ,@"Add New Bookmark Title")
-													   delegate:self 
-											  cancelButtonTitle:NSLocalizedString(@"Cancel", @"Cancel") 		
-										 destructiveButtonTitle:nil
-											  otherButtonTitles:nil];
-	[actionSheet addButtonWithTitle:kBookmarkButtonLabel];
-	[actionSheet showFromToolbar:self.toolbar];
+                                                    delegate:self 
+                                                    cancelButtonTitle:NSLocalizedString(@"Cancel", @"Cancel") 		
+                                                    destructiveButtonTitle:nil
+                                                    otherButtonTitles:nil];
+    [actionSheet addButtonWithTitle:kBookmarkButtonLabel];
+    if (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad) {
+        // is iPad
+        // Object at Index 0 is the bookmark button
+        [actionSheet addButtonWithTitle:kBookmarkButtonLabel];
+        [actionSheet showFromBarButtonItem:[self.toolbar.items objectAtIndex:0] animated:YES];
+    }
+    else {
+        // is iPhone
+        [actionSheet showFromToolbar:self.toolbar];
+    }
 	[actionSheet release];
 	
 }
@@ -478,6 +612,25 @@ NSString *const LoadingPlaceholder = @"Loading";
 	[self.navigationController pushViewController:finderImageView animated:YES];
 	[finderImageView release];
 }
+
+
+- (IBAction)objInfo:(id)sender {
+   ObjectInfoPageController *objInfoPage = [[ObjectInfoPageController alloc]
+                                     initWithNibName:nil 
+                                    bundle:nil
+                                ]; 
+    
+    [objInfoPage setEventDetails:[self.eventDetails objectForKey:kTypeKey]];
+    objInfoPage.hidesBottomBarWhenPushed=YES;
+    [self.navigationController pushViewController:objInfoPage animated:YES];
+    [objInfoPage release];
+    
+}
+
+
+
+
+
 /**
  @brief Action connected to the Compose button
  
@@ -790,7 +943,10 @@ NSString *const LoadingPlaceholder = @"Loading";
         ImageLoadingOperation *operation = [[ImageLoadingOperation alloc] initWithImageURL:url target:self action:@selector(didFinishLoadingImageWithResult:)];
         [operationQueue addOperation:operation];
         [operation release];
-		[self changePage:self];
+        if (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPhone)
+        {
+            [self changePage:self];
+        }
     } else if (![cachedObject isKindOfClass:[UIImage class]]) {
         // We're already loading the image. Don't kick off another request.
         //cachedObject = nil;
@@ -803,7 +959,6 @@ NSString *const LoadingPlaceholder = @"Loading";
  Called by ImageLoadingOperation when an image load from a URL is complete.  The new image
  is put in the image cache dictionary.
  */
-
 - (void)didFinishLoadingImageWithResult:(NSDictionary *)result
 {
 
@@ -817,12 +972,30 @@ NSString *const LoadingPlaceholder = @"Loading";
 		[cachedImages setObject:image forKey:url];
 		[cachedImageStatus setObject:@"Changed" forKey:url];
 		
-
+        if (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad)
+        {
+            ((UIImageView *) [iPadImages objectAtIndex:0]).image = [cachedImages objectForKey:url];
+            [iPadImages removeObjectAtIndex:0];
+            
+            UILabel *label = ((UILabel *) [iPadImageLabels objectAtIndex:0]);
+            if ([label.text isEqualToString:@"0"])
+            {
+                label.text = @"Past Image";
+            }
+            else
+            {
+                NSString *str = [[NSString alloc] initWithFormat:@"New Image %@", label.text];
+                label.text = str;
+                [str release];
+            }
+            [iPadImageLabels removeObjectAtIndex:0];
+        }
 	}
-	//forces the new image to be displayed
-	[self changePage:pageControl];
-	
-
+    if (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPhone)
+    {
+        //forces the new image to be displayed
+        [self changePage:pageControl];
+    }
 }
 
 

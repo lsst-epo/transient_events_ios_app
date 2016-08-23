@@ -1,0 +1,2 @@
+Cataclysmic variable stars are stars which irregularly increase in brightness by a large factor, then drop back down to a quiescent state.  They consist of two component stars; a white dwarf primary, and a mass transferring secondary. The stars are so close to each other that the gravity of the white dwarf distorts the secondary, and the white dwarf accretes matter from the companion.
+More info: http://en.wikipedia.org/wiki/Cataclysmic_variable_star

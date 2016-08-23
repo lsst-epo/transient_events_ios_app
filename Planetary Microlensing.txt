@@ -1,0 +1,2 @@
+Gravitational microlensing occurs when the gravitational field of a star acts like a lens, magnifying the light of a distant background star. This effect occurs only when the two stars are almost exactly aligned. If the foreground lensing star has a planet, then that planet's own gravitational field can make a detectable contribution to the lensing effect.
+More info: http://en.wikipedia.org/wiki/Methods_of_detecting_extrasolar_planets#Gravitational_microlensing

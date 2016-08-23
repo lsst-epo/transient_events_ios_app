@@ -13,6 +13,8 @@
 #import "Constants.h"
 #import	"FinderImageWebViewController.h"
 #import "AltAzComputation.h"
+#import "ObjectInfoPageController.h"
+#import <QuartzCore/QuartzCore.h>
 
 
 #define kTransitionDuration .5
@@ -50,6 +52,23 @@
 @synthesize backgroundView;
 @synthesize streamIconLeft;
 @synthesize streamIconRight;
+
+@synthesize leftUIView;
+@synthesize rightUIView;
+@synthesize iPadImage1;
+@synthesize iPadImage2;
+@synthesize iPadImage3;
+@synthesize iPadImage4;
+@synthesize iPadImage5;
+@synthesize iPadEventType;
+@synthesize iPadInfoTextView;
+@synthesize iPadImages;
+@synthesize iPadImageLabel1;
+@synthesize iPadImageLabel2;
+@synthesize iPadImageLabel3;
+@synthesize iPadImageLabel4;
+@synthesize iPadImageLabel5;
+@synthesize iPadImageLabels;
 
 
 
@@ -91,9 +110,39 @@
 	[emailButton release];
 	scrollView.contentSize = CGSizeMake((scrollView.frame.size.width) * 5,
 										scrollView.frame.size.height);
-	[self loadScrollViewWithPages];
-	pageControl.numberOfPages = 5;
-    pageControl.currentPage = 1;
+	if (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPhone)
+    {
+        
+        [self loadScrollViewWithPages];
+        pageControl.numberOfPages = 5;
+        pageControl.currentPage = 1;
+    }
+    else
+    {
+        // is iPad
+        UIImage *image = [UIImage imageWithData:self.transient.ReferenceImage];
+        self.iPadImage1.image = image;
+        self.iPadImageLabel1.text = @"Past Image";
+        
+        image = [UIImage imageWithData:self.transient.Image1];
+        self.iPadImage2.image = image;
+        self.iPadImageLabel2.text = @"New Image 1";
+        
+        image = [UIImage imageWithData:self.transient.Image2];
+        self.iPadImage3.image = image;
+        self.iPadImageLabel3.text = @"New Image 2";
+        
+        image = [UIImage imageWithData:self.transient.Image3];
+        self.iPadImage4.image = image;
+        self.iPadImageLabel4.text = @"New Image 3";
+        
+        if ([UIImage imageWithData:self.transient.Image4] != nil)
+        {
+            image = [UIImage imageWithData:self.transient.Image4];
+            self.iPadImage5.image = image;
+            self.iPadImageLabel5.text = @"New Image 4";
+        }
+    }
 
 
 
@@ -109,6 +158,28 @@
  
  */
 - (void)fillInEventData{
+    if (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad)
+    {
+        self.leftUIView.backgroundColor = [UIColor colorWithWhite:0.1 alpha:0.75];
+        self.leftUIView.layer.cornerRadius = 6.0;
+        self.leftUIView.layer.borderColor = [[UIColor whiteColor] CGColor];
+        self.leftUIView.layer.borderWidth = 0.7;
+        self.rightUIView.backgroundColor = [UIColor colorWithWhite:0.1 alpha:0.75];    
+        self.rightUIView.layer.cornerRadius = 6.0;
+        self.rightUIView.layer.borderColor = [[UIColor whiteColor] CGColor];
+        self.rightUIView.layer.borderWidth = 0.7;
+        
+        self.iPadEventType.text = self.title;
+        
+        NSString* path = [[NSBundle mainBundle] pathForResource:self.title 
+                                                         ofType:@"txt"];
+        NSString* content = [NSString stringWithContentsOfFile:path
+                                                      encoding:NSUTF8StringEncoding
+                                                         error:NULL];
+        self.iPadInfoTextView.text = content;
+    }
+
+    
 	self.eventID.text = self.transient.EventID;
 	NSString *path = [[NSBundle mainBundle] pathForResource:@"RAFormat" ofType:@"plist"];
 	NSMutableArray *RAFormatArray = [[NSMutableArray alloc] initWithContentsOfFile:path];
@@ -151,7 +222,7 @@
 
 	[RAFormatArray release];	
 	self.magnitude.text = [NSString stringWithFormat:@"Mv= %5.2f",[self.transient.VisibleMagnitude floatValue]];
-//	self.eventTime.text = [NSString stringWithFormat:@"Event %@",self.transient.EventDate];
+	self.eventTime.text = [NSString stringWithFormat:@"Event Time: %@",self.transient.EventDate];
 	self.alertTime.text = [NSString stringWithFormat:@"Alert Time: %@",self.transient.AlertDate];
 	//compute the current ALT and AZ coordinates	
 	AltAzComputation *altAzCalculator = [[AltAzComputation alloc] initWithRA:[self.transient.RightAscension doubleValue]
@@ -168,33 +239,56 @@
 	self.attribution.text = self.transient.Attribution;
 	NSString *imageName = [[NSString alloc] initWithFormat:@"%@Big.jpg", [self.transient valueForKey:@"EventType"]];
 	UIImage *image = [UIImage imageNamed:imageName];
-	if (image != nil) {
+	if (image != nil && ![imageName isEqualToString:@"OtherBig.jpg"]) {
 		self.backgroundView.image = image;
 	}	
 	[imageName release];
 	if ([[self.transient valueForKey:@"EventStream"] isEqualToString:@"CRTS"]) {
 		//This is a CRTS stream, display their icons
 		//		streamIconLeft.image = [UIImage imageNamed:@"CSS(60px).jpg"];
-		streamIconLeft.image = [UIImage imageNamed:@"skyalert.png"];
+		[streamIconLeft setBackgroundImage:[UIImage imageNamed:@"skyalert.png"] forState:UIControlStateNormal];
 		streamIconLeft.alpha = 1.0;
-		streamIconRight.image = [UIImage imageNamed:@"CRTS(60px).jpg"];
-	}
+        [streamIconRight setBackgroundImage:[UIImage imageNamed:@"CRTSbutton.png"] forState:UIControlStateNormal];	}
 	if ([[self.transient valueForKey:@"EventStream"] isEqualToString:@"CRTS2"]) {
 		//This is a CRTS2 stream, display their icons
 		//		streamIconLeft.image = [UIImage imageNamed:@"CSS(60px).jpg"];
-		streamIconLeft.image = [UIImage imageNamed:@"skyalert.png"];
+		[streamIconLeft setBackgroundImage:[UIImage imageNamed:@"skyalert.png"] forState:UIControlStateNormal];
 		streamIconLeft.alpha = 1.0;
-		streamIconRight.image = [UIImage imageNamed:@"CRTS(60px).jpg"];
+        [streamIconRight setBackgroundImage:[UIImage imageNamed:@"CRTSbutton.png"] forState:UIControlStateNormal];
 	}
 	if ([[self.transient valueForKey:@"EventStream"] isEqualToString:@"CRTS3"]) {
 		//This is a CRTS3 stream, display their icons
 		//		streamIconLeft.image = [UIImage imageNamed:@"CSS(60px).jpg"];
-		streamIconLeft.image = [UIImage imageNamed:@"skyalert.png"];
+		[streamIconLeft setBackgroundImage:[UIImage imageNamed:@"skyalert.png"] forState:UIControlStateNormal];
 		streamIconLeft.alpha = 1.0;
-		streamIconRight.image = [UIImage imageNamed:@"CRTS(60px).jpg"];
+        [streamIconRight setBackgroundImage:[UIImage imageNamed:@"CRTSbutton.png"] forState:UIControlStateNormal];
 	}
 	
 }
+
+- (IBAction)iconPressed:(UIButton *)button
+{
+    WebViewController *finderImageView = [[WebViewController alloc]
+                                          initWithNibName:@"FinderImageWebView"
+                                          bundle:nil];
+    
+    if (button == streamIconLeft)
+    {
+        finderImageView.title = @"SkyAlert";
+        [finderImageView webViewForURL:kURLForSkyAlert];
+        
+    }
+    else if (button == streamIconRight)
+    {
+        finderImageView.title = @"CRTS";
+        [finderImageView webViewForURL:kURLForCRTS];
+    }
+    
+    finderImageView.hidesBottomBarWhenPushed = YES;
+	[self.navigationController pushViewController:finderImageView animated:YES];
+	[finderImageView release];
+}
+
 
 /*
 // Override to allow orientations other than the default portrait orientation.
@@ -380,6 +474,19 @@
 	finderImageView.hidesBottomBarWhenPushed = YES;
 	[self.navigationController pushViewController:finderImageView animated:YES];
 	[finderImageView release];
+}
+
+- (IBAction)objInfo:(id)sender {
+    ObjectInfoPageController *objInfoPage = [[ObjectInfoPageController alloc]
+                                             initWithNibName:nil 
+                                             bundle:nil
+                                             ]; 
+    
+    [objInfoPage setEventDetails:self.transient.EventType];
+    objInfoPage.hidesBottomBarWhenPushed=YES;
+    [self.navigationController pushViewController:objInfoPage animated:YES];
+    [objInfoPage release];
+    
 }
 
 /**

@@ -18,6 +18,12 @@
 #import "Constants.h"
 #import "Locations.h"
 #import "SurveyQuestion1ViewController.h"
+#import "GlossaryController.h"
+
+// WiFi checking
+#import <arpa/inet.h> // For AF_INET, etc.
+#import <ifaddrs.h> // For getifaddrs()
+#import <net/if.h> // For IFF_LOOPBACK
 
 #define kTabBarTag 4096
 
@@ -37,7 +43,7 @@
 #pragma mark -
 #pragma mark Application lifecycle
 
-- (BOOL)application:(UIApplication *)app didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {    
+- (BOOL)application:(UIApplication *)app didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {      
 //	NSLog(@"AppDelegate: Launch options at launch.  Contents:\n%@",[launchOptions description]);
 //	NSLog(@"AppDelegate: Font Families = %@", [UIFont familyNames]);
 //	NSLog(@"AppDelegate: Georgia Fonts = %@", [UIFont fontNamesForFamilyName:@"Georgia"]);
@@ -61,24 +67,42 @@
 	BookmarkListController *bookmarkController = [[BookmarkListController alloc] init];
 	UINavigationController *bookmarkNavController = [[UINavigationController alloc] initWithRootViewController:bookmarkController];
 	bookmarkController.navController = bookmarkNavController;
+    
+    GlossaryController *infoController = [[GlossaryController alloc] init];
+    UINavigationController *infoNavController = [[UINavigationController alloc] initWithRootViewController:infoController];
+    infoController.navController = infoNavController;
+    
+    
+    
 	NSArray *array;
 	//Now add the controllers to the tab bar controller.
 	NSString *testValue5 = [[NSUserDefaults standardUserDefaults] stringForKey:kTakeSurveyKey];
 	if ((testValue5 == nil) || ([testValue5 intValue]!=kShowSurveyTab) ){
-		SurveyQuestion1ViewController *surveyViewController = [[SurveyQuestion1ViewController alloc]initWithNibName:@"SurveyQuestion1ViewController" bundle:nil];
+        NSString *device = @"";
+        if (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad)
+        {
+            device = @"SurveyQuestion1ViewController_iPad";
+        }
+        else
+        {
+            device = @"SurveyQuestion1ViewController";
+        }
+		SurveyQuestion1ViewController *surveyViewController = [[SurveyQuestion1ViewController alloc]initWithNibName:device bundle:nil];
 		UINavigationController *surveyNavController = [[UINavigationController alloc] initWithRootViewController:surveyViewController];
 		surveyViewController.navController = surveyNavController;
 		array = [[NSArray alloc] initWithObjects:eventNavController,
-						  bookmarkNavController,
-						  settingsNavController,
-						  surveyNavController,
-						  nil];
+                 bookmarkNavController,
+                 settingsNavController,
+                 surveyNavController,
+                 infoNavController,
+                 nil];
 		
 	}else{
 		array = [[NSArray alloc] initWithObjects:eventNavController,
-						  bookmarkNavController,
-						  settingsNavController,
-						  nil];
+                 bookmarkNavController,
+                 settingsNavController,
+                 infoNavController,
+                 nil];
 		
 	}
 	aTabBarController.viewControllers = array;
@@ -92,6 +116,7 @@
 	[eventNavController release];
 	[bookmarkNavController release];
 	[settingsNavController release];
+    [infoNavController release];
 	[aTabBarController release];
 	
 	//Set the status bar style
@@ -122,19 +147,58 @@
 		 registerForRemoteNotificationTypes:(UIRemoteNotificationTypeAlert|UIRemoteNotificationTypeSound|UIRemoteNotificationTypeBadge)];
 	}else{
 		[[UIApplication sharedApplication] unregisterForRemoteNotifications];
-
 	}
 
 	[window addSubview:self.tabBarController.view];
 
 	[window makeKeyAndVisible];
 	[self handlePushPayload:launchOptions];
-	
+    
+    
+    if (![self localWifiAvailable])
+    {
+        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:kWifiNotificationTitle message:@"This application can use large amounts of data. If you have a limit on your data plan, you may want to wait until you are connected to WiFi before selecting 'Continue'." delegate:self cancelButtonTitle:@"Continue" otherButtonTitles:@"Quit",nil];
+        [alert show];
+        [alert release];
+    }
+    
 	//NOTE:  return value is ignored if this is the result of a remote notification
 	//return value is used when app is launched in response to a registered URL
 	//the app should return YES if it handles the URL schema, no if it does not.
 	return YES;
 }
+
+/*
+ * Method for testing if WiFi is connected
+ */
+- (BOOL)localWifiAvailable
+{
+    struct ifaddrs *addresses;
+    struct ifaddrs *cursor;
+    BOOL wiFiAvailable = NO;
+    if (getifaddrs(&addresses) != 0) return NO;
+    
+    cursor = addresses;
+    while (cursor != NULL) {
+        if (cursor -> ifa_addr -> sa_family == AF_INET
+            && !(cursor -> ifa_flags & IFF_LOOPBACK)) // Ignore the loopback address
+        {
+            // Check for WiFi adapter
+            if (strcmp(cursor -> ifa_name, "en0") == 0) {
+                wiFiAvailable = YES;
+                break;
+            }
+        }
+        cursor = cursor -> ifa_next;
+    }
+    
+    freeifaddrs(addresses);
+    return wiFiAvailable;
+}
+
+
+
+
 /**
  sets all default values for user defaults on first run.  Also checks the launchOptions dictionary for 
  information to see if there are any notifications so we can highlight any notifications.
@@ -229,15 +293,26 @@
 */
 
 - (void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex{
+    if ([[alertView title] isEqualToString:kWifiNotificationTitle])
+    {
+        if ([[alertView buttonTitleAtIndex:buttonIndex] isEqualToString:@"Quit"])
+        {
+            // User wants to quit
+            exit(EXIT_SUCCESS);
+        }
+    }
+    else
+    {
 #ifdef LOGGING
-	NSLog(@"AppDelegate: User pressed alertView Button %@\n",[alertView buttonTitleAtIndex:buttonIndex]);
+        NSLog(@"AppDelegate: User pressed alertView Button %@\n",[alertView buttonTitleAtIndex:buttonIndex]);
 #endif
-	if ([[alertView buttonTitleAtIndex:buttonIndex]isEqualToString:NSLocalizedString(@"Take Survey", @"Take Survey")]) {
+        if ([[alertView buttonTitleAtIndex:buttonIndex]isEqualToString:NSLocalizedString(@"Take Survey", @"Take Survey")]) {
 #ifdef LOGGING
-		NSLog(@"AppDelegate: User selected to take survey now\n");
+            NSLog(@"AppDelegate: User selected to take survey now\n");
 #endif
-		self.tabBarController.selectedIndex = 3;
-	}
+            self.tabBarController.selectedIndex = 3;
+        }
+    }
 }
 
 - (void)removeLastTab{

@@ -58,11 +58,26 @@
 		IBOutlet UIProgressView *progressBar;
 		IBOutlet UIBarButtonItem *plusButton;
 		IBOutlet UIImageView	*backgroundView;
-		IBOutlet UIImageView	*streamIconLeft;
-		IBOutlet UIImageView	*streamIconRight;
-		
-		
-//		NSMutableDictionary		*imageDictionary;
+		IBOutlet UIButton	*streamIconLeft;
+		IBOutlet UIButton	*streamIconRight;
+        IBOutlet UIView     *leftUIView;
+        IBOutlet UIView     *rightUIView;
+    
+        IBOutlet UIImageView    *iPadImage1;
+        IBOutlet UIImageView    *iPadImage2;
+        IBOutlet UIImageView    *iPadImage3;
+        IBOutlet UIImageView    *iPadImage4;
+        IBOutlet UIImageView    *iPadImage5;
+        IBOutlet UILabel        *iPadImageLabel1;
+        IBOutlet UILabel        *iPadImageLabel2;
+        IBOutlet UILabel        *iPadImageLabel3;
+        IBOutlet UILabel        *iPadImageLabel4;
+        IBOutlet UILabel        *iPadImageLabel5;
+        IBOutlet UILabel        *iPadEventType;
+        IBOutlet UITextView   *iPadInfoTextView;
+    
+    
+    //		NSMutableDictionary		*imageDictionary;
 		BOOL					pageControlUsed;
 		
 		NSDictionary			*eventDetails;
@@ -80,9 +95,23 @@
 
 	
 }
+@property (nonatomic, retain) UIImageView *iPadImage1;
+@property (nonatomic, retain) UIImageView *iPadImage2;
+@property (nonatomic, retain) UIImageView *iPadImage3;
+@property (nonatomic, retain) UIImageView *iPadImage4;
+@property (nonatomic, retain) UIImageView *iPadImage5;
+@property (nonatomic, retain) UILabel     *iPadImageLabel1;
+@property (nonatomic, retain) UILabel     *iPadImageLabel2;
+@property (nonatomic, retain) UILabel     *iPadImageLabel3;
+@property (nonatomic, retain) UILabel     *iPadImageLabel4;
+@property (nonatomic, retain) UILabel     *iPadImageLabel5;
+@property (nonatomic, retain) UILabel     *iPadEventType;
+@property (nonatomic, retain) UITextView *iPadInfoTextView;
+@property (nonatomic, retain) NSMutableArray   *iPadImages;
+@property (nonatomic, retain) NSMutableArray   *iPadImageLabels;
 @property (nonatomic, retain) UIImageView	*backgroundView;	
-@property (nonatomic, retain) UIImageView	*streamIconLeft;
-@property (nonatomic, retain) UIImageView	*streamIconRight;
+@property (nonatomic, retain) UIButton	*streamIconLeft;
+@property (nonatomic, retain) UIButton	*streamIconRight;
 @property (nonatomic, retain) UILabel *airmass;
 @property (nonatomic, retain) UILabel *alertTime;
 @property (nonatomic, retain) UILabel *azAltCoordinates;
@@ -105,9 +134,11 @@
 @property (nonatomic, retain) 	UILabel		*imageDescription;
 @property (nonatomic, retain) 	UIProgressView *progressBar;
 @property (nonatomic, retain) 	UIBarButtonItem *plusButton;
+@property (nonatomic, retain) UIView *leftUIView;
+@property (nonatomic, retain) UIView *rightUIView;
 
 
-
+- (IBAction)objInfo:(id)sender; // Oject info button on toolbar
 
 - (IBAction)addBookmark:(id)sender; //!< Adds the current event to the bookmark database
 - (IBAction)displayFinderChart:(id)sender;//!< Displays the finder chart for the object based on the URL provided in the data stream

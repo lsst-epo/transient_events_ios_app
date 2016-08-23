@@ -1,0 +1,1 @@
+An object marked as Unknown means that the automated process for identifying events was unable to determine the Event Type. At a later time, these Unknown events will be classified by a human.

@@ -1,0 +1,2 @@
+Microlensing is based on the gravitational lens effect. A massive object (the lens) will bend the light of a bright background object (the source).
+More info: http://en.wikipedia.org/wiki/Microlensing

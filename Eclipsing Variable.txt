@@ -1,0 +1,2 @@
+A binary star is a star system consisting of two stars orbiting around their common center of mass. Eclipsing binaries are variable stars, not because the light of the individual components vary but because of the eclipses. The light curve of an eclipsing binary is characterized by periods of practically constant light, with periodic drops in intensity.
+More info: http://en.wikipedia.org/wiki/Eclipsing_binary_star

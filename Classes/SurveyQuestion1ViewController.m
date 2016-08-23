@@ -125,7 +125,16 @@
 #endif
 	//moving to the next screen, save the results and move on.
 	[self.surveyResults setObject:[self.selectedButton currentTitle] forKey:kQuestion1Key];
-	SurveyQuestion2ViewController *nextView= [[SurveyQuestion2ViewController alloc] initWithNibName:@"SurveyQuestion2ViewController"
+    NSString *device = @"";
+    if (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad)
+    {
+        device = @"SurveyQuestion2ViewController_iPad";
+    }
+    else
+    {
+        device = @"SurveyQuestion2ViewController";
+    }
+	SurveyQuestion2ViewController *nextView= [[SurveyQuestion2ViewController alloc] initWithNibName:device
 																									bundle:nil];
 	nextView.surveyResults = self.surveyResults;
 	nextView.navController = self.navController;

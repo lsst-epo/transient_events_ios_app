@@ -35,13 +35,23 @@
 	[super loadView];
 	
 	UIImageView *imageView = [[[UIImageView alloc] initWithFrame:self.view.bounds] autorelease];
-	[imageView setImage:[UIImage imageNamed:@"BGStar.jpg"]];
+    if (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad)
+    {
+        [imageView setImage:[UIImage imageNamed:@"BGStar_Big.jpg"]];
+    }
+    else
+    {
+        [imageView setImage:[UIImage imageNamed:@"BGStar.jpg"]];
+    }
 	[self.view addSubview:imageView];
 	CGRect tableBounds = self.view.bounds;
 	tableBounds.origin.y	 = 0;
 	tableBounds.size.height = tableBounds.size.height - (44);
 	[self.tableView = [UITableView alloc] initWithFrame:tableBounds style:UITableViewStyleGrouped];
 	[self.tableView setBackgroundColor:kSettingsTableBackgroundColor];
+    if (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad) {
+        self.tableView.backgroundView.alpha = 0.5;
+    }
 	[self.view addSubview:self.tableView];
 	
 	self.tableView.delegate = self;

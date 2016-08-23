@@ -41,9 +41,26 @@
 		IBOutlet UIButton		*nextButton;
 		IBOutlet UIButton		*previousButton;
 		IBOutlet UIImageView	*backgroundView;
-		IBOutlet UIImageView	*streamIconLeft;
-		IBOutlet UIImageView	*streamIconRight;
+		IBOutlet UIButton	*streamIconLeft;
+		IBOutlet UIButton	*streamIconRight;
+        
+        IBOutlet UIView     *leftUIView;
+        IBOutlet UIView     *rightUIView;
 		
+        
+        IBOutlet UIImageView    *iPadImage1;
+        IBOutlet UIImageView    *iPadImage2;
+        IBOutlet UIImageView    *iPadImage3;
+        IBOutlet UIImageView    *iPadImage4;
+        IBOutlet UIImageView    *iPadImage5;
+        IBOutlet UILabel        *iPadImageLabel1;
+        IBOutlet UILabel        *iPadImageLabel2;
+        IBOutlet UILabel        *iPadImageLabel3;
+        IBOutlet UILabel        *iPadImageLabel4;
+        IBOutlet UILabel        *iPadImageLabel5;
+        IBOutlet UILabel        *iPadEventType;
+        IBOutlet UITextView   *iPadInfoTextView;
+        
 		
 		Transient				*transient;
 		
@@ -58,9 +75,23 @@
 
 	
 }
+@property (nonatomic, retain) UIImageView *iPadImage1;
+@property (nonatomic, retain) UIImageView *iPadImage2;
+@property (nonatomic, retain) UIImageView *iPadImage3;
+@property (nonatomic, retain) UIImageView *iPadImage4;
+@property (nonatomic, retain) UIImageView *iPadImage5;
+@property (nonatomic, retain) UILabel     *iPadImageLabel1;
+@property (nonatomic, retain) UILabel     *iPadImageLabel2;
+@property (nonatomic, retain) UILabel     *iPadImageLabel3;
+@property (nonatomic, retain) UILabel     *iPadImageLabel4;
+@property (nonatomic, retain) UILabel     *iPadImageLabel5;
+@property (nonatomic, retain) UILabel     *iPadEventType;
+@property (nonatomic, retain) UITextView *iPadInfoTextView;
+@property (nonatomic, retain) NSMutableArray   *iPadImages;
+@property (nonatomic, retain) NSMutableArray   *iPadImageLabels;
 @property (nonatomic, retain) UIImageView	*backgroundView;	
-@property (nonatomic, retain) UIImageView	*streamIconLeft;
-@property (nonatomic, retain) UIImageView	*streamIconRight;
+@property (nonatomic, retain) UIButton	*streamIconLeft;
+@property (nonatomic, retain) UIButton	*streamIconRight;
 @property (nonatomic, retain) UILabel *airmass;
 @property (nonatomic, retain) UILabel *alertTime;
 @property (nonatomic, retain) UILabel *azAltCoordinates;
@@ -77,6 +108,10 @@
 @property (nonatomic, retain) 	UILabel		*imageDescription;
 @property (nonatomic, retain) 	UIButton		*nextButton;
 @property (nonatomic, retain) 	UIButton		*previousButton;
+
+@property (nonatomic, retain) UIView *leftUIView;
+@property (nonatomic, retain) UIView *rightUIView;
+
 
 @property (nonatomic, retain) Transient	*transient; //!< object to be displayed.
 

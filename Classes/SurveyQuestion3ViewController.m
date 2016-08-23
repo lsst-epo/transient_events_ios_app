@@ -10,6 +10,7 @@
 #import "Constants.h"
 #import "Transient_EventsAppDelegate.h"
 #import "httpFlattening.h"
+#import <QuartzCore/QuartzCore.h>
 
 
 @implementation SurveyQuestion3ViewController
@@ -39,6 +40,15 @@
 																	 action:@selector(doneButtonPressed)];
 	self.navigationItem.rightBarButtonItem = done;
 	[done release];
+    
+    
+    self.tintView.layer.backgroundColor = [[UIColor colorWithWhite:0.1 alpha:0.75] CGColor];
+    if (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad)
+    {        
+        self.tintView.layer.cornerRadius = 0.6;
+        self.tintView.layer.borderColor = [[UIColor whiteColor] CGColor];
+        self.tintView.layer.borderWidth = 0.7;
+    }
 	
     [super viewDidLoad];
 }

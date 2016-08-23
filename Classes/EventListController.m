@@ -7,6 +7,8 @@
 //
 
 
+#import "ObjectInfoPageController.h"
+
 #import "EventListController.h"
 #import "EventDetailController.h"
 #import "Transient_EventsAppDelegate.h"
@@ -87,7 +89,14 @@ NSString *const ImageLoadingPlaceholder = @"Loading";
 	[super loadView];
 	
 	UIImageView *imageView = [[[UIImageView alloc] initWithFrame:self.view.bounds] autorelease];
-	[imageView setImage:[UIImage imageNamed:@"BGtelescope.jpg"]];
+    if (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPhone)
+    {
+        [imageView setImage:[UIImage imageNamed:@"BGtelescope.jpg"]];
+    }
+    else
+    {
+        [imageView setImage:[UIImage imageNamed:@"BGtelescope_Big.jpg"]];
+    }
 	[self.view addSubview:imageView];
 	CGRect tableBounds;
 	tableBounds = self.view.bounds;
@@ -650,8 +659,13 @@ The size of the footer depends on the
 	[altAzCalculator release];
 	
 
-	NSString *label = [[NSString alloc] initWithFormat:@"%@",[[self.transientDataArray objectAtIndex:indexPath.row] 
+	NSMutableString *label = [[NSMutableString alloc] initWithFormat:@"%@",[[self.transientDataArray objectAtIndex:indexPath.row] 
 															  objectForKey:kTypeKey]];
+//    if (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad)
+//    {
+//        // is iPad
+//        [label appendFormat:@": %@",[[self.transientDataArray objectAtIndex:indexPath.row] objectForKey:kEventIDKey]];
+//    }
 	cell.textLabel.text = [label uppercaseString];
 	[label release];
 	//Now we will get the history dictionary and see if this eventID is in the dictionary.  If so
@@ -763,8 +777,19 @@ The size of the footer depends on the
 	//Right now we only have one event type.  When we get more types of events we will need to 
 	//check the stream and then set up the detail controller based on the type of stream.
 	
+    // Checking whether iPad/iPhone
+    NSString *deviceType;
+    if (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad) {
+        // is iPad
+        deviceType = @"EventDetailView_iPad";
+    }
+    else {
+        // is iPhone
+        deviceType = @"EventDetailView_iPhone";
+    }
+    
 	EventDetailController *eventDetailController = [[EventDetailController alloc] 
-													initWithNibName:@"EventDetailView" bundle:nil];
+													initWithNibName:deviceType bundle:nil];
 	eventDetailController.title = [[self.transientDataArray objectAtIndex:indexPath.row] objectForKey:kTypeKey];
 
 	eventDetailController.hidesBottomBarWhenPushed = YES;
@@ -773,8 +798,16 @@ The size of the footer depends on the
 	eventDetailController.eventDetails = [self.transientDataArray objectAtIndex:indexPath.row];
 	//Add stuff here to pass the event pointer to the view controller
 	self.currentSelection = indexPath;
-	
-	
+    
+    
+/*	
+    ObjectInfoPageController *objectInfoController =[[ObjectInfoPageController alloc]
+                                                     initWithNibName:@"ObjectInfoView" bundle:nil];
+    objectInfoController.title = [[self.transientDataArray objectAtIndex:indexPath.row] objectForKey:kTypeKey];
+    objectInfoController.eventDetails = [self.transientDataArray objectAtIndex:indexPath.row];
+    self.currentSelection =indexPath;
+  */  
+    
 	//add this selection to the history
 	NSDictionary *history = [userDefaults objectForKey:kHistoryKey];
 	//First we check and see if this event has already been added to the history

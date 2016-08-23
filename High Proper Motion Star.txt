@@ -1,0 +1,2 @@
+The proper motion of a star is its angular change in position over time as seen from the center of mass of the solar system.
+More info: http://en.wikipedia.org/wiki/Proper_motion
