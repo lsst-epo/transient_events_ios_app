@@ -1,0 +1,37 @@
+
+√ SWEENEY 3-OCT-09 When you navigate away from the Event List (after it first loads) and then return 
+	to the Event List sometimes the page is clearly in a local buffer and sometimes appears to be 
+	reloading.  The latter can take some time.
+ 
+SWEENEY 3-OCT-09 Occasionally (maybe one time in 10) my iPhone locks in the sleep state after I’ve 
+	been using the app.  It’s never locked while I’m using the app.  I think it happens mostly when 
+	I leave the app running and put the phone back in my pocket.    It’s hard to reproduce.
+
+√ TRUAX 7-OCT-09  In settings view some of the table entries are centered vertically and some are biased
+	towards the top of the cell.  They should all be formatted similarly.
+	
+√ TRUAX 9-OCT-09  (0.2 (4))  Cannot save a location to the location list.  When you leave and come back to the 
+	location screen the wrong text location is listed.
+	
+√ TRUAX 26-OCT-09 (0.23 (48)) If you switch to a detail view and then switch back to the list view while the images 
+	are still loading the program crashes in the performSelector: OnMainThread in imageLoadingOperation.  Need to 
+	gracefully kill the operation queue when the window is released.
+	
+TRUAX 11/2/09 (0.26 (69M))  With very large data sets (100 days, 23.0 magnitude) the ImageLoadingOperation can crash with a
+	BAD_ACCESS error in [largeImage drawInRect:CGRect()].  It is not clear why this is happening.  The main thread does not 
+	receive a low memory warning and all of the pointers appear to have been allocated properly.  The allocations only require
+	perhaps 20KB.  
+	
+√ TRUAX 12/4/09 (0.29 (102M))
+	If you press a table line for MORE… data and it starts LOADING… and then you touch the Loading… line the app will crash.
+	
+TRUAX 3/18/10 (0.32 (166))
+	Multiple alerts arived while I believe app was open but device was asleep.  When the app was displayed and I scrolled down through
+	events there were multiple events highlighed with ALERT.  If I scrolled forward and back the alerts stayed highlighted.
+	Some of the alerts were odd because they were UNKOWN events from the night before.  It was not clear if these were
+	supposed to be highlighted.  Need to watch this closer.  NOTE:  I had Event Thumbnails turned on when this happened.
+	
+ME AND MY IPAD 1.01 5/4/10
+	The Location List screen search bar has a cancel button.  This cancel button is overlaid with the table index.  This makes
+	it difficult to hit the cancel button without mistakenly hitting the index.  This is a bug in the Apple SDK.
+	I have filed a bug report.

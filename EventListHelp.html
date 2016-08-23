@@ -1,0 +1,95 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+        "http://www.w3.org/TR/html4/loose.dtd">
+      
+<html>
+<head>
+	<title>Event List Help</title>
+</head>	
+<style type="text/css">
+<!--
+
+body {
+	width: 285px;
+	background-color: #FFF;
+	margin-left: 5%;
+	}
+
+h1 {
+	font: bold 14px georgia;
+	margin: 23px 5px 3px 0px;
+	color: #a3577c;
+	color: #036;
+	border-bottom: solid #036 thin;
+	text-align: center;
+	}
+	
+h2 {
+	font: bold 13px georgia;
+	margin: 10px 5px 3px 0px;
+	color: #a3577c;
+	color: #069;
+	}
+	
+
+p {
+	font: 12px/15px georgia;
+	margin: 3px 7px 8px;
+	}
+body,td,th {
+	color: #333;
+}
+	
+-->
+</style>
+<body>
+
+<h1>Event List Help</h1>
+
+<h2>What is the Event List?</h2>
+<p>
+When you first open Transient Events the app asks the LSST Transient Event Server for the most recent transient events which satisfy the criteria defined in Settings.  These events are loaded showing their type and the date and magnitude of the event.  In order to minimize the amount of data to be downloaded Transient Events only downloads a limited number of events at a time. If all events have not been downloaded the last row in the table will say "More...".  Touch this row and the next group of data will be downloaded.
+</p>
+
+<h2>Why don't I see any events?</h2>
+<p>
+There may not be any events which match your filter settings.  Try changing the Magnitude Limit Slider to a larger number, increasing the maximum event age and selecting more event types.
+</p>
+
+<h2>Why haven't there been any new events or alerts for the past few days?</h2>
+<p>
+The surveys used by Transient Events are limited by the weather, the moon and occassional mechanical telescope problems.  For about 7 days each month the telescope(s) cannot acquire data due to the full moon.  Also, the telescope(s) cannot operate if the skies are not clear or the winds are to strong.  The CRTS and CRTS2 telescopes are both in Arizona so they are both affected by the same weather patterns.  These telescopes will shut down for about 2 months during July and August due to the Tucson area monsoon season.  The CRTS3 telescope is located in Australia so it should provide data during the period when CRTS and CRTS2 are closed during the monsoons.  For more information on the CRTS and CRTS2 status see the <a href="http://cleardarksky.com/c/Kpr61AZkey.html?1">clear sky chart.</a> For additional information on the CRTS telescopes visit the <a href="http://crts.caltech.edu/Telescopes.html">Catalina Real-Time Transient Survey</a> home page.
+</p>
+
+
+<h2>What do the colors mean?</h2>
+<p>
+The colors indicate the visibility of the object from the location and minimum altitude which are set in the Settings screen.  Green means that the object is currently visible.  Yellow means that the object is currently below the minimum altitude but will exceed that altitude at some later time.  Red means that this object never gets above the minimum altitude at this location.
+</p>
+
+<h2>What Colors?  I only see green.</h2>
+<p>
+In Settings you can set Transient Events to only show you visible objects.  If this switch is on then all objects will be green because they are all visible.
+</p>
+
+<h2>How do I see more information?</h2>
+<p>If want to see more information about an event simply touch the event.  Touching the event will take you to a page containing more detailed information about the event as well as a series of images.  The images show the original reference images and typically 4 of the new images which caused the event to be issued. The first image you see will be the first new image.  The reference image is to the left (swipe to the right) and the other three new images are to the right (swipe to the left).</p> 
+<p>
+If you want to view this object in your telescope a finder chart is available by touching the "Finder Chart" button. 
+</p>
+<p>
+For objects of particular interest you can press the "+" button and save this object to your bookmarks or you can press the Compose button and email information about the event to anyone in your address book.  If you save the information to your bookmarks, it will save all of the information locally so that you do not have to be connected to the internet to view the details.  Unfortunately is is not possible to store the finder chart locally so that information will be unavailable if you do not have network access.
+</p>
+
+<h1>Bug Reports and Feature Requests</h1>
+
+<p>
+<center><a href="mailto:transienteventshelp@lsst.org?subject=Transient%20Events%20Bug%20Report">Transient Events Bug Report</a><br><br>
+<a  href="mailto:btruax@dld-llc.com?subject=Transient%20Events%20Feature%20Request">Transient Events Feature Request</a><br><br>
+<br>
+<br>
+</center>
+
+</p>
+
+</body>
+</html>

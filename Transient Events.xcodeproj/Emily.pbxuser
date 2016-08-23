@@ -1,0 +1,91 @@
+// !$*UTF8*$!
+{
+	0374ED5E108FAB80007B314F /* IncrementBuildNumber */ = {
+		activeExec = 0;
+	};
+	03DF264E10BDDCAD00540B04 /* Build Documentation */ = {
+		activeExec = 0;
+	};
+	1D6058900D05DD3D006BFB54 /* Transient Events */ = {
+		activeExec = 0;
+		executables = (
+			A1C6E85D10CED9050038D17F /* Transient Events */,
+		);
+	};
+	29B97313FDCFA39411CA2CEA /* Project object */ = {
+		activeBuildConfigurationName = DeviceDevelopmentDebug;
+		activeExecutable = A1C6E85D10CED9050038D17F /* Transient Events */;
+		activeTarget = 1D6058900D05DD3D006BFB54 /* Transient Events */;
+		codeSenseManager = A1C6E88110CED9210038D17F /* Code sense */;
+		executables = (
+			A1C6E85D10CED9050038D17F /* Transient Events */,
+		);
+		perUserDictionary = {
+			PBXConfiguration.PBXFileTableDataSource3.PBXFileTableDataSource = {
+				PBXFileTableDataSourceColumnSortingDirectionKey = "-1";
+				PBXFileTableDataSourceColumnSortingKey = PBXFileDataSource_Filename_ColumnID;
+				PBXFileTableDataSourceColumnWidthsKey = (
+					20,
+					364,
+					20,
+					48.16259765625,
+					43,
+					43,
+					20,
+				);
+				PBXFileTableDataSourceColumnsKey = (
+					PBXFileDataSource_FiletypeID,
+					PBXFileDataSource_Filename_ColumnID,
+					PBXFileDataSource_Built_ColumnID,
+					PBXFileDataSource_ObjectSize_ColumnID,
+					PBXFileDataSource_Errors_ColumnID,
+					PBXFileDataSource_Warnings_ColumnID,
+					PBXFileDataSource_Target_ColumnID,
+				);
+			};
+			PBXPerProjectTemplateStateSaveDate = 281991429;
+			PBXWorkspaceStateSaveDate = 281991429;
+		};
+		sourceControlManager = A1C6E88010CED9210038D17F /* Source Control */;
+		userBuildSettings = {
+		};
+	};
+	A1C6E85D10CED9050038D17F /* Transient Events */ = {
+		isa = PBXExecutable;
+		activeArgIndices = (
+		);
+		argumentStrings = (
+		);
+		autoAttachOnCrash = 1;
+		breakpointsEnabled = 0;
+		configStateDict = {
+		};
+		customDataFormattersEnabled = 1;
+		debuggerPlugin = GDBDebugging;
+		disassemblyDisplayState = 0;
+		dylibVariantSuffix = "";
+		enableDebugStr = 1;
+		environmentEntries = (
+		);
+		executableSystemSymbolLevel = 0;
+		executableUserSymbolLevel = 0;
+		libgmallocEnabled = 0;
+		name = "Transient Events";
+		savedGlobals = {
+		};
+		sourceDirectories = (
+		);
+	};
+	A1C6E88010CED9210038D17F /* Source Control */ = {
+		isa = PBXSourceControlManager;
+		fallbackIsa = XCSourceControlManager;
+		isSCMEnabled = 0;
+		scmConfiguration = {
+			repositoryName = "Transient Events Repository";
+		};
+	};
+	A1C6E88110CED9210038D17F /* Code sense */ = {
+		isa = PBXCodeSenseManager;
+		indexTemplatePath = "";
+	};
+}

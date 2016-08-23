@@ -1,0 +1,74 @@
+√	1.  CoreData model for transients and NEO's
+√	2.	RA/Dec/Time conversion to Alt/Az coords
+		http://www.stargazing.net/kepler/altaz.html
+		http://home.att.net/~srschmitt/celestial2horizon.html
+		http://cs.astronomy.com/asycs/forums/p/32846/377504.aspx
+√	3.	JSON parser
+√	4.  Image Swiping
+	5.	NEO detail page
+√   6.	Email transient data - separate controller which can be called from either NEO or Transient pages
+√	7.	Finder Image Display Page
+√	8.  Location button will need to be created.  There is no Apple supplied button.  Everyone must just copy
+		the existing button.
+√	9.	Add ability to enter location manually
+	10.	Add separate detail page for NEO's and for other streams
+√	11.	Add a server timeout trap in the event the response from the event server is too slow - not needed user can cancel.
+			Added progress indicators but they go by so fast once data starts coming that they are not useful.
+			Most time is spent waiting for the server to extract and format the data.
+√	12.	Add an about screen with version number and credits
+	13. Add the ability to select data streams on the settings page
+√	14. Allow the user to set minimum altitude in settings
+√	15. Add previouslty visited links highlighting
+			Add an NSMutableDictionary to userDefaults
+				key - eventID
+				Value - time of last visited
+			Each time program starts enumarate the dictionary and remove event ID's which 
+			are older than a preset value.
+			Each time an event is touched the list will be updated with the event ID and time of visited
+			When list is displayed, if eventID is in list it will somehow be highlighted to show it has
+			been visited previously.
+√	16.	Add revision control to project.
+√	17. Migrate project to LSST account.
+√	18. Highlight or leave selected the most recently viewed event, particularly after returning from the 
+			detail view so the user knows which one he just viewed.
+	19.	Add new event streams.
+√	23. Should I add left and right image scroll buttons to the detail pages?
+	24. Should the event ID be a hyperlink to the Event page?  If so, where should I link?
+	25. Should I refactor the code to make the event list and bookmark list use the same controller?
+
+	
+
+TO-DO list for initial non-push release
+
+	1. Add eye candy
+			a.	Format html for credits in a nicer manner.  Add a subdued background color.
+			b.	Improve table view graphics
+			c.	Improve detail views
+			d.	Application icon
+			e.	Splash screen
+
+	2.	Implement server syncing with CalTech server.
+	
+	3.	Add event type selection functionality in server
+	
+	4.	Add "Visible Events" functionality in server (low priority now that it is implemented in app)
+	
+	5.  Remove "Alerts" switch from settings.
+	
+	6.  Get a server and move it outside of firewall.
+	
+	7.	Switch app to use LSST server as primary server.
+	
+	8.  Review code carefully for memory leaks
+	
+	9.  Write up iTunes page
+	
+	10.	Create Web Site for app with detailed help and additional information
+			a.	Definitions of event types
+			b.  Links to CRTS
+	
+	11.	Handle memory problems caused by too much data!
+	
+	TEST TEST TEST!!!!
+	
+  

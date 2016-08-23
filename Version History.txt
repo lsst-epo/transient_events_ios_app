@@ -1,0 +1,246 @@
+0.2 OCTOBER 9, 2009 (Build 4)
+	1.	Added About view from Settings - shows credits, version number, build number and build date
+	2.	Added minimum altitude setting
+	3.  Added history.  Previously visited links are greyed out.
+	4.  Selected events now remain highlighted when returning from detail view.
+	5.  Location setting now has a proper location button
+	6.  Created IncrementVersion script which uses agvtool to increment the build number.
+	7.  Compute local az and alt and max alt
+	8.	Keys for event dictionary are now in Constants.h (most of them anyway)
+	9.	Events are now color coded for local visibility
+	10. Implemented HH:mm:ss format for RA
+	11. Fixed longitude and latitude labels for N-S and E-W
+	12. Added ability to save locations
+	13. Added ability to manually enter locations
+	14. Populated locations with list of observatories higher than 1000 meters
+	
+0.21 OCTOBER 13 2009 (Build 5)
+	1.  Fixed display of location name when first entering Location view
+	2.  Changed method for loading default locations from copying SQLITE database to loading database from text file
+	3.  Item 2 fixed the problem with improper sorting of locations.
+	4.  Changed default event age to 10
+	5.  Updated event parsing to add RA and DEC and to get the event ID from the triggerIVORN string
+	6.	Updated the time so that the event time is extracted from "triggerEventTime" and the alert time is
+		extracted from "ingestTime".
+	7.  Added index to locations list
+	8.  Added search capabilities to locations list
+	9.  Fixed a few memory allocation issues and memory leaks
+	
+0.22 OCTOBER 20 2009 (Build  8)
+	1.  Added bookmark functionality
+	2.	Bookmark images are loaded on a separate thread.  Leaving detail page is blocked until thread completes
+	3.	Added Settings bundle. Currently only the server URL is set in this bundle.  
+	4.	The address of the event server can be set in the Settings app.  This will allow Jonathan to 
+		test his server.
+	5.	Changed Add Location button to bring up an action sheet rather than an alert sheet.
+	6.	Modified logic for reloading data.  Now data is only reloaded when a setting which would affect the list 
+		is changed.
+	7.	Migrate to LSST Developer Account
+	8.	Default event history age set to 3 days.  Selected link history is erased after three days.
+
+0.23 OCTOBER 26 2009 (Build 48)
+	1.	Added automated build number incrementing.  Whenever an AdHoc or iTunes distribution build is requested
+		the and automated subversion commit is performed and the build number is set to the subversion version
+		number.  This allows for better tracking of versions.  When internal debug builds are made there is no
+		automatic commit but the build number is still taken from the current Subversion version.  Also debug
+		builds will have an "M" appended indicating that the code has been modified from the version currently
+		the repository. This will always be the case even if you just did a manual commit because the build time
+		compiled into the About screen will have been modified.
+	2.	Fixed a bug in image loading.  There are cases where the URL's provided by the server do not have valid data.
+		This caused the image loading operation to return a nil result dictionary and the program would crash.
+		I now test for an empty return data stream and when that occurs a "MissingImage" Image is inserted in 
+		its place.
+	3.	Modified EventDetailController to eliminate a potential runaway memory problem.  Previously it was possible 
+		that hundreds of images could be added to the moving image display with images being added more than
+		once.  The logic has been changed to make sure that each image is only loaded once.
+	4.	Added next and previous image buttons to EventDetailController.
+	5.	First image shown on detail page is New Image 1 rather than Past Image
+	6.	Email composer includes New Image 1 rather than Past Image
+	7.	Updated Event Types list to match list provided by Andrew Drake
+	8.	Fixed a couple of display bugs in Settings where the Tab Bar was not being hidden.
+	9.  Fixed the loading of the optional server URL so that it works properly.  Tested and verified using 
+		mops2.tuc.noao.edu.
+		
+0.24 OCTOBER 28 2009 (Build 59)
+	1.	Fixed bug where if you quit out of detailed view while images were loading the app would crash.  
+		This was done by sending a cancel messages to the image loading threads which were both executing and
+		queued up to run.
+	2.	Changed main ID to type and replaced type on second line with Mv.
+	3.	Modified email composer to add event type.  Fixed some formatting bugs.
+	4.	Cleaned up some text formatting in the detail view pages.
+	5.  Added "Visible Objects Only" functionality
+	6.	Fixed bug in Event Age functionality which has occurred since Sept 28.
+	7.	Corrected computation of airmass (I used 1/cos(alt) rather than 1/sin(alt) oops!)
+	8.  Changed formatting of Airmass so that it does not display if alt<=0.
+	9.  Added Help pages
+	10. Added background gradient images to tableviews.  This was not quite as neat as I had hoped.  I had 
+		some problems with the background flashing white during loading and on the area below the bottom
+		of the table.  The current solution is not as clean as I would like but it works.
+	11.	Matched displays of event details and bookmark details.  I had been testing new features in the event details
+		and I needed to migrate them to the bookmark details.
+	12. Changed reloading logic to eliminate the need to reload if:
+			1.  You change from display all objects to displaying only visible objects (the app just filters the list)
+			2.  If you are displaying all objects and you change location the table is just updated to 
+				refresh the colors.
+				
+0.25 NOVEMBER 1 2009 (Build 64)
+	1.	Changed default values.  Default magnitude limit changed to 18.0 and Visible Object Only switch change to OFF.
+	2.  Alerts set for no data received and for unparsable data.  These need to be tested under various conditions.
+	3.  Changed "Alert:<date>" to "Alert Time: <date>" on bookmark detail page to match event list.
+	4.	Changed subtitle text from grey to white on bookmark list page to match event list.
+	5.	Increased size of "touchable area" of next and previous image buttons to make them easier to hit.
+	6.  Changed URL for server to "http://www.skyalert.info/jsonQuery
+	7.	Fixed a bug where a zero byte image from the server could crash the app.
+	8.	Fixed bug where if immediately after switching to detailed view you switch to Finder Chart when you switch back
+		to detail view some of the images would not load.
+		
+0.26 NOVEMBER 3 2009 (Build 71)
+	1.	Added progress bar to creation of bookmark so that now the user knows that something it happening.
+	2.	During bookmark process the back button is hidden.  You cannot go back to the list view until 
+		the bookmark process is complete.  Previously the app just locked up with no indication until
+		the bookmark process was complete.
+	3.	Optimized display of thumbnail images so that once they are loaded you get smooth scrolling on all devices.
+		This was done by resizing the images as they were downloaded rather than as the table was rendered. The Sample 
+		instrument showed that almost all of the scrolling computations were in the resize image function.
+	4.	Eliminated some memory leaks.
+	5.	Modified ImageLoadingOperation to trap malformed image files and replace them with "Missing Image…"
+		
+		
+0.27 NOVEMBER 20 2009 (Build 83 )
+	1.	Added Cataclysmic Variable to event type list.
+	2.	Changed userDefaults default event to Unknown from Uncharacterized
+	3.	Adding Doxygen documentation to classes
+	4.	Added Documentation build target
+	5.  Events are now loaded in batches of 10.  At the end of each 10 events a More… indicator is displayed
+		if you touch the More… table entry the next 10 events are loaded.  This reduces the load on the server.
+	6.	Implemented Event Type selection.  The app now respects the event types you check in the settings page
+		and only downloads those event types from the server.
+		
+0.28 NOVEMBER 25 2009 (Build 93 )
+	1.  Updated application icon
+	2.	Updated startup screen
+	3.	Added ability to set time splash screen is display during compile.  Currently set to 2 seconds.
+		
+
+0.29 DECEMBER 13 2009 (Build 113)
+	1.	Modified IncrementBuildNumber target to insert current build number when new build number is empty. 
+		This does not affect release builds, only internal development builds which sometimes had empty build
+		numbers.
+	2.	Modified the bookmarking function.  Previously it was not possible to return to the event list page while
+		the bookmarked data was being downloaded from the server.  On a fast connection this only resulted in 
+		one or two seconds of delay but on an Edge connection this could take as long as 30 seconds - quite annoying.
+		The reason for this was that returning to the event list page resulted in the memory for the thread being
+		deallocated and the thread crashing.  This problem was eliminated by keeping the object alive, even if 
+		it was not visible.  It is now possible to leave the detail view while the bookmark data is downloading.  
+		You can also start more bookmarks and they will run simultaneously until they are complete.  Download 
+		activity is indicated by the network activity indicator in the status bar.
+	3.  In the EventDetailController the bookmark button (+) is disabled during a bookmark thread.
+	4.	Changed the EventDetailController to set the title of the back button prior to entering the Finder Chart
+		so that it is now titled "Event Details" rather than the type of event.  This was confusing when the 
+		event type was "Unknown".  
+	5.	Added icons for event types.  These are on by default. To see the image thumbnails
+		turn the Event Thumbnails switch on in the Settings panel.  
+	6.	Added Emily Acosta to the Credits. 
+	7.	Rewrote ImageLoadingOperation to use CG graphics libraries for image resizing to eliminate problem
+		with crashing since UIImage is not thread safe.
+		
+
+0.30 DECEMBER 2009 (Build 116)
+	1.	Removed the "END" label from the end of the Event list.  This is more consistent with normal
+		table views which simply end.
+		
+0.31 JANUARY 2010 (Build ??)
+	1.	Updated application icons with new artwork from Emily.
+	
+	
+0.50 JANUARY 2010 (Internal release only)  PUSH NOTIFICATION BRANCH
+	1.	Implemented push notification registration in Transient_EventsAppDelegate.
+	2.	Send POST request for notifications to server at LSST.
+	3.	Implemented a blinking ALERT image which can be used for PUSH alerts.
+	4.  Added POST server notification to applicationWillTerminate so that any changes made during 
+		the use of the program are sent to the server.
+	5.	Changed device token to BigEndien.
+	6.	Credits in about window now automatically scrolls through the credit list.  
+	7.	Tested and debugged behavior of alerts for cases when the program is running and not running using test software.
+	8.	Updated Variable and Other icons
+	9.	Corrected spelling of satellite in the location view push buttons.
+	10.	Refactored LocationSettingsViewController
+	11. Fixed bug where device ID string sent the 5 chunk twice in both the 5th and 6th positions.
+	12. Increased size of string buffer to handle POST string in AppDelegate and in EventListController.  Changed from 500 bytes to 1500bytes
+	13. Updated Help files.
+	14. Changed the event list selection page.  The app now checks and if no events are selected the user is warned that this is not allowed
+		and the changes are not saved.  
+	15. Changed size of string buffer in item 12 to be dynamically allocated to the required size.
+	16. Updated Event List and Event Detail views to new graphic look.  Also upated all navigation bars to new color.
+	17. Update Most of Settings with new graphic look.
+	18. Update remainder of settings, location list, Bookmark list and bookmark detail with lastest look.  All graphics are
+		now complete and ready to be reviewed.
+	19. Fixed bug where background image would not display on the event list views - capitalization matters on device, not on simulator!
+	20. Changed Big event images to jpg to save space.
+	21. Added skyalert logo.
+	22. Changed "Alerts" to "Notifications"
+	23. Update all help files with new formatting
+	24. Added background image to help pages.
+	25. Checked for memory leaks.  Only leaks found were related to the Apple SDK. URL cache policy in EventListController
+		was set to possibly help with one.
+
+0.51 FEBRUARY 2010 (Build 162) PUSH NOTIFICATION BRANCH
+	1.	Fixed bug where push notifications were not being updated upon quit of application.
+	2.	Updated notification sound
+	
+0.52 FEBRUARY 2010 (Build 166) PUSH NOTIFICATION BRANCH
+	1.  Turned off all (I hope) logging statements exept those which report errors.
+	2.	Fixed a bug in the Bookmark detail view which prevented the background image from rendering.
+		
+0.53 MARCH 2010 (Build 166) PUSH NOTIFICATION BRANCH
+	1.	Changed tinting of map type selection on location screen to improve selected map type visibility.
+	2.	Modified location button to make it easier to see when it has been activated.
+	
+0.54 MARCH 2010 (Build ???) PUSH NOTIFICATION BRANCH
+	1.  Added email links for help and feature requests to the help screens.
+	2.	Touching the LSST Logo on the About screen takes you to the LSST web site.
+	3.	Added kNotificationServer key to notification registration request.
+	
+0.55 MARCH 2010 (Build 175) PUSH NOTIFICATION BRANCH
+	1.	Added maxAge key to push registration
+	2.  Developer versions of the program now have the About page version label as "Devel Vers." "Debug Vers." 
+		(simulator only), "AdHoc Vers." or "Version" (Release)
+		
+1.00 MARCH 30, 2010 (Build 184) PUSH NOTIFICATION BRANCH
+	1.	Release to iTunes Store
+
+1.01 MAY 4,2010 (Build 193)
+	1.  Started to add CRTS2 stream.  Added it to the request and tested against Caltech server.
+		Still need to modify code to add logos to detail screen and make sure alerts work.
+	2.  Completed adding CRTS2 stream.  Changes to:
+		EventListController - added CRTS2 to POST request
+		EventDetailController - added test for CRTS2 to put up logos at bottom of screen - still using just CRTS logo
+		BookmarkDetailController - added test for CRTS2 to put up logos at bottom of screen - still using just CRTS logo
+		TransientEventAppDelegate - Added CRTS2 to streamNames being registered for notifications.
+	3.	Fixed a bug with the foward an back buttons in the web views - they were wired incorrectly.
+	4.	Updated the Event List help information to explain what to do if no events are displayed and to explain why the telescopes
+		do not operate every night.
+	5.	Added a pop up alert for the first run to explain that the telescopes do not run every day.
+	6.	Increased Default event age to 60 days.
+	
+1.02 
+	1.	Add CRTS3 stream.
+	2.  Hacked search bar in LocationListController to move cancel button out from under table index.  This was done buy adding
+		a UINavigationBar as the main bar view and adding the UISearchBar with a narrower width as a subview.  Not pretty
+		but it works.
+		
+1.03	Survey Branch
+	1.	Update project for xCode 3.2.3
+	2.	Add survey questions
+	3.	Add POSTing to LSST server URL.
+	4.	Added flattening to survey responses. 
+	5.	Updated the survey graphics.
+	
+1.04 Survey Branch
+	1.	Fixed DEC formatting bug in detail view where minutes were always 00.
+	
+1.05 Survey Branch
+	1.	Added applicationWillResignActive: method to app delegate to save managed object state and to 
+		send any changes to the push server.  This was added becasue of the fact that in iOS4 applications
+		do not necessarily quit when changing to other applications.
+	

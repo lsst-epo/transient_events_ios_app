@@ -1,0 +1,15 @@
+{
+	"aps":{
+			"alert" : "<stream> finds <eventType> at <RA>, <Declination>.  Time of discovery: <time>UT.",
+			"badge" : 1,
+			"sound" : "incoming.wav"
+	},
+	"eventID" : "<eventID>"
+}
+
+NOTES:
+
+1.  Max 256 characters for entire payload
+2.	Strip all newline and whitespace characters to keep the payload small
+
+			

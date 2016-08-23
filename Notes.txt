@@ -1,0 +1,19 @@
+1.  Location button will need to be created.  There is no Apple supplied button.  Everyone must just copy
+	the existing button. 
+4.	How to display finder chart
+	a)  Add a Finder Chart button to event detail view - not very nice from a UI perspective
+	b)	Show finder chart if user rotates device to landscape orientation. - OK from usability - no hint that this is how it works
+
+Link to Sky Alert query form
+
+http://www.skyalert.org/static/jsonQueryForm.html
+
+Auto Build Incrementing
+
+http://iphonedevelopment.blogspot.com/2009/04/automated-commit-and-build-number.html
+
+Apparently UIImage and graphics contexts are not thread safe.  It is OK to create a UIImage in a separate thread but if you try to 
+resize it it may cause an EXC_BAD_ACCESS error or UIImage drawInRect may return a null image (sometimes).  Here is a hint how to get around
+this problem
+
+http://www.codingventures.com/2009/08/image-manipulation-and-drawing-using-quartz-in-the-background-threads/

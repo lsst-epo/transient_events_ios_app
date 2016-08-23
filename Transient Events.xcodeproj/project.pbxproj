@@ -1,0 +1,1274 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 45;
+	objects = {
+
+/* Begin PBXAggregateTarget section */
+		0374ED5E108FAB80007B314F /* IncrementBuildNumber */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 0374ED6C108FABBA007B314F /* Build configuration list for PBXAggregateTarget "IncrementBuildNumber" */;
+			buildPhases = (
+				037C8ADF10908EC200B09EDE /* Touch About file */,
+				0374ED5D108FAB80007B314F /* Increment Build Number */,
+			);
+			dependencies = (
+			);
+			name = IncrementBuildNumber;
+			productName = IncrementBuildNumber;
+		};
+		03DF264E10BDDCAD00540B04 /* Build Documentation */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 03DF265410BDDCD400540B04 /* Build configuration list for PBXAggregateTarget "Build Documentation" */;
+			buildPhases = (
+				03DF264D10BDDCAD00540B04 /* ShellScript */,
+			);
+			dependencies = (
+			);
+			name = "Build Documentation";
+			productName = Untitled;
+		};
+/* End PBXAggregateTarget section */
+
+/* Begin PBXBuildFile section */
+		0304D96E10890CC2001D942D /* Transient.m in Sources */ = {isa = PBXBuildFile; fileRef = 0304D96D10890CC2001D942D /* Transient.m */; };
+		0330915F10973EDE0016EC0D /* EventListHelp.html in Resources */ = {isa = PBXBuildFile; fileRef = 0330915E10973EDE0016EC0D /* EventListHelp.html */; };
+		0330916310973EFD0016EC0D /* BookmarkListHelp.html in Resources */ = {isa = PBXBuildFile; fileRef = 0330916210973EFD0016EC0D /* BookmarkListHelp.html */; };
+		0330916910973F2F0016EC0D /* SettingsHelp.html in Resources */ = {isa = PBXBuildFile; fileRef = 0330916810973F2F0016EC0D /* SettingsHelp.html */; };
+		033CC77B10879A0A00FF3BDC /* BookmarkDetailView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 033CC77A10879A0A00FF3BDC /* BookmarkDetailView.xib */; };
+		03471854106A3E27001EDCDB /* Entitlements.plist in Resources */ = {isa = PBXBuildFile; fileRef = 03471853106A3E27001EDCDB /* Entitlements.plist */; };
+		03471B36106AA7A4001EDCDB /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03471B35106AA7A4001EDCDB /* MessageUI.framework */; };
+		03471B47106AB116001EDCDB /* FinderImageView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 03471B46106AB116001EDCDB /* FinderImageView.xib */; };
+		03584CD610513EA9005A0EF0 /* MagnitudeLimitView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 03584CD510513EA9005A0EF0 /* MagnitudeLimitView.xib */; };
+		03584CDC1051413F005A0EF0 /* MagnitudeLimitViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 03584CDB1051413F005A0EF0 /* MagnitudeLimitViewController.m */; };
+		03584D5710515096005A0EF0 /* EventAgeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 03584D5510515096005A0EF0 /* EventAgeViewController.m */; };
+		03584D5810515096005A0EF0 /* EventAgeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 03584D5610515096005A0EF0 /* EventAgeViewController.xib */; };
+		03584E6F10516B18005A0EF0 /* RAFormat.plist in Resources */ = {isa = PBXBuildFile; fileRef = 03584E6E10516B18005A0EF0 /* RAFormat.plist */; };
+		03584E7810516C57005A0EF0 /* RAFormatListController.m in Sources */ = {isa = PBXBuildFile; fileRef = 03584E7710516C57005A0EF0 /* RAFormatListController.m */; };
+		0363DDF911DE63620053633A /* httpFlattening.m in Sources */ = {isa = PBXBuildFile; fileRef = 0363DDF811DE63620053633A /* httpFlattening.m */; };
+		036A849A10C93F7B00AB79A5 /* Supernova.png in Resources */ = {isa = PBXBuildFile; fileRef = 036A849910C93F7B00AB79A5 /* Supernova.png */; };
+		036A858B10C94B6100AB79A5 /* Asteroid.png in Resources */ = {isa = PBXBuildFile; fileRef = 036A857810C94B6100AB79A5 /* Asteroid.png */; };
+		036A858C10C94B6100AB79A5 /* Blazar Outburst.png in Resources */ = {isa = PBXBuildFile; fileRef = 036A857910C94B6100AB79A5 /* Blazar Outburst.png */; };
+		036A858D10C94B6100AB79A5 /* Cataclysmic Variable.png in Resources */ = {isa = PBXBuildFile; fileRef = 036A857A10C94B6100AB79A5 /* Cataclysmic Variable.png */; };
+		036A858E10C94B6100AB79A5 /* Comet.png in Resources */ = {isa = PBXBuildFile; fileRef = 036A857B10C94B6100AB79A5 /* Comet.png */; };
+		036A858F10C94B6100AB79A5 /* Eclipsing Variable.png in Resources */ = {isa = PBXBuildFile; fileRef = 036A857C10C94B6100AB79A5 /* Eclipsing Variable.png */; };
+		036A859110C94B6100AB79A5 /* Gamma Ray Burst Afterglow.png in Resources */ = {isa = PBXBuildFile; fileRef = 036A857E10C94B6100AB79A5 /* Gamma Ray Burst Afterglow.png */; };
+		036A859210C94B6100AB79A5 /* High Proper Motion Star.png in Resources */ = {isa = PBXBuildFile; fileRef = 036A857F10C94B6100AB79A5 /* High Proper Motion Star.png */; };
+		036A859310C94B6100AB79A5 /* Microlensing.png in Resources */ = {isa = PBXBuildFile; fileRef = 036A858010C94B6100AB79A5 /* Microlensing.png */; };
+		036A859410C94B6100AB79A5 /* Mira Variable.png in Resources */ = {isa = PBXBuildFile; fileRef = 036A858110C94B6100AB79A5 /* Mira Variable.png */; };
+		036A859510C94B6100AB79A5 /* Nova.png in Resources */ = {isa = PBXBuildFile; fileRef = 036A858210C94B6100AB79A5 /* Nova.png */; };
+		036A859610C94B6100AB79A5 /* Other.png in Resources */ = {isa = PBXBuildFile; fileRef = 036A858310C94B6100AB79A5 /* Other.png */; };
+		036A859710C94B6100AB79A5 /* Planetary Microlensing.png in Resources */ = {isa = PBXBuildFile; fileRef = 036A858410C94B6100AB79A5 /* Planetary Microlensing.png */; };
+		036A859810C94B6100AB79A5 /* RRLyrae Variable.png in Resources */ = {isa = PBXBuildFile; fileRef = 036A858510C94B6100AB79A5 /* RRLyrae Variable.png */; };
+		036A859910C94B6100AB79A5 /* Tidal Disruption Flare.png in Resources */ = {isa = PBXBuildFile; fileRef = 036A858610C94B6100AB79A5 /* Tidal Disruption Flare.png */; };
+		036A859A10C94B6100AB79A5 /* Unknown.png in Resources */ = {isa = PBXBuildFile; fileRef = 036A858710C94B6100AB79A5 /* Unknown.png */; };
+		036A859B10C94B6100AB79A5 /* UV Ceti Variable.png in Resources */ = {isa = PBXBuildFile; fileRef = 036A858810C94B6100AB79A5 /* UV Ceti Variable.png */; };
+		036A859C10C94B6100AB79A5 /* Variable.png in Resources */ = {isa = PBXBuildFile; fileRef = 036A858910C94B6100AB79A5 /* Variable.png */; };
+		036B548510501B3E007836C7 /* PinAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = 036B548410501B3E007836C7 /* PinAnnotation.m */; };
+		037099B710737A6C002D91A0 /* ImageLoadingOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 037099B610737A6C002D91A0 /* ImageLoadingOperation.m */; };
+		03709A6410738AB5002D91A0 /* NoImage.png in Resources */ = {isa = PBXBuildFile; fileRef = 03709A6310738AB5002D91A0 /* NoImage.png */; };
+		03709B6C1073A53E002D91A0 /* FinderImageWebView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 03709B6B1073A53E002D91A0 /* FinderImageWebView.xib */; };
+		03709B731073A5CF002D91A0 /* FinderImageWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 03709B721073A5CF002D91A0 /* FinderImageWebViewController.m */; };
+		03709BF41073AC64002D91A0 /* BackButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 03709BF21073AC64002D91A0 /* BackButton.png */; };
+		03709BF51073AC64002D91A0 /* ForwardButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 03709BF31073AC64002D91A0 /* ForwardButton.png */; };
+		037CBE4D11DB6D3300709F26 /* surveyIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = 037CBE4C11DB6D3300709F26 /* surveyIcon.png */; };
+		0387846F107BC7B600610E90 /* AboutTransientEventsView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0387846D107BC7B600610E90 /* AboutTransientEventsView.m */; };
+		03878470107BC7B600610E90 /* AboutTransientEventsView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0387846E107BC7B600610E90 /* AboutTransientEventsView.xib */; };
+		038784DC107BD24D00610E90 /* Credits.html in Resources */ = {isa = PBXBuildFile; fileRef = 038784DB107BD24D00610E90 /* Credits.html */; };
+		03881F61104EB04F008651C8 /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 03881F60104EB04F008651C8 /* Icon.png */; };
+		03881FCA104EBFA3008651C8 /* SettingsTitles.plist in Resources */ = {isa = PBXBuildFile; fileRef = 03881FC9104EBFA3008651C8 /* SettingsTitles.plist */; };
+		0388200F104EC5DE008651C8 /* GroupTitles.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0388200E104EC5DE008651C8 /* GroupTitles.plist */; };
+		0388229D104EFB5C008651C8 /* LocationView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0388229C104EFB5C008651C8 /* LocationView.xib */; };
+		038822A5104EFC6D008651C8 /* LocationSettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 038822A4104EFC6D008651C8 /* LocationSettingViewController.m */; };
+		038822E4104EFCB0008651C8 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 038822E3104EFCB0008651C8 /* MapKit.framework */; };
+		038822F0104F0070008651C8 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 038822EF104F0070008651C8 /* CoreLocation.framework */; };
+		0388CE6A107CF487003163F8 /* LocationButtonOn.png in Resources */ = {isa = PBXBuildFile; fileRef = 0388CE68107CF487003163F8 /* LocationButtonOn.png */; };
+		0388CE6B107CF487003163F8 /* LocationButtonOff.png in Resources */ = {isa = PBXBuildFile; fileRef = 0388CE69107CF487003163F8 /* LocationButtonOff.png */; };
+		0388CE77107D02C6003163F8 /* LocationButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 0388CE76107D02C6003163F8 /* LocationButton.png */; };
+		0388CEDA107D0D04003163F8 /* MinAltitudeView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0388CED9107D0D04003163F8 /* MinAltitudeView.xib */; };
+		0388CEE1107D0D84003163F8 /* MinimumAltitudeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0388CEDF107D0D84003163F8 /* MinimumAltitudeViewController.m */; };
+		03902324107E37C700320829 /* LSSTBanner.png in Resources */ = {isa = PBXBuildFile; fileRef = 03902323107E37C700320829 /* LSSTBanner.png */; };
+		03902426107E79D100320829 /* Locations.m in Sources */ = {isa = PBXBuildFile; fileRef = 03902425107E79D100320829 /* Locations.m */; };
+		039024AA107E85D500320829 /* LocationListController.m in Sources */ = {isa = PBXBuildFile; fileRef = 039024A9107E85D500320829 /* LocationListController.m */; };
+		0391E3A41080B12800A62B9F /* Locations1000.txt in Resources */ = {isa = PBXBuildFile; fileRef = 0391E3A31080B12800A62B9F /* Locations1000.txt */; };
+		039FD2001072793B003184BC /* NSObject+SBJSON.m in Sources */ = {isa = PBXBuildFile; fileRef = 039FD1F51072793B003184BC /* NSObject+SBJSON.m */; };
+		039FD2011072793B003184BC /* NSString+SBJSON.m in Sources */ = {isa = PBXBuildFile; fileRef = 039FD1F71072793B003184BC /* NSString+SBJSON.m */; };
+		039FD2021072793B003184BC /* SBJSON.m in Sources */ = {isa = PBXBuildFile; fileRef = 039FD1F91072793B003184BC /* SBJSON.m */; };
+		039FD2031072793B003184BC /* SBJsonBase.m in Sources */ = {isa = PBXBuildFile; fileRef = 039FD1FB1072793B003184BC /* SBJsonBase.m */; };
+		039FD2041072793B003184BC /* SBJsonParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 039FD1FD1072793B003184BC /* SBJsonParser.m */; };
+		039FD2051072793B003184BC /* SBJsonWriter.m in Sources */ = {isa = PBXBuildFile; fileRef = 039FD1FF1072793B003184BC /* SBJsonWriter.m */; };
+		03A71BA5102C8F540056AF1C /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03A71BA4102C8F540056AF1C /* CoreLocation.framework */; };
+		03A71BAE102C90000056AF1C /* EventListController.m in Sources */ = {isa = PBXBuildFile; fileRef = 03A71BAD102C90000056AF1C /* EventListController.m */; };
+		03A71C0B102CA7100056AF1C /* SettingsListController.m in Sources */ = {isa = PBXBuildFile; fileRef = 03A71C0A102CA7100056AF1C /* SettingsListController.m */; };
+		03A71C0F102CA83D0056AF1C /* Gear.png in Resources */ = {isa = PBXBuildFile; fileRef = 03A71C0E102CA83D0056AF1C /* Gear.png */; };
+		03A71CC3102CAE0A0056AF1C /* EventIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = 03A71CC2102CAE0A0056AF1C /* EventIcon.png */; };
+		03A71CD4102CB7300056AF1C /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 03A71CD3102CB7300056AF1C /* Default.png */; };
+		03A71CE3102CB79B0056AF1C /* BookmarkListController.m in Sources */ = {isa = PBXBuildFile; fileRef = 03A71CE2102CB79B0056AF1C /* BookmarkListController.m */; };
+		03AD194810FE5F7900F3554D /* AlertIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = 03AD194710FE5F7900F3554D /* AlertIcon.png */; };
+		03AD19C210FE725200F3554D /* incoming.wav in Resources */ = {isa = PBXBuildFile; fileRef = 03AD19C110FE725200F3554D /* incoming.wav */; };
+		03AD19E310FE734100F3554D /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03AD19E210FE734100F3554D /* AudioToolbox.framework */; };
+		03B1F82A1121E794004DAA56 /* VariableBig.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 03B1F8171121E794004DAA56 /* VariableBig.jpg */; };
+		03B1F82B1121E794004DAA56 /* UnknownBig.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 03B1F8181121E794004DAA56 /* UnknownBig.jpg */; };
+		03B1F82C1121E794004DAA56 /* Tidal Distuption FlareBig.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 03B1F8191121E794004DAA56 /* Tidal Distuption FlareBig.jpg */; };
+		03B1F82D1121E794004DAA56 /* SupernovaBig.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 03B1F81A1121E794004DAA56 /* SupernovaBig.jpg */; };
+		03B1F82E1121E794004DAA56 /* RRLyrae VariableBig.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 03B1F81B1121E794004DAA56 /* RRLyrae VariableBig.jpg */; };
+		03B1F82F1121E794004DAA56 /* Planetary MicrolensingBig.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 03B1F81C1121E794004DAA56 /* Planetary MicrolensingBig.jpg */; };
+		03B1F8301121E794004DAA56 /* OtherBig.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 03B1F81D1121E794004DAA56 /* OtherBig.jpg */; };
+		03B1F8311121E794004DAA56 /* NovaBig.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 03B1F81E1121E794004DAA56 /* NovaBig.jpg */; };
+		03B1F8321121E794004DAA56 /* Mira VariableBig.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 03B1F81F1121E794004DAA56 /* Mira VariableBig.jpg */; };
+		03B1F8331121E794004DAA56 /* High Proper Motion StarBig.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 03B1F8201121E794004DAA56 /* High Proper Motion StarBig.jpg */; };
+		03B1F8341121E794004DAA56 /* Gamma Ray Burst AfterglowBig.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 03B1F8211121E794004DAA56 /* Gamma Ray Burst AfterglowBig.jpg */; };
+		03B1F8351121E794004DAA56 /* Eclipsing VariableBig.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 03B1F8221121E794004DAA56 /* Eclipsing VariableBig.jpg */; };
+		03B1F8361121E794004DAA56 /* CometBig.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 03B1F8231121E794004DAA56 /* CometBig.jpg */; };
+		03B1F8371121E794004DAA56 /* Cataclysmic VariableBig.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 03B1F8241121E794004DAA56 /* Cataclysmic VariableBig.jpg */; };
+		03B1F8381121E794004DAA56 /* Blazar OutburstBig.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 03B1F8251121E794004DAA56 /* Blazar OutburstBig.jpg */; };
+		03B1F8391121E794004DAA56 /* AsteroidBig.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 03B1F8261121E794004DAA56 /* AsteroidBig.jpg */; };
+		03B1F83A1121E794004DAA56 /* UV Ceti VariableBig.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 03B1F8271121E794004DAA56 /* UV Ceti VariableBig.jpg */; };
+		03B1F83B1121E794004DAA56 /* MicrolensingBig.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 03B1F8281121E794004DAA56 /* MicrolensingBig.jpg */; };
+		03B1F83C1121E794004DAA56 /* Active Galactic Nucleus VariabilityBig.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 03B1F8291121E794004DAA56 /* Active Galactic Nucleus VariabilityBig.jpg */; };
+		03B1F85B1121E8EF004DAA56 /* skyalert.png in Resources */ = {isa = PBXBuildFile; fileRef = 03B1F85A1121E8EF004DAA56 /* skyalert.png */; };
+		03B9FD40107D1EFD00A7CB72 /* AltAzComputation.m in Sources */ = {isa = PBXBuildFile; fileRef = 03B9FD3F107D1EFD00A7CB72 /* AltAzComputation.m */; };
+		03BD74FC111761F10013F235 /* EventListBackgroundView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 03BD74FA111761F10013F235 /* EventListBackgroundView.xib */; };
+		03BD75C41117749A0013F235 /* BookmarkDetailController.m in Sources */ = {isa = PBXBuildFile; fileRef = 03BD75C31117749A0013F235 /* BookmarkDetailController.m */; };
+		03BD75D7111775400013F235 /* ELicon.png in Resources */ = {isa = PBXBuildFile; fileRef = 03BD75D3111775400013F235 /* ELicon.png */; };
+		03BD75D8111775400013F235 /* LSSTClogo.png in Resources */ = {isa = PBXBuildFile; fileRef = 03BD75D4111775400013F235 /* LSSTClogo.png */; };
+		03BD75D9111775400013F235 /* BGStar.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 03BD75D5111775400013F235 /* BGStar.jpg */; };
+		03BD75DA111775400013F235 /* BGtelescope.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 03BD75D6111775400013F235 /* BGtelescope.jpg */; };
+		03BD75DD1117755A0013F235 /* CSS(60px).jpg in Resources */ = {isa = PBXBuildFile; fileRef = 03BD75DB1117755A0013F235 /* CSS(60px).jpg */; };
+		03BD75DE1117755A0013F235 /* CRTS(60px).jpg in Resources */ = {isa = PBXBuildFile; fileRef = 03BD75DC1117755A0013F235 /* CRTS(60px).jpg */; };
+		03BE73A4108CD30E001D23EA /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 03BE73A3108CD30E001D23EA /* Settings.bundle */; };
+		03C98D801030752800396439 /* EventDetailView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 03C98D7F1030752800396439 /* EventDetailView.xib */; };
+		03C98D851030799100396439 /* sampleimage.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 03C98D841030799100396439 /* sampleimage.jpg */; };
+		03E148F710986212002C4C0A /* EventDetailController.m in Sources */ = {isa = PBXBuildFile; fileRef = 03E148F610986212002C4C0A /* EventDetailController.m */; };
+		03F1B7B21090EBFB0012C7D6 /* MissingImage.png in Resources */ = {isa = PBXBuildFile; fileRef = 03F1B7B11090EBFB0012C7D6 /* MissingImage.png */; };
+		03F2CC3110C9E1B700D773DB /* Active Galactic Nucleus Variability.png in Resources */ = {isa = PBXBuildFile; fileRef = 03590FA910C9C41700D45180 /* Active Galactic Nucleus Variability.png */; };
+		03F3FBDF1051A110009575B6 /* EventTypesListController.m in Sources */ = {isa = PBXBuildFile; fileRef = 03F3FBDE1051A110009575B6 /* EventTypesListController.m */; };
+		03F3FBFC1051A5F3009575B6 /* EventTypeDictionary.plist in Resources */ = {isa = PBXBuildFile; fileRef = 03F3FBFB1051A5F3009575B6 /* EventTypeDictionary.plist */; };
+		1D3623260D0F684500981E51 /* Transient_EventsAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D3623250D0F684500981E51 /* Transient_EventsAppDelegate.m */; };
+		1D60589B0D05DD56006BFB54 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; };
+		1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D30AB110D05D00D00671497 /* Foundation.framework */; };
+		1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DF5F4DF0D08C38300B7A737 /* UIKit.framework */; };
+		288765A50DF7441C002DB57D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 288765A40DF7441C002DB57D /* CoreGraphics.framework */; };
+		28AD733F0D9D9553002E5188 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 28AD733E0D9D9553002E5188 /* MainWindow.xib */; };
+		28C3AD8A0F43EF2300507BA6 /* Transient_Events.xcdatamodel in Sources */ = {isa = PBXBuildFile; fileRef = 28C3AD890F43EF2300507BA6 /* Transient_Events.xcdatamodel */; };
+		28D801B40F44B63D00FB423F /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 28D801B30F44B63D00FB423F /* CoreData.framework */; };
+		3215294E11C923FC00905BEA /* SurveyQuestion1ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3215294C11C923FC00905BEA /* SurveyQuestion1ViewController.m */; };
+		3215294F11C923FC00905BEA /* SurveyQuestion1ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3215294D11C923FC00905BEA /* SurveyQuestion1ViewController.xib */; };
+		32152B2111C9688000905BEA /* SurveyQuestion2ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 32152B1F11C9688000905BEA /* SurveyQuestion2ViewController.m */; };
+		32152B5111C969D400905BEA /* SurveyQuestion2ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 32152B5011C969D400905BEA /* SurveyQuestion2ViewController.xib */; };
+		32152BF311C97A0300905BEA /* SurveyQuestion3ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 32152BF111C97A0300905BEA /* SurveyQuestion3ViewController.m */; };
+		32152BF411C97A0300905BEA /* SurveyQuestion3ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 32152BF211C97A0300905BEA /* SurveyQuestion3ViewController.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		0374ED9D108FB08A007B314F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 29B97313FDCFA39411CA2CEA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0374ED5E108FAB80007B314F;
+			remoteInfo = IncrementBuildNumber;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0304D96C10890CC2001D942D /* Transient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Transient.h; sourceTree = "<group>"; };
+		0304D96D10890CC2001D942D /* Transient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Transient.m; sourceTree = "<group>"; };
+		0330915E10973EDE0016EC0D /* EventListHelp.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = EventListHelp.html; sourceTree = "<group>"; };
+		0330916210973EFD0016EC0D /* BookmarkListHelp.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = BookmarkListHelp.html; sourceTree = "<group>"; };
+		0330916810973F2F0016EC0D /* SettingsHelp.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = SettingsHelp.html; sourceTree = "<group>"; };
+		033092AA109772330016EC0D /* TableGradient.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TableGradient.png; sourceTree = "<group>"; };
+		0330933810977DF10016EC0D /* Background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Background.png; sourceTree = "<group>"; };
+		03309398109789FB0016EC0D /* DarkBackground.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = DarkBackground.png; sourceTree = "<group>"; };
+		033CC77A10879A0A00FF3BDC /* BookmarkDetailView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BookmarkDetailView.xib; sourceTree = "<group>"; };
+		0341824810C9EFFB002562D8 /* Galaxy.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Galaxy.png; sourceTree = "<group>"; };
+		034384F31117A0B300635A1E /* Mira VariableBig.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Mira VariableBig.png"; sourceTree = "<group>"; };
+		0343850C1117A16500635A1E /* CometBig.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = CometBig.png; sourceTree = "<group>"; };
+		0343850D1117A16500635A1E /* Eclipsing VariableBig.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Eclipsing VariableBig.png"; sourceTree = "<group>"; };
+		0343850E1117A16500635A1E /* Gamma Ray Burst AfterglowBig.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Gamma Ray Burst AfterglowBig.png"; sourceTree = "<group>"; };
+		034385171117A17B00635A1E /* NovaBig.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = NovaBig.png; sourceTree = "<group>"; };
+		034385181117A17B00635A1E /* UV Ceti VariableBig.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "UV Ceti VariableBig.png"; sourceTree = "<group>"; };
+		03471853106A3E27001EDCDB /* Entitlements.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Entitlements.plist; sourceTree = "<group>"; };
+		03471909106A5847001EDCDB /* image5.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = image5.jpg; sourceTree = "<group>"; };
+		0347190A106A5847001EDCDB /* image4.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = image4.jpg; sourceTree = "<group>"; };
+		0347190B106A5847001EDCDB /* image3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = image3.jpg; sourceTree = "<group>"; };
+		0347190C106A5847001EDCDB /* image2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = image2.jpg; sourceTree = "<group>"; };
+		0347190D106A5847001EDCDB /* image1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = image1.jpg; sourceTree = "<group>"; };
+		03471B35106AA7A4001EDCDB /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
+		03471B42106AAF8B001EDCDB /* Finder.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = Finder.gif; sourceTree = "<group>"; };
+		03471B46106AB116001EDCDB /* FinderImageView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FinderImageView.xib; sourceTree = "<group>"; };
+		03584CD510513EA9005A0EF0 /* MagnitudeLimitView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MagnitudeLimitView.xib; sourceTree = "<group>"; };
+		03584CDA1051413F005A0EF0 /* MagnitudeLimitViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MagnitudeLimitViewController.h; sourceTree = "<group>"; };
+		03584CDB1051413F005A0EF0 /* MagnitudeLimitViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MagnitudeLimitViewController.m; sourceTree = "<group>"; };
+		03584D5410515096005A0EF0 /* EventAgeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EventAgeViewController.h; sourceTree = "<group>"; };
+		03584D5510515096005A0EF0 /* EventAgeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EventAgeViewController.m; sourceTree = "<group>"; };
+		03584D5610515096005A0EF0 /* EventAgeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = EventAgeViewController.xib; path = Classes/EventAgeViewController.xib; sourceTree = "<group>"; };
+		03584E6E10516B18005A0EF0 /* RAFormat.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = RAFormat.plist; sourceTree = "<group>"; };
+		03584E7610516C57005A0EF0 /* RAFormatListController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RAFormatListController.h; sourceTree = "<group>"; };
+		03584E7710516C57005A0EF0 /* RAFormatListController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RAFormatListController.m; sourceTree = "<group>"; };
+		03590FA910C9C41700D45180 /* Active Galactic Nucleus Variability.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Active Galactic Nucleus Variability.png"; sourceTree = "<group>"; };
+		0363DDF711DE63620053633A /* httpFlattening.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = httpFlattening.h; path = ../httpFlattening.h; sourceTree = "<group>"; };
+		0363DDF811DE63620053633A /* httpFlattening.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = httpFlattening.m; path = ../httpFlattening.m; sourceTree = "<group>"; };
+		036A259D107CE08F0016B241 /* IncrementVersion */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = IncrementVersion; sourceTree = "<group>"; };
+		036A849910C93F7B00AB79A5 /* Supernova.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Supernova.png; sourceTree = "<group>"; };
+		036A857810C94B6100AB79A5 /* Asteroid.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Asteroid.png; sourceTree = "<group>"; };
+		036A857910C94B6100AB79A5 /* Blazar Outburst.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Blazar Outburst.png"; sourceTree = "<group>"; };
+		036A857A10C94B6100AB79A5 /* Cataclysmic Variable.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Cataclysmic Variable.png"; sourceTree = "<group>"; };
+		036A857B10C94B6100AB79A5 /* Comet.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Comet.png; sourceTree = "<group>"; };
+		036A857C10C94B6100AB79A5 /* Eclipsing Variable.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Eclipsing Variable.png"; sourceTree = "<group>"; };
+		036A857E10C94B6100AB79A5 /* Gamma Ray Burst Afterglow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Gamma Ray Burst Afterglow.png"; sourceTree = "<group>"; };
+		036A857F10C94B6100AB79A5 /* High Proper Motion Star.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "High Proper Motion Star.png"; sourceTree = "<group>"; };
+		036A858010C94B6100AB79A5 /* Microlensing.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Microlensing.png; sourceTree = "<group>"; };
+		036A858110C94B6100AB79A5 /* Mira Variable.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Mira Variable.png"; sourceTree = "<group>"; };
+		036A858210C94B6100AB79A5 /* Nova.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Nova.png; sourceTree = "<group>"; };
+		036A858310C94B6100AB79A5 /* Other.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Other.png; sourceTree = "<group>"; };
+		036A858410C94B6100AB79A5 /* Planetary Microlensing.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Planetary Microlensing.png"; sourceTree = "<group>"; };
+		036A858510C94B6100AB79A5 /* RRLyrae Variable.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "RRLyrae Variable.png"; sourceTree = "<group>"; };
+		036A858610C94B6100AB79A5 /* Tidal Disruption Flare.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Tidal Disruption Flare.png"; sourceTree = "<group>"; };
+		036A858710C94B6100AB79A5 /* Unknown.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Unknown.png; sourceTree = "<group>"; };
+		036A858810C94B6100AB79A5 /* UV Ceti Variable.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "UV Ceti Variable.png"; sourceTree = "<group>"; };
+		036A858910C94B6100AB79A5 /* Variable.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Variable.png; sourceTree = "<group>"; };
+		036B548310501B3E007836C7 /* PinAnnotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PinAnnotation.h; sourceTree = "<group>"; };
+		036B548410501B3E007836C7 /* PinAnnotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PinAnnotation.m; sourceTree = "<group>"; };
+		037099B510737A6C002D91A0 /* ImageLoadingOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageLoadingOperation.h; sourceTree = "<group>"; };
+		037099B610737A6C002D91A0 /* ImageLoadingOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageLoadingOperation.m; sourceTree = "<group>"; };
+		03709A6310738AB5002D91A0 /* NoImage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = NoImage.png; sourceTree = "<group>"; };
+		03709B6B1073A53E002D91A0 /* FinderImageWebView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FinderImageWebView.xib; sourceTree = "<group>"; };
+		03709B711073A5CF002D91A0 /* FinderImageWebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FinderImageWebViewController.h; sourceTree = "<group>"; };
+		03709B721073A5CF002D91A0 /* FinderImageWebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FinderImageWebViewController.m; sourceTree = "<group>"; };
+		03709BF21073AC64002D91A0 /* BackButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BackButton.png; sourceTree = "<group>"; };
+		03709BF31073AC64002D91A0 /* ForwardButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ForwardButton.png; sourceTree = "<group>"; };
+		037CBE4C11DB6D3300709F26 /* surveyIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = surveyIcon.png; sourceTree = "<group>"; };
+		038244801122EC2500DF2E53 /* doxygen.config */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = doxygen.config; sourceTree = "<group>"; };
+		0387846C107BC7B600610E90 /* AboutTransientEventsView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AboutTransientEventsView.h; sourceTree = "<group>"; };
+		0387846D107BC7B600610E90 /* AboutTransientEventsView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AboutTransientEventsView.m; sourceTree = "<group>"; };
+		0387846E107BC7B600610E90 /* AboutTransientEventsView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = AboutTransientEventsView.xib; path = Classes/AboutTransientEventsView.xib; sourceTree = "<group>"; };
+		038784DB107BD24D00610E90 /* Credits.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = Credits.html; sourceTree = "<group>"; };
+		03881F60104EB04F008651C8 /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
+		03881FC9104EBFA3008651C8 /* SettingsTitles.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = SettingsTitles.plist; sourceTree = "<group>"; };
+		0388200E104EC5DE008651C8 /* GroupTitles.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = GroupTitles.plist; sourceTree = "<group>"; };
+		038820C6104EDA25008651C8 /* Constants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
+		0388229C104EFB5C008651C8 /* LocationView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LocationView.xib; sourceTree = "<group>"; };
+		038822A3104EFC6D008651C8 /* LocationSettingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LocationSettingViewController.h; sourceTree = "<group>"; };
+		038822A4104EFC6D008651C8 /* LocationSettingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LocationSettingViewController.m; sourceTree = "<group>"; };
+		038822E3104EFCB0008651C8 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		038822EF104F0070008651C8 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		0388CE68107CF487003163F8 /* LocationButtonOn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = LocationButtonOn.png; sourceTree = "<group>"; };
+		0388CE69107CF487003163F8 /* LocationButtonOff.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = LocationButtonOff.png; sourceTree = "<group>"; };
+		0388CE76107D02C6003163F8 /* LocationButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = LocationButton.png; sourceTree = "<group>"; };
+		0388CED9107D0D04003163F8 /* MinAltitudeView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MinAltitudeView.xib; sourceTree = "<group>"; };
+		0388CEDE107D0D84003163F8 /* MinimumAltitudeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MinimumAltitudeViewController.h; sourceTree = "<group>"; };
+		0388CEDF107D0D84003163F8 /* MinimumAltitudeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MinimumAltitudeViewController.m; sourceTree = "<group>"; };
+		0388CF45107D152B003163F8 /* Version History.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "Version History.txt"; sourceTree = "<group>"; };
+		03902323107E37C700320829 /* LSSTBanner.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = LSSTBanner.png; sourceTree = "<group>"; };
+		03902337107E37F500320829 /* LSSTBanner.psd */ = {isa = PBXFileReference; lastKnownFileType = file; path = LSSTBanner.psd; sourceTree = "<group>"; };
+		03902338107E37F500320829 /* LocationButton.psd */ = {isa = PBXFileReference; lastKnownFileType = file; path = LocationButton.psd; sourceTree = "<group>"; };
+		03902339107E37F500320829 /* NoImage.psd */ = {isa = PBXFileReference; lastKnownFileType = file; path = NoImage.psd; sourceTree = "<group>"; };
+		0390233A107E37F500320829 /* Icon.psd */ = {isa = PBXFileReference; lastKnownFileType = file; path = Icon.psd; sourceTree = "<group>"; };
+		0390233B107E37F500320829 /* Event.psd */ = {isa = PBXFileReference; lastKnownFileType = file; path = Event.psd; sourceTree = "<group>"; };
+		03902424107E79D100320829 /* Locations.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Locations.h; path = ../Locations.h; sourceTree = "<group>"; };
+		03902425107E79D100320829 /* Locations.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Locations.m; path = ../Locations.m; sourceTree = "<group>"; };
+		039024A8107E85D500320829 /* LocationListController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LocationListController.h; sourceTree = "<group>"; };
+		039024A9107E85D500320829 /* LocationListController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LocationListController.m; sourceTree = "<group>"; };
+		0391E3A31080B12800A62B9F /* Locations1000.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Locations1000.txt; sourceTree = "<group>"; };
+		039FD1F31072793B003184BC /* JSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSON.h; sourceTree = "<group>"; };
+		039FD1F41072793B003184BC /* NSObject+SBJSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+SBJSON.h"; sourceTree = "<group>"; };
+		039FD1F51072793B003184BC /* NSObject+SBJSON.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+SBJSON.m"; sourceTree = "<group>"; };
+		039FD1F61072793B003184BC /* NSString+SBJSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+SBJSON.h"; sourceTree = "<group>"; };
+		039FD1F71072793B003184BC /* NSString+SBJSON.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+SBJSON.m"; sourceTree = "<group>"; };
+		039FD1F81072793B003184BC /* SBJSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJSON.h; sourceTree = "<group>"; };
+		039FD1F91072793B003184BC /* SBJSON.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJSON.m; sourceTree = "<group>"; };
+		039FD1FA1072793B003184BC /* SBJsonBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonBase.h; sourceTree = "<group>"; };
+		039FD1FB1072793B003184BC /* SBJsonBase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonBase.m; sourceTree = "<group>"; };
+		039FD1FC1072793B003184BC /* SBJsonParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonParser.h; sourceTree = "<group>"; };
+		039FD1FD1072793B003184BC /* SBJsonParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonParser.m; sourceTree = "<group>"; };
+		039FD1FE1072793B003184BC /* SBJsonWriter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonWriter.h; sourceTree = "<group>"; };
+		039FD1FF1072793B003184BC /* SBJsonWriter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonWriter.m; sourceTree = "<group>"; };
+		03A71BA4102C8F540056AF1C /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = /Users/bruce/Desktop/Transient_Events_SurveyBranch/iphoneos3.0/System/Library/Frameworks/CoreLocation.framework; sourceTree = "<absolute>"; };
+		03A71BAC102C90000056AF1C /* EventListController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EventListController.h; sourceTree = "<group>"; };
+		03A71BAD102C90000056AF1C /* EventListController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EventListController.m; sourceTree = "<group>"; };
+		03A71C09102CA7100056AF1C /* SettingsListController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingsListController.h; sourceTree = "<group>"; };
+		03A71C0A102CA7100056AF1C /* SettingsListController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingsListController.m; sourceTree = "<group>"; };
+		03A71C0E102CA83D0056AF1C /* Gear.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Gear.png; sourceTree = "<group>"; };
+		03A71CC2102CAE0A0056AF1C /* EventIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = EventIcon.png; sourceTree = "<group>"; };
+		03A71CD3102CB7300056AF1C /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		03A71CE1102CB79B0056AF1C /* BookmarkListController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BookmarkListController.h; sourceTree = "<group>"; };
+		03A71CE2102CB79B0056AF1C /* BookmarkListController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BookmarkListController.m; sourceTree = "<group>"; };
+		03AD194710FE5F7900F3554D /* AlertIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = AlertIcon.png; sourceTree = "<group>"; };
+		03AD19B310FE6C4F00F3554D /* Sample JSON payload.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "Sample JSON payload.txt"; sourceTree = "<group>"; };
+		03AD19C110FE725200F3554D /* incoming.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = incoming.wav; sourceTree = "<group>"; };
+		03AD19E210FE734100F3554D /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = /Users/bruce/Desktop/Transient_Events_SurveyBranch/iphoneos3.0/System/Library/Frameworks/AudioToolbox.framework; sourceTree = "<absolute>"; };
+		03B1F8171121E794004DAA56 /* VariableBig.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = VariableBig.jpg; sourceTree = "<group>"; };
+		03B1F8181121E794004DAA56 /* UnknownBig.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = UnknownBig.jpg; sourceTree = "<group>"; };
+		03B1F8191121E794004DAA56 /* Tidal Distuption FlareBig.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Tidal Distuption FlareBig.jpg"; sourceTree = "<group>"; };
+		03B1F81A1121E794004DAA56 /* SupernovaBig.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = SupernovaBig.jpg; sourceTree = "<group>"; };
+		03B1F81B1121E794004DAA56 /* RRLyrae VariableBig.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "RRLyrae VariableBig.jpg"; sourceTree = "<group>"; };
+		03B1F81C1121E794004DAA56 /* Planetary MicrolensingBig.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Planetary MicrolensingBig.jpg"; sourceTree = "<group>"; };
+		03B1F81D1121E794004DAA56 /* OtherBig.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = OtherBig.jpg; sourceTree = "<group>"; };
+		03B1F81E1121E794004DAA56 /* NovaBig.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = NovaBig.jpg; sourceTree = "<group>"; };
+		03B1F81F1121E794004DAA56 /* Mira VariableBig.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Mira VariableBig.jpg"; sourceTree = "<group>"; };
+		03B1F8201121E794004DAA56 /* High Proper Motion StarBig.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "High Proper Motion StarBig.jpg"; sourceTree = "<group>"; };
+		03B1F8211121E794004DAA56 /* Gamma Ray Burst AfterglowBig.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Gamma Ray Burst AfterglowBig.jpg"; sourceTree = "<group>"; };
+		03B1F8221121E794004DAA56 /* Eclipsing VariableBig.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Eclipsing VariableBig.jpg"; sourceTree = "<group>"; };
+		03B1F8231121E794004DAA56 /* CometBig.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = CometBig.jpg; sourceTree = "<group>"; };
+		03B1F8241121E794004DAA56 /* Cataclysmic VariableBig.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Cataclysmic VariableBig.jpg"; sourceTree = "<group>"; };
+		03B1F8251121E794004DAA56 /* Blazar OutburstBig.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Blazar OutburstBig.jpg"; sourceTree = "<group>"; };
+		03B1F8261121E794004DAA56 /* AsteroidBig.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = AsteroidBig.jpg; sourceTree = "<group>"; };
+		03B1F8271121E794004DAA56 /* UV Ceti VariableBig.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "UV Ceti VariableBig.jpg"; sourceTree = "<group>"; };
+		03B1F8281121E794004DAA56 /* MicrolensingBig.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = MicrolensingBig.jpg; sourceTree = "<group>"; };
+		03B1F8291121E794004DAA56 /* Active Galactic Nucleus VariabilityBig.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Active Galactic Nucleus VariabilityBig.jpg"; sourceTree = "<group>"; };
+		03B1F85A1121E8EF004DAA56 /* skyalert.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = skyalert.png; sourceTree = "<group>"; };
+		03B9FD3E107D1EFD00A7CB72 /* AltAzComputation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AltAzComputation.h; sourceTree = "<group>"; };
+		03B9FD3F107D1EFD00A7CB72 /* AltAzComputation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AltAzComputation.m; sourceTree = "<group>"; };
+		03BD74FA111761F10013F235 /* EventListBackgroundView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = EventListBackgroundView.xib; path = Classes/EventListBackgroundView.xib; sourceTree = "<group>"; };
+		03BD75C21117749A0013F235 /* BookmarkDetailController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BookmarkDetailController.h; sourceTree = "<group>"; };
+		03BD75C31117749A0013F235 /* BookmarkDetailController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BookmarkDetailController.m; sourceTree = "<group>"; };
+		03BD75D3111775400013F235 /* ELicon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ELicon.png; sourceTree = "<group>"; };
+		03BD75D4111775400013F235 /* LSSTClogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = LSSTClogo.png; sourceTree = "<group>"; };
+		03BD75D5111775400013F235 /* BGStar.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = BGStar.jpg; sourceTree = "<group>"; };
+		03BD75D6111775400013F235 /* BGtelescope.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = BGtelescope.jpg; sourceTree = "<group>"; };
+		03BD75DB1117755A0013F235 /* CSS(60px).jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "CSS(60px).jpg"; sourceTree = "<group>"; };
+		03BD75DC1117755A0013F235 /* CRTS(60px).jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "CRTS(60px).jpg"; sourceTree = "<group>"; };
+		03BD76A1111783D90013F235 /* Active Galactic Nucleus VariabilityBig.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Active Galactic Nucleus VariabilityBig.png"; sourceTree = "<group>"; };
+		03BD76B0111783F80013F235 /* AsteroidBig.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = AsteroidBig.png; sourceTree = "<group>"; };
+		03BD76B5111784AC0013F235 /* SupernovaBig.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = SupernovaBig.png; sourceTree = "<group>"; };
+		03BD76EC111788880013F235 /* OtherBig.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = OtherBig.png; sourceTree = "<group>"; };
+		03BD76ED111788880013F235 /* VariableBig.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = VariableBig.png; sourceTree = "<group>"; };
+		03BD76EE111788880013F235 /* Tidal Distuption FlareBig.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Tidal Distuption FlareBig.png"; sourceTree = "<group>"; };
+		03BD76EF111788880013F235 /* Blazar OutburstBig.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Blazar OutburstBig.png"; sourceTree = "<group>"; };
+		03BD76F0111788880013F235 /* MicrolensingBig.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = MicrolensingBig.png; sourceTree = "<group>"; };
+		03BD76F1111788880013F235 /* Planetary MicrolensingBig.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Planetary MicrolensingBig.png"; sourceTree = "<group>"; };
+		03BD76F2111788880013F235 /* UnknownBig.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = UnknownBig.png; sourceTree = "<group>"; };
+		03BD76F3111788880013F235 /* RRLyrae VariableBig.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "RRLyrae VariableBig.png"; sourceTree = "<group>"; };
+		03BD76F4111788880013F235 /* Cataclysmic VariableBig.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Cataclysmic VariableBig.png"; sourceTree = "<group>"; };
+		03BD76F5111788880013F235 /* High Proper Motion StarBig.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "High Proper Motion StarBig.png"; sourceTree = "<group>"; };
+		03BE73A3108CD30E001D23EA /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
+		03C98D7410305C8800396439 /* Notes.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Notes.txt; sourceTree = "<group>"; };
+		03C98D7F1030752800396439 /* EventDetailView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EventDetailView.xib; sourceTree = "<group>"; };
+		03C98D841030799100396439 /* sampleimage.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = sampleimage.jpg; sourceTree = "<group>"; };
+		03C98D8F1030A5B400396439 /* EventDetailController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EventDetailController.h; sourceTree = "<group>"; };
+		03CD995B10641FA1008190FF /* ToDo.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ToDo.txt; sourceTree = "<group>"; };
+		03E148F610986212002C4C0A /* EventDetailController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EventDetailController.m; sourceTree = "<group>"; };
+		03E149C910987E78002C4C0A /* DarkBackground.psd */ = {isa = PBXFileReference; lastKnownFileType = file; path = DarkBackground.psd; sourceTree = "<group>"; };
+		03E149CA10987E78002C4C0A /* TableGradient.psd */ = {isa = PBXFileReference; lastKnownFileType = file; path = TableGradient.psd; sourceTree = "<group>"; };
+		03F1B7AD1090EBD70012C7D6 /* MissingImage.psd */ = {isa = PBXFileReference; lastKnownFileType = file; path = MissingImage.psd; sourceTree = "<group>"; };
+		03F1B7B11090EBFB0012C7D6 /* MissingImage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = MissingImage.png; sourceTree = "<group>"; };
+		03F3FBDD1051A110009575B6 /* EventTypesListController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EventTypesListController.h; sourceTree = "<group>"; };
+		03F3FBDE1051A110009575B6 /* EventTypesListController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EventTypesListController.m; sourceTree = "<group>"; };
+		03F3FBFB1051A5F3009575B6 /* EventTypeDictionary.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = EventTypeDictionary.plist; sourceTree = "<group>"; };
+		1D30AB110D05D00D00671497 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		1D3623240D0F684500981E51 /* Transient_EventsAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Transient_EventsAppDelegate.h; sourceTree = "<group>"; };
+		1D3623250D0F684500981E51 /* Transient_EventsAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Transient_EventsAppDelegate.m; sourceTree = "<group>"; };
+		1D6058910D05DD3D006BFB54 /* Transient Events.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Transient Events.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1DF5F4DF0D08C38300B7A737 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		288765A40DF7441C002DB57D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		28AD733E0D9D9553002E5188 /* MainWindow.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainWindow.xib; sourceTree = "<group>"; };
+		28C3AD890F43EF2300507BA6 /* Transient_Events.xcdatamodel */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = wrapper.xcdatamodel; name = Transient_Events.xcdatamodel; path = ../Transient_Events.xcdatamodel; sourceTree = "<group>"; };
+		28D801B30F44B63D00FB423F /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		3215294B11C923FC00905BEA /* SurveyQuestion1ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SurveyQuestion1ViewController.h; sourceTree = "<group>"; };
+		3215294C11C923FC00905BEA /* SurveyQuestion1ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SurveyQuestion1ViewController.m; sourceTree = "<group>"; };
+		3215294D11C923FC00905BEA /* SurveyQuestion1ViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = SurveyQuestion1ViewController.xib; path = Classes/SurveyQuestion1ViewController.xib; sourceTree = "<group>"; };
+		32152B1F11C9688000905BEA /* SurveyQuestion2ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SurveyQuestion2ViewController.m; sourceTree = "<group>"; };
+		32152B2011C9688000905BEA /* SurveyQuestion2ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SurveyQuestion2ViewController.h; sourceTree = "<group>"; };
+		32152B5011C969D400905BEA /* SurveyQuestion2ViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = SurveyQuestion2ViewController.xib; path = Classes/SurveyQuestion2ViewController.xib; sourceTree = "<group>"; };
+		32152BF011C97A0300905BEA /* SurveyQuestion3ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SurveyQuestion3ViewController.h; sourceTree = "<group>"; };
+		32152BF111C97A0300905BEA /* SurveyQuestion3ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SurveyQuestion3ViewController.m; sourceTree = "<group>"; };
+		32152BF211C97A0300905BEA /* SurveyQuestion3ViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = SurveyQuestion3ViewController.xib; path = Classes/SurveyQuestion3ViewController.xib; sourceTree = "<group>"; };
+		32CA4F630368D1EE00C91783 /* Transient_Events_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Transient_Events_Prefix.pch; sourceTree = "<group>"; };
+		32D976C5105EA2D300C93CF4 /* Bugs and Changes.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "Bugs and Changes.txt"; sourceTree = "<group>"; };
+		8D1107310486CEB800E47090 /* Transient_Events-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Transient_Events-Info.plist"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1D60588F0D05DD3D006BFB54 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */,
+				1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */,
+				288765A50DF7441C002DB57D /* CoreGraphics.framework in Frameworks */,
+				28D801B40F44B63D00FB423F /* CoreData.framework in Frameworks */,
+				03A71BA5102C8F540056AF1C /* CoreLocation.framework in Frameworks */,
+				038822E4104EFCB0008651C8 /* MapKit.framework in Frameworks */,
+				038822F0104F0070008651C8 /* CoreLocation.framework in Frameworks */,
+				03471B36106AA7A4001EDCDB /* MessageUI.framework in Frameworks */,
+				03AD19E310FE734100F3554D /* AudioToolbox.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		03471906106A582D001EDCDB /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				037CBE4C11DB6D3300709F26 /* surveyIcon.png */,
+				03B1F85A1121E8EF004DAA56 /* skyalert.png */,
+				03B1F8171121E794004DAA56 /* VariableBig.jpg */,
+				03B1F8181121E794004DAA56 /* UnknownBig.jpg */,
+				03B1F8191121E794004DAA56 /* Tidal Distuption FlareBig.jpg */,
+				03B1F81A1121E794004DAA56 /* SupernovaBig.jpg */,
+				03B1F81B1121E794004DAA56 /* RRLyrae VariableBig.jpg */,
+				03B1F81C1121E794004DAA56 /* Planetary MicrolensingBig.jpg */,
+				03B1F81D1121E794004DAA56 /* OtherBig.jpg */,
+				03B1F81E1121E794004DAA56 /* NovaBig.jpg */,
+				03B1F81F1121E794004DAA56 /* Mira VariableBig.jpg */,
+				03B1F8201121E794004DAA56 /* High Proper Motion StarBig.jpg */,
+				03B1F8211121E794004DAA56 /* Gamma Ray Burst AfterglowBig.jpg */,
+				03B1F8221121E794004DAA56 /* Eclipsing VariableBig.jpg */,
+				03B1F8231121E794004DAA56 /* CometBig.jpg */,
+				03B1F8241121E794004DAA56 /* Cataclysmic VariableBig.jpg */,
+				03B1F8251121E794004DAA56 /* Blazar OutburstBig.jpg */,
+				03B1F8261121E794004DAA56 /* AsteroidBig.jpg */,
+				03B1F8271121E794004DAA56 /* UV Ceti VariableBig.jpg */,
+				03B1F8281121E794004DAA56 /* MicrolensingBig.jpg */,
+				03B1F8291121E794004DAA56 /* Active Galactic Nucleus VariabilityBig.jpg */,
+				0343850C1117A16500635A1E /* CometBig.png */,
+				0343850D1117A16500635A1E /* Eclipsing VariableBig.png */,
+				0343850E1117A16500635A1E /* Gamma Ray Burst AfterglowBig.png */,
+				034384F31117A0B300635A1E /* Mira VariableBig.png */,
+				03BD76EC111788880013F235 /* OtherBig.png */,
+				03BD76ED111788880013F235 /* VariableBig.png */,
+				03BD76EE111788880013F235 /* Tidal Distuption FlareBig.png */,
+				03BD76EF111788880013F235 /* Blazar OutburstBig.png */,
+				03BD76F0111788880013F235 /* MicrolensingBig.png */,
+				03BD76F1111788880013F235 /* Planetary MicrolensingBig.png */,
+				03BD76F2111788880013F235 /* UnknownBig.png */,
+				03BD76F3111788880013F235 /* RRLyrae VariableBig.png */,
+				03BD76F4111788880013F235 /* Cataclysmic VariableBig.png */,
+				03BD76F5111788880013F235 /* High Proper Motion StarBig.png */,
+				03BD76B5111784AC0013F235 /* SupernovaBig.png */,
+				03BD76B0111783F80013F235 /* AsteroidBig.png */,
+				03BD76A1111783D90013F235 /* Active Galactic Nucleus VariabilityBig.png */,
+				03BD75DB1117755A0013F235 /* CSS(60px).jpg */,
+				03BD75DC1117755A0013F235 /* CRTS(60px).jpg */,
+				03BD75D3111775400013F235 /* ELicon.png */,
+				03BD75D4111775400013F235 /* LSSTClogo.png */,
+				03BD75D5111775400013F235 /* BGStar.jpg */,
+				03BD75D6111775400013F235 /* BGtelescope.jpg */,
+				03AD194710FE5F7900F3554D /* AlertIcon.png */,
+				0341824810C9EFFB002562D8 /* Galaxy.png */,
+				03590FA910C9C41700D45180 /* Active Galactic Nucleus Variability.png */,
+				036A857810C94B6100AB79A5 /* Asteroid.png */,
+				036A857910C94B6100AB79A5 /* Blazar Outburst.png */,
+				036A857A10C94B6100AB79A5 /* Cataclysmic Variable.png */,
+				036A857B10C94B6100AB79A5 /* Comet.png */,
+				036A857C10C94B6100AB79A5 /* Eclipsing Variable.png */,
+				036A857E10C94B6100AB79A5 /* Gamma Ray Burst Afterglow.png */,
+				036A857F10C94B6100AB79A5 /* High Proper Motion Star.png */,
+				036A858010C94B6100AB79A5 /* Microlensing.png */,
+				036A858110C94B6100AB79A5 /* Mira Variable.png */,
+				036A858210C94B6100AB79A5 /* Nova.png */,
+				036A858310C94B6100AB79A5 /* Other.png */,
+				036A858410C94B6100AB79A5 /* Planetary Microlensing.png */,
+				036A858510C94B6100AB79A5 /* RRLyrae Variable.png */,
+				036A858610C94B6100AB79A5 /* Tidal Disruption Flare.png */,
+				036A858710C94B6100AB79A5 /* Unknown.png */,
+				036A858810C94B6100AB79A5 /* UV Ceti Variable.png */,
+				036A858910C94B6100AB79A5 /* Variable.png */,
+				036A849910C93F7B00AB79A5 /* Supernova.png */,
+				03881F60104EB04F008651C8 /* Icon.png */,
+				03C98D841030799100396439 /* sampleimage.jpg */,
+				03A71CD3102CB7300056AF1C /* Default.png */,
+				03A71CC2102CAE0A0056AF1C /* EventIcon.png */,
+				03A71C0E102CA83D0056AF1C /* Gear.png */,
+				03309398109789FB0016EC0D /* DarkBackground.png */,
+				0330933810977DF10016EC0D /* Background.png */,
+				033092AA109772330016EC0D /* TableGradient.png */,
+				03F1B7B11090EBFB0012C7D6 /* MissingImage.png */,
+				03902323107E37C700320829 /* LSSTBanner.png */,
+				0388CE76107D02C6003163F8 /* LocationButton.png */,
+				0388CE68107CF487003163F8 /* LocationButtonOn.png */,
+				0388CE69107CF487003163F8 /* LocationButtonOff.png */,
+				03709BF21073AC64002D91A0 /* BackButton.png */,
+				03709BF31073AC64002D91A0 /* ForwardButton.png */,
+				03709A6310738AB5002D91A0 /* NoImage.png */,
+				03471B42106AAF8B001EDCDB /* Finder.gif */,
+				03471909106A5847001EDCDB /* image5.jpg */,
+				0347190A106A5847001EDCDB /* image4.jpg */,
+				0347190B106A5847001EDCDB /* image3.jpg */,
+				0347190C106A5847001EDCDB /* image2.jpg */,
+				0347190D106A5847001EDCDB /* image1.jpg */,
+				034385171117A17B00635A1E /* NovaBig.png */,
+				034385181117A17B00635A1E /* UV Ceti VariableBig.png */,
+			);
+			name = Images;
+			sourceTree = "<group>";
+		};
+		03902334107E37D300320829 /* Master Images */ = {
+			isa = PBXGroup;
+			children = (
+				03E149C910987E78002C4C0A /* DarkBackground.psd */,
+				03E149CA10987E78002C4C0A /* TableGradient.psd */,
+				03F1B7AD1090EBD70012C7D6 /* MissingImage.psd */,
+				03902337107E37F500320829 /* LSSTBanner.psd */,
+				03902338107E37F500320829 /* LocationButton.psd */,
+				03902339107E37F500320829 /* NoImage.psd */,
+				0390233A107E37F500320829 /* Icon.psd */,
+				0390233B107E37F500320829 /* Event.psd */,
+			);
+			name = "Master Images";
+			sourceTree = "<group>";
+		};
+		0398F18B10C7016600AD6889 /* Documented */ = {
+			isa = PBXGroup;
+			children = (
+				038820C6104EDA25008651C8 /* Constants.h */,
+				03BD75C21117749A0013F235 /* BookmarkDetailController.h */,
+				03BD75C31117749A0013F235 /* BookmarkDetailController.m */,
+				0387846C107BC7B600610E90 /* AboutTransientEventsView.h */,
+				0387846D107BC7B600610E90 /* AboutTransientEventsView.m */,
+				03B9FD3E107D1EFD00A7CB72 /* AltAzComputation.h */,
+				03B9FD3F107D1EFD00A7CB72 /* AltAzComputation.m */,
+				1D3623240D0F684500981E51 /* Transient_EventsAppDelegate.h */,
+				1D3623250D0F684500981E51 /* Transient_EventsAppDelegate.m */,
+				03A71BAC102C90000056AF1C /* EventListController.h */,
+				03A71BAD102C90000056AF1C /* EventListController.m */,
+				03C98D8F1030A5B400396439 /* EventDetailController.h */,
+				03E148F610986212002C4C0A /* EventDetailController.m */,
+				03A71CE1102CB79B0056AF1C /* BookmarkListController.h */,
+				03A71CE2102CB79B0056AF1C /* BookmarkListController.m */,
+				03902424107E79D100320829 /* Locations.h */,
+				03902425107E79D100320829 /* Locations.m */,
+				0304D96C10890CC2001D942D /* Transient.h */,
+				0304D96D10890CC2001D942D /* Transient.m */,
+				037099B510737A6C002D91A0 /* ImageLoadingOperation.h */,
+				037099B610737A6C002D91A0 /* ImageLoadingOperation.m */,
+				036B548310501B3E007836C7 /* PinAnnotation.h */,
+				036B548410501B3E007836C7 /* PinAnnotation.m */,
+				03584CDA1051413F005A0EF0 /* MagnitudeLimitViewController.h */,
+				03584CDB1051413F005A0EF0 /* MagnitudeLimitViewController.m */,
+				03A71C09102CA7100056AF1C /* SettingsListController.h */,
+				03A71C0A102CA7100056AF1C /* SettingsListController.m */,
+				03584E7610516C57005A0EF0 /* RAFormatListController.h */,
+				03584E7710516C57005A0EF0 /* RAFormatListController.m */,
+				03584D5410515096005A0EF0 /* EventAgeViewController.h */,
+				03584D5510515096005A0EF0 /* EventAgeViewController.m */,
+				03F3FBDD1051A110009575B6 /* EventTypesListController.h */,
+				03F3FBDE1051A110009575B6 /* EventTypesListController.m */,
+				03709B711073A5CF002D91A0 /* FinderImageWebViewController.h */,
+				03709B721073A5CF002D91A0 /* FinderImageWebViewController.m */,
+				0388CEDE107D0D84003163F8 /* MinimumAltitudeViewController.h */,
+				0388CEDF107D0D84003163F8 /* MinimumAltitudeViewController.m */,
+				038822A3104EFC6D008651C8 /* LocationSettingViewController.h */,
+				038822A4104EFC6D008651C8 /* LocationSettingViewController.m */,
+				039024A8107E85D500320829 /* LocationListController.h */,
+				039024A9107E85D500320829 /* LocationListController.m */,
+				039FD1F21072793B003184BC /* JSON */,
+			);
+			name = Documented;
+			sourceTree = "<group>";
+		};
+		039FD1F21072793B003184BC /* JSON */ = {
+			isa = PBXGroup;
+			children = (
+				039FD1F31072793B003184BC /* JSON.h */,
+				039FD1F41072793B003184BC /* NSObject+SBJSON.h */,
+				039FD1F51072793B003184BC /* NSObject+SBJSON.m */,
+				039FD1F61072793B003184BC /* NSString+SBJSON.h */,
+				039FD1F71072793B003184BC /* NSString+SBJSON.m */,
+				039FD1F81072793B003184BC /* SBJSON.h */,
+				039FD1F91072793B003184BC /* SBJSON.m */,
+				039FD1FA1072793B003184BC /* SBJsonBase.h */,
+				039FD1FB1072793B003184BC /* SBJsonBase.m */,
+				039FD1FC1072793B003184BC /* SBJsonParser.h */,
+				039FD1FD1072793B003184BC /* SBJsonParser.m */,
+				039FD1FE1072793B003184BC /* SBJsonWriter.h */,
+				039FD1FF1072793B003184BC /* SBJsonWriter.m */,
+			);
+			path = JSON;
+			sourceTree = "<group>";
+		};
+		03E149A210987A22002C4C0A /* String Plists and TXT files */ = {
+			isa = PBXGroup;
+			children = (
+				03881FC9104EBFA3008651C8 /* SettingsTitles.plist */,
+				0388200E104EC5DE008651C8 /* GroupTitles.plist */,
+				03584E6E10516B18005A0EF0 /* RAFormat.plist */,
+				03F3FBFB1051A5F3009575B6 /* EventTypeDictionary.plist */,
+				0391E3A31080B12800A62B9F /* Locations1000.txt */,
+			);
+			name = "String Plists and TXT files";
+			sourceTree = "<group>";
+		};
+		03E149A310987A62002C4C0A /* HTML files */ = {
+			isa = PBXGroup;
+			children = (
+				0330916810973F2F0016EC0D /* SettingsHelp.html */,
+				0330915E10973EDE0016EC0D /* EventListHelp.html */,
+				0330916210973EFD0016EC0D /* BookmarkListHelp.html */,
+				038784DB107BD24D00610E90 /* Credits.html */,
+			);
+			name = "HTML files";
+			sourceTree = "<group>";
+		};
+		080E96DDFE201D6D7F000001 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				0398F18B10C7016600AD6889 /* Documented */,
+				28C3AD890F43EF2300507BA6 /* Transient_Events.xcdatamodel */,
+				3215294B11C923FC00905BEA /* SurveyQuestion1ViewController.h */,
+				3215294C11C923FC00905BEA /* SurveyQuestion1ViewController.m */,
+				32152B2011C9688000905BEA /* SurveyQuestion2ViewController.h */,
+				32152B1F11C9688000905BEA /* SurveyQuestion2ViewController.m */,
+				32152BF011C97A0300905BEA /* SurveyQuestion3ViewController.h */,
+				32152BF111C97A0300905BEA /* SurveyQuestion3ViewController.m */,
+				0363DDF711DE63620053633A /* httpFlattening.h */,
+				0363DDF811DE63620053633A /* httpFlattening.m */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		19C28FACFE9D520D11CA2CBB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1D6058910D05DD3D006BFB54 /* Transient Events.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		29B97314FDCFA39411CA2CEA /* CustomTemplate */ = {
+			isa = PBXGroup;
+			children = (
+				038244801122EC2500DF2E53 /* doxygen.config */,
+				03AD19B310FE6C4F00F3554D /* Sample JSON payload.txt */,
+				03C98D7410305C8800396439 /* Notes.txt */,
+				32D976C5105EA2D300C93CF4 /* Bugs and Changes.txt */,
+				03CD995B10641FA1008190FF /* ToDo.txt */,
+				0388CF45107D152B003163F8 /* Version History.txt */,
+				03902334107E37D300320829 /* Master Images */,
+				080E96DDFE201D6D7F000001 /* Classes */,
+				29B97315FDCFA39411CA2CEA /* Other Sources */,
+				29B97317FDCFA39411CA2CEA /* Resources */,
+				29B97323FDCFA39411CA2CEA /* Frameworks */,
+				19C28FACFE9D520D11CA2CBB /* Products */,
+				036A259D107CE08F0016B241 /* IncrementVersion */,
+			);
+			name = CustomTemplate;
+			sourceTree = "<group>";
+		};
+		29B97315FDCFA39411CA2CEA /* Other Sources */ = {
+			isa = PBXGroup;
+			children = (
+				32CA4F630368D1EE00C91783 /* Transient_Events_Prefix.pch */,
+				29B97316FDCFA39411CA2CEA /* main.m */,
+			);
+			name = "Other Sources";
+			sourceTree = "<group>";
+		};
+		29B97317FDCFA39411CA2CEA /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				32152BF211C97A0300905BEA /* SurveyQuestion3ViewController.xib */,
+				32152B5011C969D400905BEA /* SurveyQuestion2ViewController.xib */,
+				3215294D11C923FC00905BEA /* SurveyQuestion1ViewController.xib */,
+				03BD74FA111761F10013F235 /* EventListBackgroundView.xib */,
+				03AD19C110FE725200F3554D /* incoming.wav */,
+				03E149A310987A62002C4C0A /* HTML files */,
+				03E149A210987A22002C4C0A /* String Plists and TXT files */,
+				033CC77A10879A0A00FF3BDC /* BookmarkDetailView.xib */,
+				8D1107310486CEB800E47090 /* Transient_Events-Info.plist */,
+				0388CED9107D0D04003163F8 /* MinAltitudeView.xib */,
+				0387846E107BC7B600610E90 /* AboutTransientEventsView.xib */,
+				03471906106A582D001EDCDB /* Images */,
+				03471853106A3E27001EDCDB /* Entitlements.plist */,
+				03584D5610515096005A0EF0 /* EventAgeViewController.xib */,
+				28AD733E0D9D9553002E5188 /* MainWindow.xib */,
+				03C98D7F1030752800396439 /* EventDetailView.xib */,
+				0388229C104EFB5C008651C8 /* LocationView.xib */,
+				03584CD510513EA9005A0EF0 /* MagnitudeLimitView.xib */,
+				03471B46106AB116001EDCDB /* FinderImageView.xib */,
+				03709B6B1073A53E002D91A0 /* FinderImageWebView.xib */,
+				03BE73A3108CD30E001D23EA /* Settings.bundle */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				03AD19E210FE734100F3554D /* AudioToolbox.framework */,
+				038822EF104F0070008651C8 /* CoreLocation.framework */,
+				038822E3104EFCB0008651C8 /* MapKit.framework */,
+				1DF5F4DF0D08C38300B7A737 /* UIKit.framework */,
+				03A71BA4102C8F540056AF1C /* CoreLocation.framework */,
+				1D30AB110D05D00D00671497 /* Foundation.framework */,
+				288765A40DF7441C002DB57D /* CoreGraphics.framework */,
+				28D801B30F44B63D00FB423F /* CoreData.framework */,
+				03471B35106AA7A4001EDCDB /* MessageUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1D6058900D05DD3D006BFB54 /* Transient Events */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1D6058960D05DD3E006BFB54 /* Build configuration list for PBXNativeTarget "Transient Events" */;
+			buildPhases = (
+				1D60588D0D05DD3D006BFB54 /* Resources */,
+				1D60588E0D05DD3D006BFB54 /* Sources */,
+				1D60588F0D05DD3D006BFB54 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0374ED9E108FB08A007B314F /* PBXTargetDependency */,
+			);
+			name = "Transient Events";
+			productName = "Transient Events";
+			productReference = 1D6058910D05DD3D006BFB54 /* Transient Events.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		29B97313FDCFA39411CA2CEA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				ORGANIZATIONNAME = "Diffraction Limited Design LLC";
+			};
+			buildConfigurationList = C01FCF4E08A954540054247B /* Build configuration list for PBXProject "Transient Events" */;
+			compatibilityVersion = "Xcode 3.1";
+			developmentRegion = English;
+			hasScannedForEncodings = 1;
+			knownRegions = (
+				English,
+				Japanese,
+				French,
+				German,
+			);
+			mainGroup = 29B97314FDCFA39411CA2CEA /* CustomTemplate */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				0374ED5E108FAB80007B314F /* IncrementBuildNumber */,
+				1D6058900D05DD3D006BFB54 /* Transient Events */,
+				03DF264E10BDDCAD00540B04 /* Build Documentation */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1D60588D0D05DD3D006BFB54 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				03BD75DD1117755A0013F235 /* CSS(60px).jpg in Resources */,
+				03BD75DE1117755A0013F235 /* CRTS(60px).jpg in Resources */,
+				03BD75D7111775400013F235 /* ELicon.png in Resources */,
+				03BD75D8111775400013F235 /* LSSTClogo.png in Resources */,
+				03BD75D9111775400013F235 /* BGStar.jpg in Resources */,
+				03BD75DA111775400013F235 /* BGtelescope.jpg in Resources */,
+				03AD194810FE5F7900F3554D /* AlertIcon.png in Resources */,
+				03F2CC3110C9E1B700D773DB /* Active Galactic Nucleus Variability.png in Resources */,
+				036A858B10C94B6100AB79A5 /* Asteroid.png in Resources */,
+				036A858C10C94B6100AB79A5 /* Blazar Outburst.png in Resources */,
+				036A858D10C94B6100AB79A5 /* Cataclysmic Variable.png in Resources */,
+				036A858E10C94B6100AB79A5 /* Comet.png in Resources */,
+				036A858F10C94B6100AB79A5 /* Eclipsing Variable.png in Resources */,
+				036A859110C94B6100AB79A5 /* Gamma Ray Burst Afterglow.png in Resources */,
+				036A859210C94B6100AB79A5 /* High Proper Motion Star.png in Resources */,
+				036A859310C94B6100AB79A5 /* Microlensing.png in Resources */,
+				036A859410C94B6100AB79A5 /* Mira Variable.png in Resources */,
+				036A859510C94B6100AB79A5 /* Nova.png in Resources */,
+				036A859610C94B6100AB79A5 /* Other.png in Resources */,
+				036A859710C94B6100AB79A5 /* Planetary Microlensing.png in Resources */,
+				036A859810C94B6100AB79A5 /* RRLyrae Variable.png in Resources */,
+				036A859910C94B6100AB79A5 /* Tidal Disruption Flare.png in Resources */,
+				036A859A10C94B6100AB79A5 /* Unknown.png in Resources */,
+				036A859B10C94B6100AB79A5 /* UV Ceti Variable.png in Resources */,
+				036A859C10C94B6100AB79A5 /* Variable.png in Resources */,
+				036A849A10C93F7B00AB79A5 /* Supernova.png in Resources */,
+				03881F61104EB04F008651C8 /* Icon.png in Resources */,
+				03C98D851030799100396439 /* sampleimage.jpg in Resources */,
+				03A71CD4102CB7300056AF1C /* Default.png in Resources */,
+				03A71CC3102CAE0A0056AF1C /* EventIcon.png in Resources */,
+				03A71C0F102CA83D0056AF1C /* Gear.png in Resources */,
+				03F1B7B21090EBFB0012C7D6 /* MissingImage.png in Resources */,
+				03902324107E37C700320829 /* LSSTBanner.png in Resources */,
+				0388CE77107D02C6003163F8 /* LocationButton.png in Resources */,
+				0388CE6A107CF487003163F8 /* LocationButtonOn.png in Resources */,
+				0388CE6B107CF487003163F8 /* LocationButtonOff.png in Resources */,
+				03709BF41073AC64002D91A0 /* BackButton.png in Resources */,
+				03709BF51073AC64002D91A0 /* ForwardButton.png in Resources */,
+				28AD733F0D9D9553002E5188 /* MainWindow.xib in Resources */,
+				03C98D801030752800396439 /* EventDetailView.xib in Resources */,
+				03881FCA104EBFA3008651C8 /* SettingsTitles.plist in Resources */,
+				0388200F104EC5DE008651C8 /* GroupTitles.plist in Resources */,
+				0388229D104EFB5C008651C8 /* LocationView.xib in Resources */,
+				03584CD610513EA9005A0EF0 /* MagnitudeLimitView.xib in Resources */,
+				03584D5810515096005A0EF0 /* EventAgeViewController.xib in Resources */,
+				03584E6F10516B18005A0EF0 /* RAFormat.plist in Resources */,
+				03F3FBFC1051A5F3009575B6 /* EventTypeDictionary.plist in Resources */,
+				03471854106A3E27001EDCDB /* Entitlements.plist in Resources */,
+				03471B47106AB116001EDCDB /* FinderImageView.xib in Resources */,
+				03709A6410738AB5002D91A0 /* NoImage.png in Resources */,
+				03709B6C1073A53E002D91A0 /* FinderImageWebView.xib in Resources */,
+				03878470107BC7B600610E90 /* AboutTransientEventsView.xib in Resources */,
+				038784DC107BD24D00610E90 /* Credits.html in Resources */,
+				0388CEDA107D0D04003163F8 /* MinAltitudeView.xib in Resources */,
+				0391E3A41080B12800A62B9F /* Locations1000.txt in Resources */,
+				033CC77B10879A0A00FF3BDC /* BookmarkDetailView.xib in Resources */,
+				03BE73A4108CD30E001D23EA /* Settings.bundle in Resources */,
+				0330915F10973EDE0016EC0D /* EventListHelp.html in Resources */,
+				0330916310973EFD0016EC0D /* BookmarkListHelp.html in Resources */,
+				0330916910973F2F0016EC0D /* SettingsHelp.html in Resources */,
+				03AD19C210FE725200F3554D /* incoming.wav in Resources */,
+				03BD74FC111761F10013F235 /* EventListBackgroundView.xib in Resources */,
+				03B1F82A1121E794004DAA56 /* VariableBig.jpg in Resources */,
+				03B1F82B1121E794004DAA56 /* UnknownBig.jpg in Resources */,
+				03B1F82C1121E794004DAA56 /* Tidal Distuption FlareBig.jpg in Resources */,
+				03B1F82D1121E794004DAA56 /* SupernovaBig.jpg in Resources */,
+				03B1F82E1121E794004DAA56 /* RRLyrae VariableBig.jpg in Resources */,
+				03B1F82F1121E794004DAA56 /* Planetary MicrolensingBig.jpg in Resources */,
+				03B1F8301121E794004DAA56 /* OtherBig.jpg in Resources */,
+				03B1F8311121E794004DAA56 /* NovaBig.jpg in Resources */,
+				03B1F8321121E794004DAA56 /* Mira VariableBig.jpg in Resources */,
+				03B1F8331121E794004DAA56 /* High Proper Motion StarBig.jpg in Resources */,
+				03B1F8341121E794004DAA56 /* Gamma Ray Burst AfterglowBig.jpg in Resources */,
+				03B1F8351121E794004DAA56 /* Eclipsing VariableBig.jpg in Resources */,
+				03B1F8361121E794004DAA56 /* CometBig.jpg in Resources */,
+				03B1F8371121E794004DAA56 /* Cataclysmic VariableBig.jpg in Resources */,
+				03B1F8381121E794004DAA56 /* Blazar OutburstBig.jpg in Resources */,
+				03B1F8391121E794004DAA56 /* AsteroidBig.jpg in Resources */,
+				03B1F83A1121E794004DAA56 /* UV Ceti VariableBig.jpg in Resources */,
+				03B1F83B1121E794004DAA56 /* MicrolensingBig.jpg in Resources */,
+				03B1F83C1121E794004DAA56 /* Active Galactic Nucleus VariabilityBig.jpg in Resources */,
+				03B1F85B1121E8EF004DAA56 /* skyalert.png in Resources */,
+				3215294F11C923FC00905BEA /* SurveyQuestion1ViewController.xib in Resources */,
+				32152B5111C969D400905BEA /* SurveyQuestion2ViewController.xib in Resources */,
+				32152BF411C97A0300905BEA /* SurveyQuestion3ViewController.xib in Resources */,
+				037CBE4D11DB6D3300709F26 /* surveyIcon.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0374ED5D108FAB80007B314F /* Increment Build Number */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Increment Build Number";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /usr/bin/ruby;
+			shellScript = "print \"Incrementing Build Number\"\n\ndef get_file_as_string(filename)\n  data = ''\n  f = File.open(filename, \"r\") \n  f.each_line do |line|\n    data += line\n  end\n  return data\nend\n\n# commit if any changes\n#%x[svn -m 'automated build commit' commit]\nprint \"\\nEntering if tests for commits for build style: \",ENV['BUILD_STYLE']\nif ENV['BUILD_STYLE'] == \"AdHocRelease LSST\"\n  # commit if any changes\n  print \"\\nCommitting changes to SVN repository for AdHoc Release\\n\"\n  %x[svn -m 'automated Ad Hoc Distriution build commit' commit]\nend\n\n\nif ENV['BUILD_STYLE'] == \"iTunesDistributionRelease LSST\"\n  # commit if any changes\n  print \"\\nCommitting changes to SVN repository for iTunesDistribution Release\\n\"\n  %x[svn -m 'automated iTunes Distribution build commit' commit]\nend\n\n=begin\nif (ENV['BUILD_STYLE'] == \"Debug\" || ENV['BUILD_STYLE'] == \"DeviceDevelopmentDebug\")\n  # commit if any changes\n  print \"\\nCommitting changes to SVN repository for debug build\\n\"\n  %x[svn -m 'automated Debug build commit' commit]\nend\n=end\n\nsvn_version = %x[svnversion -n]\nparts = svn_version.split(\":\")\nnew_version = parts[1]\n\n# if new version = nil then we will put svn_version into new_version\nif (new_version == nil)\n\tnew_version = \tsvn_version\nend\nprint \"\\nnew_version = \",new_version\n\nprint \"\\nsvn version=\",svn_version, \" new_version =\",new_version,\"\\n\"\n# Figure out where the Info.plist file is\nproject_dir = ENV['PROJECT_DIR']\nprint \"\\nproj directory =\",project_dir,\"\\n\"\ninfoplist_file = ENV['INFOPLIST_FILE']\n#infoplist_file = \"Transient_Events-Info.plist\"\nprint \"info plist file =\",infoplist_file,\"\\n\"\nplist_filename = \"#{project_dir}/#{infoplist_file}\"\nprint \"plist filename = \",plist_filename,\"\\n\"\ninfoplist = get_file_as_string(plist_filename)\nprint \"Info.plist contents \\n\",infoplist,\"\\n\"\nstart_of_key = infoplist.index(\"CFBundleVersion\")\nstart_of_value = infoplist.index(\"<string>\", start_of_key)\nend_of_value = infoplist.index(\"</string>\", start_of_value) + \"</string>\".length\nold_value = infoplist[start_of_value, end_of_value - start_of_value]\n\nnew_key = \"<string>#{new_version}</string>\"\nnew_info_plist = \"#{infoplist[0, start_of_value]}#{new_key}\\n#{infoplist[end_of_value+1, infoplist.length - (end_of_value+1)]}\"\n\nFile.open(plist_filename, 'w') {|f| f.write(new_info_plist) }\n";
+		};
+		037C8ADF10908EC200B09EDE /* Touch About file */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Touch About file";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "pwd\ncd Classes\npwd\nls -l AboutTransientEventsView.*\ntouch -m AboutTransientEventsView.m\nls -l AboutTransientEventsView.*";
+		};
+		03DF264D10BDDCAD00540B04 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "#  Build the doxygen documentation for the project and load the docset into Xcode.\n\n#  Use the following to adjust the value of the $DOXYGEN_PATH User-Defined Setting:\n#    Binary install location: /Applications/Doxygen.app/Contents/Resources/doxygen\n#    Source build install location: /usr/local/bin/doxygen\n\n#  If the config file doesn't exist, run 'doxygen -g $SOURCE_ROOT/doxygen.config' to \n#   a get default file.\n\nif ! [ -f $SOURCE_ROOT/doxygen.config ] \nthen \n  echo doxygen config file does not exist\n  $DOXYGEN_PATH -g $SOURCE_ROOT/doxygen.config\nfi\n\n#  Append the proper input/output directories and docset info to the config file.\n#  This works even though values are assigned higher up in the file. Easier than sed.\necho \"Copying doxygen.config to tmp directory\"\necho cp $SOURCE_ROOT/doxygen.config $TEMP_DIR/doxygen.config\ncp $SOURCE_ROOT/doxygen.config \"$TEMP_DIR/doxygen.config\"\necho \"doxygent.config copied\"\n\necho \"Adding INPUT specification to config file\"\necho \"INPUT = $SOURCE_ROOT\" >> $TEMP_DIR/doxygen.config\necho \"adding OUTPUT_DIRECTORY specification to config file\"\necho \"OUTPUT_DIRECTORY = $SOURCE_ROOT/DoxygenDocs.docset\" >> $TEMP_DIR/doxygen.config\necho \"adding GENERATE_DOCSET to config file\"\necho \"GENERATE_DOCSET        = YES\" >> $TEMP_DIR/doxygen.config\necho \"adding DOCSET_BUNDLE_ID to config file\"\necho \"DOCSET_BUNDLE_ID       = $DOCSET_BUNDLE_ID\" >> $TEMP_DIR/doxygen.config\n\n#  Run doxygen on the updated config file.\n#  Note: doxygen creates a Makefile that does most of the heavy lifting.\necho \"Running doxygen on the udated config file\"\n$DOXYGEN_PATH \"$TEMP_DIR/doxygen.config\"\n#  remove old docset\nrm -R /Users/$USER/Library/Developer/Shared/Documentation/DocSets/$DOCSET_BUNDLE_ID.docset\n#  make will invoke docsetutil. Take a look at the Makefile to see how this is done.\necho \"running make/install\"\nmake -C $SOURCE_ROOT/DoxygenDocs.docset/html install\n\n#  Construct a temporary applescript file to tell Xcode to load a docset.\necho \"telling XCode to load DocSet\"\nrm -f \"$TEMP_DIR/loadDocSet.scpt\"\n\necho \"tell application \\\"Xcode\\\"\" >> $TEMP_DIR/loadDocSet.scpt\necho \"load documentation set with path \\\"/Users/$USER/Library/Developer/Shared/Documentation/DocSets/$DOCSET_BUNDLE_ID.docset\\\"\" >> $TEMP_DIR/loadDocSet.scpt\necho \"end tell\" >> $TEMP_DIR/loadDocSet.scpt\n\n#  Run the load-docset applescript command.\necho \"Run applescript to tell XCode to load the docset\"\narch -i386 osascript \"$TEMP_DIR/loadDocSet.scpt\"\n\nexit 0";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1D60588E0D05DD3D006BFB54 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1D60589B0D05DD56006BFB54 /* main.m in Sources */,
+				1D3623260D0F684500981E51 /* Transient_EventsAppDelegate.m in Sources */,
+				28C3AD8A0F43EF2300507BA6 /* Transient_Events.xcdatamodel in Sources */,
+				03A71BAE102C90000056AF1C /* EventListController.m in Sources */,
+				03A71C0B102CA7100056AF1C /* SettingsListController.m in Sources */,
+				03A71CE3102CB79B0056AF1C /* BookmarkListController.m in Sources */,
+				038822A5104EFC6D008651C8 /* LocationSettingViewController.m in Sources */,
+				036B548510501B3E007836C7 /* PinAnnotation.m in Sources */,
+				03584CDC1051413F005A0EF0 /* MagnitudeLimitViewController.m in Sources */,
+				03584D5710515096005A0EF0 /* EventAgeViewController.m in Sources */,
+				03584E7810516C57005A0EF0 /* RAFormatListController.m in Sources */,
+				03F3FBDF1051A110009575B6 /* EventTypesListController.m in Sources */,
+				039FD2001072793B003184BC /* NSObject+SBJSON.m in Sources */,
+				039FD2011072793B003184BC /* NSString+SBJSON.m in Sources */,
+				039FD2021072793B003184BC /* SBJSON.m in Sources */,
+				039FD2031072793B003184BC /* SBJsonBase.m in Sources */,
+				039FD2041072793B003184BC /* SBJsonParser.m in Sources */,
+				039FD2051072793B003184BC /* SBJsonWriter.m in Sources */,
+				037099B710737A6C002D91A0 /* ImageLoadingOperation.m in Sources */,
+				03709B731073A5CF002D91A0 /* FinderImageWebViewController.m in Sources */,
+				0387846F107BC7B600610E90 /* AboutTransientEventsView.m in Sources */,
+				0388CEE1107D0D84003163F8 /* MinimumAltitudeViewController.m in Sources */,
+				03B9FD40107D1EFD00A7CB72 /* AltAzComputation.m in Sources */,
+				03902426107E79D100320829 /* Locations.m in Sources */,
+				039024AA107E85D500320829 /* LocationListController.m in Sources */,
+				0304D96E10890CC2001D942D /* Transient.m in Sources */,
+				03E148F710986212002C4C0A /* EventDetailController.m in Sources */,
+				03BD75C41117749A0013F235 /* BookmarkDetailController.m in Sources */,
+				3215294E11C923FC00905BEA /* SurveyQuestion1ViewController.m in Sources */,
+				32152B2111C9688000905BEA /* SurveyQuestion2ViewController.m in Sources */,
+				32152BF311C97A0300905BEA /* SurveyQuestion3ViewController.m in Sources */,
+				0363DDF911DE63620053633A /* httpFlattening.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		0374ED9E108FB08A007B314F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0374ED5E108FAB80007B314F /* IncrementBuildNumber */;
+			targetProxy = 0374ED9D108FB08A007B314F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		0374ED5F108FAB81007B314F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				PRODUCT_NAME = IncrementBuildNumber;
+			};
+			name = Debug;
+		};
+		0374ED60108FAB81007B314F /* DeviceDevelopmentDebug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = IncrementBuildNumber;
+			};
+			name = DeviceDevelopmentDebug;
+		};
+		0374ED61108FAB81007B314F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				PRODUCT_NAME = IncrementBuildNumber;
+				ZERO_LINK = NO;
+			};
+			name = Release;
+		};
+		0374ED63108FAB81007B314F /* AdHocRelease LSST */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = IncrementBuildNumber;
+			};
+			name = "AdHocRelease LSST";
+		};
+		037C8AB8109089EC00B09EDE /* iTunesDistributionRelease LSST */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CODE_SIGN_ENTITLEMENTS = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: LSST";
+				CURRENT_PROJECT_VERSION = 8;
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_PREPROCESSOR_DEFINITIONS = "RELEASE=1";
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = "Transient_Events-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 3.0;
+				PREBINDING = NO;
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "FAC434D0-38DF-4891-B18A-18884B913EF1";
+				SDKROOT = iphoneos3.2;
+				VERSIONING_SYSTEM = "apple-generic";
+			};
+			name = "iTunesDistributionRelease LSST";
+		};
+		037C8AB9109089EC00B09EDE /* iTunesDistributionRelease LSST */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = IncrementBuildNumber;
+			};
+			name = "iTunesDistributionRelease LSST";
+		};
+		037C8ABA109089EC00B09EDE /* iTunesDistributionRelease LSST */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"/Volumes/Skiiing2/CD/ViewBased/Unknown Path/System/Library/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = Transient_Events_Prefix.pch;
+				INFOPLIST_FILE = "Transient_Events-Info.plist";
+				PRODUCT_NAME = "Transient Events";
+			};
+			name = "iTunesDistributionRelease LSST";
+		};
+		03881EB4104E9F2B008651C8 /* DeviceDevelopmentDebug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Bruce Truax (R2736RMRQV)";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"SANDBOX=1",
+					"DEVELOPMENT=1",
+				);
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = "Transient_Events-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 3.0;
+				PREBINDING = NO;
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "D0BB519D-DA37-47F3-AF55-423D896EAA71";
+				SDKROOT = iphoneos3.2;
+			};
+			name = DeviceDevelopmentDebug;
+		};
+		03881EB5104E9F2B008651C8 /* DeviceDevelopmentDebug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"/Volumes/Skiiing2/CD/ViewBased/Unknown Path/System/Library/Frameworks\"",
+				);
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = Transient_Events_Prefix.pch;
+				INFOPLIST_FILE = "Transient_Events-Info.plist";
+				PRODUCT_NAME = "Transient Events";
+			};
+			name = DeviceDevelopmentDebug;
+		};
+		03BE7465108D08D3001D23EA /* AdHocRelease LSST */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CODE_SIGN_ENTITLEMENTS = Entitlements.plist;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: LSST";
+				CURRENT_PROJECT_VERSION = 8;
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_PREPROCESSOR_DEFINITIONS = "ADHOC=1";
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = "Transient_Events-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 3.0;
+				PREBINDING = NO;
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "DE1E58FA-7DE3-4CDB-91AC-6E1CB565523E";
+				SDKROOT = iphoneos3.2;
+				VERSIONING_SYSTEM = "apple-generic";
+			};
+			name = "AdHocRelease LSST";
+		};
+		03BE7466108D08D3001D23EA /* AdHocRelease LSST */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"/Volumes/Skiiing2/CD/ViewBased/Unknown Path/System/Library/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = Transient_Events_Prefix.pch;
+				INFOPLIST_FILE = "Transient_Events-Info.plist";
+				PRODUCT_NAME = "Transient Events";
+			};
+			name = "AdHocRelease LSST";
+		};
+		03DF264F10BDDCAD00540B04 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				DOCSET_BUNDLE_ID = org.lsst.transientevents;
+				DOXYGEN_PATH = /Applications/Doxygen.app/Contents/Resources/doxygen;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				PRODUCT_NAME = Untitled;
+			};
+			name = Debug;
+		};
+		03DF265010BDDCAD00540B04 /* DeviceDevelopmentDebug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DOCSET_BUNDLE_ID = org.lsst.transientevents;
+				DOXYGEN_PATH = /Applications/Doxygen.app/Contents/Resources/doxygen;
+				PRODUCT_NAME = Untitled;
+			};
+			name = DeviceDevelopmentDebug;
+		};
+		03DF265110BDDCAD00540B04 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DOCSET_BUNDLE_ID = org.lsst.transientevents;
+				DOXYGEN_PATH = /Applications/Doxygen.app/Contents/Resources/doxygen;
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				PRODUCT_NAME = Untitled;
+				ZERO_LINK = NO;
+			};
+			name = Release;
+		};
+		03DF265210BDDCAD00540B04 /* AdHocRelease LSST */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DOCSET_BUNDLE_ID = org.lsst.transientevents;
+				DOXYGEN_PATH = /Applications/Doxygen.app/Contents/Resources/doxygen;
+				PRODUCT_NAME = Untitled;
+			};
+			name = "AdHocRelease LSST";
+		};
+		03DF265310BDDCAD00540B04 /* iTunesDistributionRelease LSST */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DOCSET_BUNDLE_ID = org.lsst.transientevents;
+				DOXYGEN_PATH = /Applications/Doxygen.app/Contents/Resources/doxygen;
+				PRODUCT_NAME = Untitled;
+			};
+			name = "iTunesDistributionRelease LSST";
+		};
+		1D6058940D05DD3E006BFB54 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"/Volumes/Skiiing2/CD/ViewBased/Unknown Path/System/Library/Frameworks\"",
+				);
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = Transient_Events_Prefix.pch;
+				INFOPLIST_FILE = "Transient_Events-Info.plist";
+				PRODUCT_NAME = "Transient Events";
+			};
+			name = Debug;
+		};
+		1D6058950D05DD3E006BFB54 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"/Volumes/Skiiing2/CD/ViewBased/Unknown Path/System/Library/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = Transient_Events_Prefix.pch;
+				INFOPLIST_FILE = "Transient_Events-Info.plist";
+				PRODUCT_NAME = "Transient Events";
+			};
+			name = Release;
+		};
+		C01FCF4F08A954540054247B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "Don't Code Sign";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"SANDBOX=1",
+					"DEBUG=1",
+				);
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = "Transient_Events-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 3.0;
+				PREBINDING = NO;
+				SDKROOT = iphonesimulator3.2;
+			};
+			name = Debug;
+		};
+		C01FCF5008A954540054247B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_PREPROCESSOR_DEFINITIONS = "";
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = "Transient_Events-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 3.0;
+				PREBINDING = NO;
+				SDKROOT = iphoneos3.2;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0374ED6C108FABBA007B314F /* Build configuration list for PBXAggregateTarget "IncrementBuildNumber" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0374ED5F108FAB81007B314F /* Debug */,
+				0374ED60108FAB81007B314F /* DeviceDevelopmentDebug */,
+				0374ED61108FAB81007B314F /* Release */,
+				0374ED63108FAB81007B314F /* AdHocRelease LSST */,
+				037C8AB9109089EC00B09EDE /* iTunesDistributionRelease LSST */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = "AdHocRelease LSST";
+		};
+		03DF265410BDDCD400540B04 /* Build configuration list for PBXAggregateTarget "Build Documentation" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				03DF264F10BDDCAD00540B04 /* Debug */,
+				03DF265010BDDCAD00540B04 /* DeviceDevelopmentDebug */,
+				03DF265110BDDCAD00540B04 /* Release */,
+				03DF265210BDDCAD00540B04 /* AdHocRelease LSST */,
+				03DF265310BDDCAD00540B04 /* iTunesDistributionRelease LSST */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = "AdHocRelease LSST";
+		};
+		1D6058960D05DD3E006BFB54 /* Build configuration list for PBXNativeTarget "Transient Events" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1D6058940D05DD3E006BFB54 /* Debug */,
+				03881EB5104E9F2B008651C8 /* DeviceDevelopmentDebug */,
+				1D6058950D05DD3E006BFB54 /* Release */,
+				03BE7466108D08D3001D23EA /* AdHocRelease LSST */,
+				037C8ABA109089EC00B09EDE /* iTunesDistributionRelease LSST */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = "AdHocRelease LSST";
+		};
+		C01FCF4E08A954540054247B /* Build configuration list for PBXProject "Transient Events" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C01FCF4F08A954540054247B /* Debug */,
+				03881EB4104E9F2B008651C8 /* DeviceDevelopmentDebug */,
+				C01FCF5008A954540054247B /* Release */,
+				03BE7465108D08D3001D23EA /* AdHocRelease LSST */,
+				037C8AB8109089EC00B09EDE /* iTunesDistributionRelease LSST */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = "AdHocRelease LSST";
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 29B97313FDCFA39411CA2CEA /* Project object */;
+}

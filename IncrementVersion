@@ -1,0 +1,3 @@
+#! /bin/sh
+
+/Developer/usr/bin/agvtool next-version -all

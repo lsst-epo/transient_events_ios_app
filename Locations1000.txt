@@ -1,0 +1,189 @@
+1;1;1;6.853166667;45.84;4353;Mont Blanc 
+2;1;1;-105.64;39.58666667;4305;Meyer-Womble Obs. ,Georgetown/Mt.Evans 
+3;1;1;-155.4683333;19.82333333;4213;Gemini North Obs. ,Hilo/Mauna Kea 
+4;1;1;-155.4721667;19.82666667;4205;Univ. Hawaii ,Hilo/Mauna Kea 
+5;1;1;-155.47;19.82166667;4198;Joimt Ast. Centre Radio ,Hilo/Mauna Kea 
+6;1;1;-155.4766667;19.825;4163;Subaru Tel. ,Hilo/Mauna Kea 
+7;1;1;-155.475;19.82666667;4160;W.M.Keck Obs. ,Hilo/Mauna Kea 
+8;1;1;-155.475;19.82166667;4072;Caltech Submill .Radio Obs. ,Hilo/Mauna Kea 
+9;1;1;-71.57916667;-33.00666667;4000;Vina del Mar 
+10;1;1;-68.13266667;-16.495;3659;Obs. Coll. San Calixto ,La Paz 
+11;1;1;-70.86666667;8.79;3610;Llano del Hato Obs. ,Merida 
+12;1;1;7.985;46.54833333;3576;High Alpine Research Obs ,Murren/Jungfraujoch 
+13;1;1;77.87916667;43.32666667;3418;Assah 
+14;1;1;-106.2095;39.39166667;3394;High Altitude Obs. ,Climax 
+15;1;1;-107.1883333;33.985;3235;Joint Obs. Cometary Research ,Socorro/S.Baldy Peak 
+16;1;1;-109.8916667;32.70166667;3190;Submill. Telescope Obs. Radio ,Safford/Mt.Graham 
+17;1;1;-109.8916667;32.7;3181;Vatican Obs. Res. Group ,Safford/Mt.Graham 
+18;1;1;7.785;45.985;3135;Gornergrat North&South Obs. Radio ,Zermatt 
+19;1;1;-156.256;20.70666667;3054;CEK Mees Solar Obs. Univ. Hawaii ,Haleakala/Maui Kahului 
+20;1;1;203.2583333;20.71;3049;LURE Obs. Univ. Hawaii ,Haleakala-AMOS/Maui 
+21;1;1;-64.62916667;-21.59333333;3000;Tarija 
+22;1;1;-68.93333333;-22.63333333;3000;Solar Sta. Smithsonian Inst. ,Montezuma 
+23;1;1;-71.12083333;8.673333333;3000;Univ. of the Andes Sta. , 
+24;1;1;-105.9766667;41.09666667;2943;Wyoming Infrared Obs. ,Jelm Mtn. 
+25;1;1;-78.4925;-0.233333333;2908;National Obs. ,Quito 
+26;1;1;-71.3625;-22.27666667;2886;Sta. Harvard Univ. 1923-1926 ,Chuquicamata 
+27;1;1;137.555;36.11333333;2876;Norikura Solar Obs. ,Motsumoto 
+28;1;1;-3.4;37.06833333;2870;Millimeter Radio Sta. ,Granada/Pico Veleto 
+29;1;1;0.142333333;42.93666667;2862;Pic du Midi Obs. Univ de Toulouse ,Bagneres-de-Bigorre 
+30;1;1;-106.4046667;34.69666667;2842;Univ. N.Mexico Capilla Peak Obs. ,Capilla Peak Obs. 
+31;1;1;-115.4633333;31.04333333;2830;National Ast. Obs. ,San Felipe (Baja) 
+32;1;1;-115.4625;31.04333333;2825;San Pedro Martir 
+33;1;1;-105.8191667;32.78666667;2811;Sacramento Peak Obs. ,Sunspot 
+34;1;1;-105.82;32.78;2781;Apache Point Obs. ,Sunspot 
+35;1;1;-110.7908333;32.44166667;2776;Steward Obs. Catalina Sta. ,Tucson/Mt.Lemmon 
+36;1;1;76.968;43.06666667;2760;High Sta. SAIS ,Alma-Ata 
+37;1;1;-105.5168333;38.97;2679;Tiara Obs. ,South Park 
+38;1;1;-105.4366667;39.42666667;2675;Chamberlin Obs. Sta. ,Baily/Dick Mtn. 
+39;1;1;-74.08133333;4.598333333;2640;Nat. Obs. of Bortolome ,Bogota 
+40;1;1;-70.40333333;-24.625;2635;Paranal Obs. ,Antofagasta/CerroParanal
+41;1;1;20.22;49.19666667;2632;Lomnicky Stit Coronal Obs. ,Pprad/Mt.Lomnicky Stit 
+42;1;1;-102.5508333;22.77666667;2610;Goverment Obs. 1904-1924 ,Zacatecas 
+43;1;1;-110.885;31.68833333;2608;MMT Obs. Fred L.Whipple Obs. ,Amado/Mt.Hopkins 
+44;1;1;-69.3;-31.8;2552;El Leoncito Astr. Complex ,San Juan/El Leoncito 
+45;1;1;5.906666667;44.63333333;2552;Millimeter Radio Astr.Inst. ,Gap/Plateau de Bure 
+46;1;1;5.908333333;44.63333333;2552;Grenoble Obs. Radio ,Gap/Plateau de Bure 
+47;1;1;-119.9281667;39.295;2546;MacLean Obs. ,Incline Lake 
+48;1;1;-110.732;32.41666667;2510;Steward Obs. Catalina Sta. ,Tucson/Mt.Bigelow 
+49;1;1;-106.6583333;33.805;2500;Lincoln Laboratory ETS , 
+50;1;1;-105.7708333;32.95666667;2493;AW & B Obs. ,Cloudcroft 
+51;1;1;-110.3833333;31.05333333;2480;Guillermo Haro Astrophys. Obs. ,Cananea/La Mariquita Mt.
+52;1;1;-71.54866667;-16.375;2451;Harvard Obs 1891-1927(post in Bloemfontein) ,Arequipa 
+53;1;1;-71.60833333;-16.43;2440;National Obs. ,Arequipa 
+54;1;1;-16.49666667;28.29166667;2395;Teide Obs. ,Tenerife Islan., Canaries
+55;1;1;-110.8775;31.68333333;2382;Smithsonian Obs. ,Tucson, Mt.Hopkins 
+56;1;1;-69.33;-31.80166667;2348;Dr.Carlos U.Cesco Sta. ,San Juan/El Leoncito 
+57;1;1;-70.72966667;-29.25666667;2347;European Southern Obs. ,La Serena/Cerro La Silla
+58;1;1;77.46866667;10.23;2343;Solar Astroph. Obs. ,Kodaikanal 
+59;1;1;-17.88166667;28.76;2326;Roque de los Muchachos Obs. ,La Palma Island, Canaries
+60;1;1;-111.7588333;35.19166667;2310;U.S. Naval Obs. Sta. ,Flagstaff 
+61;1;1;-99.19466667;19.405;2297;National Obs. ,Tacubaya 
+62;1;1;-117.6808333;34.38166667;2287;Solar Sta. Smithsonian Obs. ,Table Mt., Wrightwood 
+63;1;1;-70.702;-29.00333333;2282;Cerro Las campanas Obs. ,La Serena 
+64;1;1;-70.7;-29.005;2282;Las Campanas Obs. ,Vallenar 
+65;1;1;-71.02;-32.98166667;2220;Santiago-Cerro El Roble 
+66;1;1;-111.6858333;35.20833333;2219;Lowell Obs. ,Flagstaff 
+67;1;1;-70.815;-30.165;2215;Cerro Tololo Inter.-Amer. Obs. ,La Serena 
+68;1;1;-111.5366667;35.09666667;2200;Lowell Obs. Sta. ,Flagstaff/Anderson Mesa 
+69;1;1;-104.875;39.00666667;2187;US Air Force Acad. Obs. ,Colorado Springs 
+70;1;1;-2.536666667;37.23;2168;German+Spanish Center ,Gergal/Calar Alto Mtn. 
+71;1;1;76.66716667;11.38166667;2150;Radio Ast. Ctr. Tata Inst.of Fund. Rsch ,Ootacamund 
+72;1;1;76.66666667;11.38166667;2150;Radio Astr. Center ,Udhagamandalam (Ooty) 
+73;1;1;-98.31383333;19.03333333;2150;National Astrophys. Obs. ,Tanantzintla 
+74;1;1;-98.31333333;19.03333333;2150;National. Ast. Obs. Radio ,Tonantzintla 
+75;1;1;42.53;43.73333333;2130;Pulkovo Obs. Sta.(Shat Jat Mass Mt.) ,Kislovodsk 
+76;1;1;-107.6183333;34.07833333;2124;National Radio Ast. Obs. ,Socorro 
+77;1;1;-111.5993333;31.96333333;2120;Steward Obs. Sta. ,Kitt Peak Tucson 
+78;1;1;-111.6533333;35.185;2110;Northern Arizona Univ. Obs. ,Flagstaff 
+79;1;1;41.44;43.65166667;2100;Sta. of Engelhardt Obs. ,Zelenchukskaya 
+80;1;1;41.44166667;43.65333333;2100;Special Astrophys. Obs. Pasternikov Mnt. ,Zelenchukskaya 
+81;1;1;-111.5983333;31.96;2084;Warner+Swasey Obs. National Obs. ,Tucson/Kitt Peak 
+82;1;1;-104.0223333;30.67166667;2081;McDonald Obs. ,Fort Davis/Mt.Locke 
+83;1;1;87.17833333;43.47166667;2080;Shanghai Obs. Sta. Radio ,Urumqui 
+84;1;1;-116.9125;34.25333333;2067;Big Bear Solar Obs. ,Big Bear City 
+85;1;1;-104.0283333;30.67166667;2031;Millimeter Wave Obs. Radio ,Fort Davis/Mt.Locke 
+86;1;1;-107.1658333;32.49166667;2025;Blue Mesa Obs. New Mexico Univ. ,Las Cruces 
+87;1;1;-69.32916667;-31.745;2000;El Leoncito 
+88;1;1;149.1291667;-35.35166667;2000;Barton near Canberra 
+89;1;1;149.0083333;-35.44666667;2000;Kambah near Canberra 
+90;1;1;-46.82916667;-21.155;2000;Campinas 
+91;1;1;24.70833333;41.65;2000;Smolyan 
+92;1;1;-78.35;0;2000;Comet Astrograph Sta. ,Quito 
+93;1;1;-123.5208333;48.35833333;2000;Victoria 
+94;1;1;102.7883333;25.025;1940;Yunnan obs. National Inst. Astr. ,Kunming 
+95;1;1;79.45716667;29.36;1927;Uttar Pradesh State Obs. ,Naini Tal,  Manora Peak 
+96;1;1;-111.6166667;31.95;1925;McGraw-Hill Obs. ,Tucson/Kitt Peak 
+97;1;1;-111.6141667;31.95333333;1920;National Radio Obs. ,Tucson/Kitt Peak 
+98;1;1;-45.58333333;-22.535;1870;Pico dos Dias Obs. ,Itajuba 
+99;1;1;-116.4266667;32.84;1859;Mt.Laguna Obs. Laser ,Mt.Laguna 
+100;1;1;12.01666667;47.70333333;1838;Fraunhofer Inst. Obs. ,Wendelstein 
+101;1;1;13.20416667;41.95833333;1828;Monte Autore 
+102;1;1;138.175;35.9;1816;Nyukasa 
+103;1;1;28.075;-26.18166667;1806;Outstation of South African Obs. ,Johannesburg 
+104;1;1;109.5291667;18.66666667;1800;Purple Mt. Obs. Hainan Island Sta. ,Hainan Island 
+105;1;1;-112.4916667;34.51333333;1794;Prescott 
+106;1;1;28.07466667;-26.18166667;1786;Union Obs. ,Johannesburg 
+107;1;1;20.245;49.18833333;1783;Skalnate Pleso Obs. ,Poprad 
+108;1;1;20.81066667;-32.38;1768;S.African Obs. ,Sutherland 
+109;1;1;-43.51166667;-19.82166667;1746;Peidade Obs. ,Belo Horizonte 
+110;1;1;-118.0596667;34.21666667;1742;Obs. Mount Wilson Carnegie Inst. Pasadena ,Mount Wilson 
+111;1;1;28.02916667;-26.18666667;1741;Yale-Columbia Sta. ,Johannesburg 
+112;1;1;14.97833333;37.69166667;1725;Stellar Sta. Serra La Nave ,Catania Mt.Etna 
+113;1;1;-116.864;33.35666667;1706;Palomar Obs. (Hale obs.) ,Palomar Mountain 
+114;1;1;28.81666667;-2.266666667;1700;Radio Astr. Obs. ,Lwigo 
+115;1;1;72.78;24.65166667;1700;Gurushikhar Infrared Obs. ,Abu 
+116;1;1;-105.2621667;40.00333333;1648;Sommers-Bausch Obs. High Sta.Harvard Univ.Boulder 
+117;1;1;-104.9488333;39.67666667;1644;Chamberlin Univ. Obs. ,Denver 
+118;1;1;-103.9466667;30.635;1603;G.R.Agassiz Ata. Radio ,Fort Davis 
+119;1;1;17.8;-25.86666667;1600;Solar Sta. Smithsonian Univ. ,Mt.Brukkaros 
+120;1;1;42.82533333;41.755;1580;Abastuman Obs. ,Mt.Kanobili 
+121;1;1;28.22883333;-25.78833333;1542;Radcliffe Obs. ,Pretoria 
+122;1;1;13.90666667;46.67833333;1526;Univ. Obs. ,Graz, Kanzelhohe 
+123;1;1;9.229166667;45.92333333;1526;Sorman 
+124;1;1;-121.57;36.305;1525;MIRA Oliver Obs.Sta. ,Monterey/Chews Ridge 
+125;1;1;120.5796667;16.41166667;1507;Manila Obs. ,Baguio City 
+126;1;1;-106.6975;32.29333333;1505;Obs. N.Mexico Univ. ,Las Cruces, Tortugas Mt.
+127;1;1;44.29166667;40.335;1500;Byurakan Astrophys. Obs.(+Radio Obs.) ,Byurakan, Mt.Aragaz 
+128;1;1;150.8291667;-33.66;1500;Windsor 
+129;1;1;45.89583333;39.1;1500;Sta. Pulkovo Obs. ,Ordubad 
+130;1;1;8.029166667;50.92666667;1500;Siegen 
+131;1;1;69.22;38.31833333;1500;SAIS+Goloseevo Sta. ,Sanglok 
+132;1;1;-110.7208333;32.39833333;1500;Mt.Bigelow 
+133;1;1;-112.1583333;35.35166667;1500;Williams 
+134;1;1;-118.2208333;33.805;1500;Los Angeles 
+135;1;1;-119.1791667;34.85666667;1500;San Emigdio Peak 
+136;1;1;-117.6083333;34.45833333;1500;Ford Obs. ,Wrightwood 
+137;1;1;-73.17083333;44.05666667;1500;Middlebury 
+138;1;1;-123.6166667;48.32833333;1500;Sooke 
+139;1;1;66.88;38.72166667;1500;Shokin Majdanak SAIS+Goloseevo Sta. ,Majdanak 
+140;1;1;26.2375;-29.09666667;1490;Lamont-Hussey Obs Sta. Michigan Univ. ,Bloemfontein 
+141;1;1;138.8125;35.805;1454;Ochiai 
+142;1;1;-107.0433333;32.38;1453;Corralitos Obs. ,Las Cruces 
+143;1;1;76.95733333;43.18833333;1450;High Sta. of Alma-Ata Obs. , 
+144;1;1;76.95733333;43.18833333;1450;Mountain Obs. ,Alma-Ata 
+145;1;1;173.8033333;-41.74833333;1396;Carter Obs. Sta. ,Blenheim/Black Birch 
+146;1;1;27.685;-25.89;1391;Hartebeeshoek Radio Obs. ,Hartebeeshoek 
+147;1;1;128.4566667;36.93333333;1390;Sobaeksan Ast. Obs. ,Danyang 
+148;1;1;26.405;-29.03833333;1387;Boyden Sta. at Mazelspoort ,Bloemfontein 
+149;1;1;47.55183333;18.91666667;1381;Tananarive Obs. , 
+150;1;1;11.57166667;45.84333333;1350;Mt.Ekar Obs. ,Asiago/Mt.Ekar 
+151;1;1;138.4791667;35.93833333;1350;Nobeyama Solar Radio Obs. ,Minamimaki-mura 
+152;1;1;138.48;35.93833333;1350;Nobeyama Solar Radio Obs. ,Nobeyama 
+153;1;1;138.4833333;35.93333333;1350;Nobeyama Cosmic Radio Obs. ,Nobeyama 
+154;1;1;107.616;6.825;1300;Bosscha Obs. ,Lembang 
+155;1;1;27.99166667;-26.205;1300;Linden Obs. , 
+156;1;1;133.7666667;33.75666667;1285;Mt.Kajigamori Otoyo 
+157;1;1;-121.6455;37.34;1283;Lick Obs. ,San Jose/Mt.Hamilton 
+158;1;1;12.85416667;42.57166667;1280;Osservatorio Polino , 
+159;1;1;138.3216667;36.52;1280;Nagoya Univ. Sugadaira Radio Sta. ,Toyokawa 
+160;1;1;137.3083333;36.24833333;1276;Hida Obs. ,Kamitakara 
+161;1;1;6.925;43.74833333;1271;Caussols 
+162;1;1;6.926666667;43.74833333;1270;Cote d-Azur Obs., Calern Sta. Inf+Las ,St.Vallier-de-Thiey 
+163;1;1;32.78;39.84333333;1266;Univ. Ankara Obs. Radio ,Ankara 
+164;1;1;-64.54666667;-31.59833333;1250;Cordoba Obs. Sta. ,Bosque Alegre 
+165;1;1;7.905833333;47.915;1240;Obs. Fraunhofer Inst. ,Freiburg, Schauinsland 
+166;1;1;-118.2816667;37.23166667;1236;Owens Valley Radio Obs. Cal. Technol. Inst., Big Pine 
+167;1;1;27.87683333;-25.77333333;1220;Republican Obs. Hartbeespoort ,Annexe, Johannesburg 
+168;1;1;27.87666667;-25.77333333;1220;Leiden obs. Southern Sta. ,Hartebeespoort 
+169;1;1;-120.723;46.95166667;1198;Manastash Ridge Obs. ,Ellensburg 
+170;1;1;149.0661667;-31.27666667;1165;Siding Spring Obs. Sta. Mt.Stromlo ,Coonabarabran 
+171;1;1;138.4458333;35.9;1141;Kiyosato 
+172;1;1;137.6283333;35.79333333;1130;Kiso Obs. *, Tokyo-Kiso 
+173;1;1;128.9766667;36.16666667;1127;Bohyunsan Optical Ast. Obs. ,Youngchum/Mt.Bohyun 
+174;1;1;135.1208333;34.61666667;1123;Go-Chome and Kobe-Suma Obs. , 
+175;1;1;5.410833333;36.18666667;1120;Desloges J. Obs. ,Setif 
+176;1;1;-71.15333333;45.455;1114;Mont Megantic Obs. ,Quebec 
+177;1;1;41.56583333;43.78666667;1108;Inst. Applied Astronomym, RAS Radio Sta. ,Zelenchukskaya 
+178;1;1;138.3208333;35.89166667;1105;Yatsugatake-Kobuchizawa 
+179;1;1;-119.5953333;46.395;1085;Rattlesnake Mt. Obs. ,Richland 
+180;1;1;-118.123;34.295;1067;Echo Mt. Obs. ,Mt.Lowe 
+181;1;1;14.28816667;48.86333333;1050;Klet Obs. ,Ceske Budejovice 
+182;1;1;11.52866667;45.86166667;1045;Asiago Obs. of Padua Univ. ,Cima Ekar (Vicenza) 
+183;1;1;-121.473;40.81833333;1043;Hat Creec Radio Obs. ,Cassel 
+184;1;1;6.825;47.105;1040;La Chaux de Fonds 
+185;1;1;138.3666667;35.88;1038;Yatsugatake South Base Obs. , 
+186;1;1;-116.8483333;35.39333333;1038;JPL Radio Obs. ,Goldstone 
+187;1;1;170.465;-43.98666667;1027;Mt.John Univ. Obs. ,Lake Tekapo 
+188;1;1;-66.92833333;10.50666667;1026;Cagigal Obs. ,Caracas 
+189;1;1;138.6116667;35.42666667;1015;Nagoya Univ. Fujigane Sta. Radio ,Kamiku Isshiki 

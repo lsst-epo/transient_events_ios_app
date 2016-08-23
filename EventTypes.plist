@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<string>Unknown</string>
+	<string>Supernova</string>
+	<string>Other</string>
+	<string>Blazar Outburst</string>
+	<string>Active Galactic Nucleus Variability</string>
+	<string>UV Ceti Variable</string>
+	<string>Asteroid</string>
+	<string>Variable</string>
+	<string>Mira Variable</string>
+	<string>High Proper Motion Star</string>
+	<string>Comet</string>
+	<string>Eclipsing Variable</string>
+	<string>Gamma Ray Burst Afterglow</string>
+	<string>Microlensing</string>
+	<string>Nova</string>
+	<string>Planetary Mircolensing</string>
+	<string>RRLyrae Variable</string>
+	<string>Tidal Disruption Flare</string>
+</array>
+</plist>
